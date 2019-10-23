@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Open Climate Fix" src="https://raw.githubusercontent.com/openclimatefix/openclimatefix.github.io/master/src/images/logo_dark_square%402x.png" width="150" />
+  <img alt="Open Climate Fix" src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png" width="150" />
 </p>
 <h1 align="center">
   Open Climate Fix Website

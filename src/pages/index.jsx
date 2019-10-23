@@ -136,7 +136,7 @@ const IndexPage = () => (
             className="mt-10"
             style={{ maxWidth: '12rem' }}
             alt="Logo RAAIS Foundation"
-            src="https://raw.githubusercontent.com/openclimatefix/openclimatefix.github.io/master/src/images/sponsor_raais.png"
+            src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_raais.png"
           />
         </a>
         <div>
