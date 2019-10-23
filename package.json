@@ -43,7 +43,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/openclimatefix/openclimatefix.github.io",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint . --ext .js,.jsx",
     "start": "npm run develop",
