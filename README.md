@@ -5,7 +5,7 @@
   Open Climate Fix Website
 </h1>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-) [![Open Collective backers and sponsors](https://img.shields.io/opencollective/all/openclimatefix?style=flat-square)](https://opencollective.com/openclimatefix) [![GitHub issues](https://img.shields.io/github/issues/openclimatefix/openclimatefix.github.io?style=flat-square)](https://github.com/openclimatefix/openclimatefix.github.io/issues)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-) [![Open Collective backers and sponsors](https://img.shields.io/opencollective/all/openclimatefix?style=flat-square)](https://opencollective.com/openclimatefix) [![GitHub issues](https://img.shields.io/github/issues/openclimatefix/website?style=flat-square)](https://github.com/openclimatefix/website/issues)
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
