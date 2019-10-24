@@ -34,7 +34,7 @@ class CloudHero extends Component {
         </div>
         <div
           id="clouds"
-          className={styles.background}
+          class={styles.background}
           style={{ height: 'calc(100vh - 80px)' }}
         />
         <div
