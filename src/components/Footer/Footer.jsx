@@ -6,6 +6,7 @@ import {
   FaDonate,
   FaMedium,
   FaDiscourse,
+  FaYoutube
 } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
 
@@ -50,6 +51,13 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <FaDiscourse />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCq2-AN_j8BMERxTqdSvtPAg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaYoutube />
         </a>
         <a
           href="https://opencollective.com/openclimatefix"
