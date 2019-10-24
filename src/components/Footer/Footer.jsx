@@ -6,7 +6,7 @@ import {
   FaDonate,
   FaMedium,
   FaDiscourse,
-  FaYoutube
+  FaYoutube,
 } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
 
