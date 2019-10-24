@@ -1,5 +1,5 @@
 {
-  "projectName": "openclimatefix.github.io",
+  "projectName": "website",
   "projectOwner": "openclimatefix",
   "repoType": "github",
   "repoHost": "https://github.com",
@@ -79,6 +79,15 @@
       "profile": "https://www.raais.org/",
       "contributions": [
         "financial"
+      ]
+    },
+    {
+      "login": "hansal7014",
+      "name": "Hansal Bachkaniwala",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/28968198?v=4",
+      "profile": "https://github.com/hansal7014",
+      "contributions": [
+        "code"
       ]
     }
   ],
