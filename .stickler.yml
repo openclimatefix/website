@@ -1,0 +1,15 @@
+---
+files:
+  ignore:
+    - '.cache/*'
+    - 'public/*'
+    - 'bower_components/*'
+    - 'node_modules/*'
+
+review:
+  fail_on_comments: true
+
+linters:
+  eslint:
+    config: .eslintrc.js
+    fixer: true
