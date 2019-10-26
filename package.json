@@ -2,7 +2,7 @@
   "name": "ocf-website",
   "private": true,
   "description": "Source for the website of openclimatefix.org",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Open Climate Fix <info@openclimatefix.org>",
   "dependencies": {
     "gatsby": "^2.13.67",
