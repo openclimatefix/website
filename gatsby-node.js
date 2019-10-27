@@ -5,12 +5,12 @@
  */
 
 // You can delete this file if you're not using it
-const path = require('path');
+const dirPath = require('path');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve('src/components/BlogPost/BlogPost.jsx');
+  const blogPostTemplate = dirPath.resolve('src/components/BlogPost/BlogPost.jsx');
 
   const result = await graphql(`
     {
@@ -34,12 +34,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild('Error while running GraphQL query.');
     return;
   }
-
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const posts = result.data.allMarkdownRemark.edges;
+  result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
+    const { path } = node.frontmatter;
     createPage({
-      path: node.frontmatter.path,
+      path,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        prev: index === 0 ? null : posts[index - 1].node,
+        next: index === (posts.length - 1) ? null : posts[index + 1].node,
+      },
     });
   });
 };

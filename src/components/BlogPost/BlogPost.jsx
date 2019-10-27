@@ -7,11 +7,13 @@ import SEO from '../seo';
 import Layout from '../Layout';
 
 import AuthorInline from './AuthorInline';
-
+import PostNavigation from './PostNavigation';
 
 export default function BlogPost({
   data, // this prop will be injected by the GraphQL query below.
+  pageContext,
 }) {
+  const { prev, next } = pageContext;
   const { markdownRemark: { frontmatter, html } } = data;
   const {
     authorName,
@@ -32,6 +34,7 @@ export default function BlogPost({
         </p>
         <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
+      <PostNavigation prev={prev} next={next} />
     </Layout>
   );
 }
@@ -61,6 +64,18 @@ BlogPost.propTypes = {
         title: PropTypes.string.isRequired,
         authorName: PropTypes.string.isRequired,
         authorTwitter: PropTypes.string,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+  pageContext: PropTypes.shape({
+    prev: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        path: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    next: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        path: PropTypes.string.isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,
