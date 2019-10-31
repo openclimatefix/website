@@ -47,6 +47,10 @@ function SEO({
           content: 'website',
         },
         {
+          property: 'og:image',
+          content: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
+        },
+        {
           name: 'twitter:card',
           content: 'summary',
         },
@@ -61,6 +65,14 @@ function SEO({
         {
           name: 'twitter:description',
           content: metaDescription,
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
+        },
+        {
+          name: 'twitter:site',
+          content: '@OpenClimateFix',
         },
       ].concat(meta)}
     />
