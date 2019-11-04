@@ -1,9 +1,5 @@
 .background {
-  @apply absolute;
-
-  width:10000px;
   background: url("https://raw.githubusercontent.com/openclimatefix/website/master/src/images/clouds_repeat.jpg") repeat;
-  background-size: 1000px 1000px;
 
-  left: 0;
+  @apply absolute left-0 w-screen bg-fixed;
 }
