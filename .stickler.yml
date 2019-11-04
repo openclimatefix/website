@@ -11,5 +11,5 @@ review:
 
 linters:
   eslint:
-    config: .eslintrc.js
+    config: .eslintrc.stickler.js
     fixer: true
