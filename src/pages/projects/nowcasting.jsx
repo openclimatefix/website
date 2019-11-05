@@ -14,11 +14,9 @@ const NowcastingPage = ({ data }) => {
       <SEO title="Project: Nowcasting" />
       <h1>Nowcasting</h1>
       <main className="markdown">
-        <div className="videoWrapper">
+        <div className="video-wrapper">
           <iframe
             title="nowcasting"
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/IOp-tj-IJpk"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
