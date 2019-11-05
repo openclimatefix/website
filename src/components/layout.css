@@ -21,6 +21,16 @@ h3 {
 .markdown {
   @apply text-lg text-gray-900 leading-normal mb-2 font-serif;
 
+  & .video-wrapper {
+    @apply relative h-0 max-w-full overflow-hidden;
+    padding-bottom: 56.25%;
+   
+    & iframe {
+      @apply absolute top-0 left-0 h-full w-full;
+    }
+  
+  }
+
   & > p + p {
     @apply mt-6;
   }

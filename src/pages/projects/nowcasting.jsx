@@ -14,6 +14,15 @@ const NowcastingPage = ({ data }) => {
       <SEO title="Project: Nowcasting" />
       <h1>Nowcasting</h1>
       <main className="markdown">
+        <div className="video-wrapper">
+          <iframe
+            title="nowcasting"
+            src="https://www.youtube.com/embed/IOp-tj-IJpk"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
         <h2>Why?</h2>
         <p>
           Solar Photovoltaics (PV) is the single biggest source of uncertainty in
