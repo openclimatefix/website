@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CloudHero from '../components/CloudHero';
+import ContributorShowcase from '../components/ContributorShowcase';
 
 import '../components/layout.css';
 
@@ -122,6 +123,7 @@ const IndexPage = () => (
           </a>
           .
         </p>
+        <ContributorShowcase />
       </div>
       <h2 id="funding" className="mt-16 mb-2">Funding</h2>
       <div className="markdown">
