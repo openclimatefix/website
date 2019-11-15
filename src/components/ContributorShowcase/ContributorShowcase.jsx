@@ -5,29 +5,22 @@ import {StaticQuery, graphql} from 'gatsby';
 
 function ContributorShowcase() {
   return (
-    <div className={styles.cs}>
-      hello World!
+    <div>
+      <h2>Contributors</h2>
+      <br></br>
       <StaticQuery 
       query = {graphql`
         query queryJSON {
-          allContributorsJson {
-            edges {
-              node {
-                name
-                avatar_url
-                profile
-              }
+          contributorsJson {
+            contributors {
+              name
+              profile
+              avatar_url
             }
           }
         }
       `}
-      render={data => {
-        <div className={styles.row}>
-          
-        </div>
-        }
-      }
-    
+      render={data => <div className={styles.grid}>{getContributors(data)}</div>}
     />
     </div>
   );
@@ -35,6 +28,15 @@ function ContributorShowcase() {
 
 
 function getContributors(data) {
-  
+  const cont = [];
+  data.contributorsJson.contributors.forEach(item => {
+    cont.push(
+    <div className={styles.griditem} key={item.name}>
+      <img className={styles.image} src={item.avatar_url}></img>
+    <a href={item.profile}>{item.name}</a>
+    </div>
+    )
+  });
+  return cont;
 }
 export default ContributorShowcase;

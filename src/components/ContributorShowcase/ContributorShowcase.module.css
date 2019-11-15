@@ -1,7 +1,14 @@
-.cs {
-  color: red;
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
-.row {
-  color: blue;
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.griditem {
+  text-align: left;
+  padding: 10px;
 }
