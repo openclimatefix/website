@@ -32,7 +32,7 @@ function ContributorShowcase() {
             }
           }
         `}
-        render={(data) => <div className={styles.grid}>{getContributors(data)}</div>}
+        render={data => <div className={styles.grid}>{getContributors(data)}</div>}
       />
     </div>
   );
