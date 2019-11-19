@@ -102,3 +102,19 @@ h3 {
 @tailwind components;
 
 @tailwind utilities;
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper  {
+  height: 100%;
+}
+
+ #gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: auto;
+}
