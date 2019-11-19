@@ -52,6 +52,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/hansal7014"><img src="https://avatars2.githubusercontent.com/u/28968198?v=4" width="100px;" alt="Hansal Bachkaniwala"/><br /><sub><b>Hansal Bachkaniwala</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=hansal7014" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/drwm-base"><img src="https://avatars3.githubusercontent.com/u/50212366?v=4" width="100px;" alt="David"/><br /><sub><b>David</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=drwm-base" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sukhbeersingh"><img src="https://avatars2.githubusercontent.com/u/44414281?v=4" width="100px;" alt="sukhbeersingh"/><br /><sub><b>sukhbeersingh</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=sukhbeersingh" title="Code">💻</a></td>
+    <td align="center"><a href="https://geekayush.github.io/"><img src="https://avatars2.githubusercontent.com/u/22499864?v=4" width="100px;" alt="Ayush Srivastava"/><br /><sub><b>Ayush Srivastava</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=geekayush" title="Code">💻</a></td>
   </tr>
 </table>
 
