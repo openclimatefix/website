@@ -11,7 +11,7 @@ const PostNavigation = ({ prev, next }) => (
             <Link to={prev.frontmatter.path}>
               <div className="flex-1 text-center px-4 py-2 m-2">
                 <FaCaretLeft size="20" className="inline mr-0" />
-          Next
+                Next
               </div>
             </Link>
           )}
@@ -19,14 +19,12 @@ const PostNavigation = ({ prev, next }) => (
           && (
             <Link to={next.frontmatter.path}>
               <div className="flex-1 text-center px-4 py-2 m-2">
-Previous
+                Previous
                 <FaCaretRight size="20" className="inline mr-0" />
               </div>
             </Link>
           )}
-
   </div>
-
 );
 
 PostNavigation.propTypes = {
