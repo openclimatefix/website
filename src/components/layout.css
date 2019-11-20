@@ -103,6 +103,7 @@ h3 {
 
 @tailwind utilities;
 
+/* Ensure Footer always sticks to the bottom */
 html,
 body,
 #___gatsby,
