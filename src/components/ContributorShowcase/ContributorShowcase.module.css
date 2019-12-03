@@ -16,14 +16,14 @@
 @media (min-width: 992px) { 
   .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
 }
 
 @media (min-width: 1200px) { 
   .grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
   }
 }
 
