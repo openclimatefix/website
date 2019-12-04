@@ -6,7 +6,7 @@ const getInvolvedPage = () => (
   <Layout>
     <h1>Get Involved</h1>
     <div className="markdown">
-        <ul>
+      <ul>
         <li>
           <a href="https://opencollective.com/openclimatefix">Donate</a>
           {' '}
@@ -22,7 +22,7 @@ const getInvolvedPage = () => (
           {' '}
           <a href="https://openclimatefix.discourse.group/">OCF discussion forum</a>
         </li>
-        </ul>
+      </ul>
       <p>
         Also check out
         {' '}

@@ -7,8 +7,8 @@ function renderContributorsFromData(data) {
   data.contributorsJson.contributors.forEach((item) => {
     cont.push(
       <div className={styles.griditem} key={item.profile}>
-      <img className={styles.image} alt={item.profile} src={item.avatar_url} />
-      <a href={item.profile}>{item.name}</a>
+        <img className={styles.image} alt={item.profile} src={item.avatar_url} />
+        <a href={item.profile}>{item.name}</a>
       </div>,
     );
   });
