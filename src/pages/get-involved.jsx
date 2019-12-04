@@ -6,9 +6,8 @@ const getInvolvedPage = () => (
   <Layout>
     <h1>Get Involved</h1>
     <div className="markdown">
-    <p></p>
-        <ul>
-          <li>
+      <ul>
+        <li>
             <a href="https://opencollective.com/openclimatefix">Donate</a>
             {' '}
             to our OpenCollective
@@ -32,10 +31,13 @@ const getInvolvedPage = () => (
           </a>
           .
         </p>
-        <h2>Contribute to one of our repositories on Github</h2>
-        <p>Check out our <a href="https://github.com/search?l=&p=1&q=user%3Aopenclimatefix+label%3A%22good+first+issue%22&ref=advsearch&type=Issues&utf8=%E2%9C%93&state=open">List of Good First Issues</a> to get started!</p>
-        <ContributorShowcase />
-      </div>
+      <h2>Contribute to one of our repositories on Github</h2>
+      <p>Check out our 
+        <a href="https://github.com/search?l=&p=1&q=user%3Aopenclimatefix+label%3A%22good+first+issue%22&ref=advsearch&type=Issues&utf8=%E2%9C%93&state=open">List of Good First Issues</a>
+        to get started!
+      </p>
+      <ContributorShowcase />
+    </div>
   </Layout>
 );
 
