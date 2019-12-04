@@ -19,6 +19,7 @@ function ContributorShowcase() {
   return (
     <>
       <h2>Contributors</h2>
+      <p>Join our amazing group of contributors and get involved.<br/>These people are already contributing to our work.</p>
       <StaticQuery
         query={graphql`
           query queryJSON {
