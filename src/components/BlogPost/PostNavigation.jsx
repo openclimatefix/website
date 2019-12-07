@@ -9,7 +9,7 @@ const PostNavigation = ({ prev, next }) => (
     { prev
           && (
             <Link to={prev.frontmatter.path}>
-              <div className="flex-1 text-center px-4 py-2 m-2">
+              <div className="flex-center items-center px-4 py-2 m-2">
                 <FaCaretLeft size="20" className="inline mr-0" />
                 Next
               </div>
@@ -18,7 +18,7 @@ const PostNavigation = ({ prev, next }) => (
     { next
           && (
             <Link to={next.frontmatter.path}>
-              <div className="flex-1 text-center px-4 py-2 m-2">
+              <div className="flex-center items-center px-4 py-2 m-2">
                 Previous
                 <FaCaretRight size="20" className="inline mr-0" />
               </div>

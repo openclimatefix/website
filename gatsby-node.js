@@ -35,7 +35,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
   const posts = result.data.allMarkdownRemark.edges;
-  result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
+  posts.forEach(({ node }, index) => {
     const { path } = node.frontmatter;
     createPage({
       path,
