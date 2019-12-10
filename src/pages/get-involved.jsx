@@ -36,6 +36,7 @@ const getInvolvedPage = () => (
         Check out our
         {' '}
         <a href="https://github.com/search?l=&p=1&q=user%3Aopenclimatefix+label%3A%22good+first+issue%22&ref=advsearch&type=Issues&utf8=%E2%9C%93&state=open">List of Good First Issues</a>
+        {' '}
         to get started!
       </p>
       <ContributorShowcase />
