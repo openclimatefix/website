@@ -4,7 +4,6 @@ import { MdEmail } from 'react-icons/md';
 import {
   FaTwitter,
   FaDonate,
-  FaMedium,
   FaDiscourse,
   FaYoutube,
 } from 'react-icons/fa';
@@ -37,13 +36,6 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <MdEmail />
-        </a>
-        <a
-          href="https://medium.com/open-climate-fix"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaMedium />
         </a>
         <a
           href="https://openclimatefix.discourse.group/"
