@@ -37,5 +37,6 @@
 
 .griditem {
   padding: 10px;
+  @apply text-blue-600;
   @apply text-xs text-center;
 }

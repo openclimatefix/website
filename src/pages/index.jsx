@@ -95,36 +95,6 @@ const IndexPage = () => (
           </a>
         </p>
       </div>
-
-      <h2 id="get-involved" className="mt-16 mb-2">Get Involved</h2>
-      <div className="markdown">
-        <ul>
-          <li>
-            <a href="https://opencollective.com/openclimatefix">Donate</a>
-            {' '}
-            to our OpenCollective
-          </li>
-          <li>
-            Follow us by
-            {' '}
-            <a href="https://eepurl.com/guCjvH">signing up to our newsletter</a>
-          </li>
-          <li>
-            Join the
-            {' '}
-            <a href="https://openclimatefix.discourse.group/">OCF discussion forum</a>
-          </li>
-        </ul>
-        <p>
-          Also check out
-          {' '}
-          <a href="/blog/2019-03-06-how-to-get-involved">
-            Jack&apos;s blog post about getting involved
-          </a>
-          .
-        </p>
-        <ContributorShowcase />
-      </div>
       <h2 id="funding" className="mt-16 mb-2">Funding</h2>
       <div className="markdown">
         <p>
