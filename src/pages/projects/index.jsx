@@ -22,13 +22,13 @@ const ProjectsPage = () => (
       <p>
         Solar PV power production is a hard to forecast: As clouds move over PV panels,
         the power output moves up and down rapidly. To keep the energy grid in
-        balance, electricity grid operators need to have a readily available backup which usually
-        comes from fossil sources.
+        balance, electricity grid operators need to have a readily available backup
+        which usually comes from fossil sources.
       </p>
       <p>
         Our assumption is the following: If we have more accurate predictions of
-        how much electricity a PV installation will produce over the next few hours then we can reduce
-        the amount of fossil fuel backup required.
+        how much electricity a PV installation will produce over the next few hours then we
+        can reduce the amount of fossil fuel backup required.
       </p>
       <p>
         <Link to="/blog/2019-07-09-solar-pv-mapping">PV Mapping&nbsp;</Link>
