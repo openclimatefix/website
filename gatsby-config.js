@@ -3,6 +3,7 @@ module.exports = {
     title: 'Open Climate Fix',
     description: 'Open Climate Fix is a new non-profit research and development lab, totally focused on reducing greenhouse gas emissions as rapidly as possible. Every part of the organisation is designed to maximise climate impact, such as our open and collaborative approach, our rapid prototyping, and our attention on finding scalable & practical solutions.',
     author: '@openclimatefix',
+    siteUrl: 'https://openclimatefix.org',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -54,6 +55,62 @@ module.exports = {
       options: {
         name: 'data',
         path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: (
+              { query: { site, allMarkdownRemark } },
+            ) => allMarkdownRemark.edges.map((edge) => {
+              const url = `${site.siteMetadata.siteUrl}/blog${edge.node.fields.slug}`;
+
+              return {
+                ...edge.node.frontmatter,
+                description: edge.node.excerpt,
+                date: edge.node.frontmatter.date,
+                url,
+                guid: url,
+                custom_elements: [{ 'content:encoded': edge.node.html }],
+              };
+            }),
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Open Climate Fix',
+          },
+        ],
       },
     },
   ],
