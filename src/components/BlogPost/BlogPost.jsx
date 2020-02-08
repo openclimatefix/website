@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import { DiscussionEmbed } from 'disqus-react';
 
 import SEO from '../seo';
 import Layout from '../Layout';
@@ -18,6 +19,7 @@ export default function BlogPost({
   const {
     authorName,
     authorTwitter,
+    path,
     title,
     date,
   } = frontmatter;
@@ -35,6 +37,10 @@ export default function BlogPost({
         <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
       <PostNavigation prev={prev} next={next} />
+      <DiscussionEmbed
+        shortname="open-climate-fix"
+        config={{ identifier: path, title }}
+      />
     </Layout>
   );
 }
