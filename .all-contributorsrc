@@ -118,7 +118,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "grantbdev",
+      "name": "Grant Bourque",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/616290?v=4",
+      "profile": "https://grantbourque.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
