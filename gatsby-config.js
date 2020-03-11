@@ -28,11 +28,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Open Climate Fix',
+        short_name: 'OCF',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#000000',
+        theme_color: '#000000',
         display: 'minimal-ui',
         // This path is relative to the root of the site.
         icon: 'src/images/logo_dark_square@2x.png',
