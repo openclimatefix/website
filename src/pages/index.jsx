@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import SEO from '../components/seo';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CloudHero from '../components/CloudHero';
-import ContributorShowcase from '../components/ContributorShowcase';
 
 import '../components/layout.css';
 
@@ -90,9 +90,9 @@ const IndexPage = () => (
           of tonnes per year.
         </p>
         <p>
-          <a href="/projects">
+          <Link to="/projects">
             &rarr; Learn more about our projects Solar PV Nowcasting and PV Mapping
-          </a>
+          </Link>
         </p>
       </div>
       <h2 id="funding" className="mt-16 mb-2">Funding</h2>
@@ -102,7 +102,30 @@ const IndexPage = () => (
           least millions of tonnes, at a cost of a few dollars per tonne, so
           considerably cheaper than most other interventions.
         </p>
-        <p>The RAAIS Foundation have very kindly given OCF our first grant!</p>
+        <a href="https://business.esa.int/">
+          <img
+            className="mt-10"
+            style={{ maxWidth: '12rem' }}
+            alt="Logo ESA Space Solutions"
+            src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png"
+          />
+        </a>
+        <div>
+          <p>
+            <a href="https://business.esa.int/">ESA Business Applications</a>
+            {' '}
+            aims to show that space is open for business and has the power to improve our
+            everyday lives on Earth. They do this by helping companies to integrate space
+            data and technology into commercial services.
+          </p>
+          <p>
+            ESA awarded us an AI Kick-Start co-funding for six months. Kick-Start activities
+            are compact Feasability Studies to explore new service concepts that use space tech.
+            We will ask potential users of&nbsp;
+            <Link to="/projects/nowcasting">nowcasting</Link>
+            &nbsp;what they need; and how best to serve those needs.
+          </p>
+        </div>
         <a href="https://www.raais.org/">
           <img
             className="mt-10"
