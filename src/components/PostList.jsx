@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import PostLink from './PostLink';
 
 const PostList = ({ posts }) => (
-  <div className="markdown mt-6">
+  <div className="mt-6">
     <ul>
       {posts.map(({ node: post }) => (
         <PostLink key={post.id} post={post} />
