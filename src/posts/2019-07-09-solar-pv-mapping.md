@@ -6,6 +6,8 @@ authorName: 'Damien Tanner'
 authorTwitter: 'dctanner'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/damien.jpg'
 project: 'mapping'
+coverImageUnsplashId: '4JL_VAgxwcU'
+coverImagePhotographerName: 'Adolfo Félix'
 ---
 
 Solar PV mapping is a sub-project of our [PV nowcasting project](http://jack-kelly.com/blog/2019-07-01-starting-solar-electricity-nowcasting). Nowcasting will provide solar PV yield predictions for any location. To be able to arrive at an accurate forecast for solar power generation (out-turn), we need to know where all the PV panels are!

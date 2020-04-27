@@ -6,6 +6,8 @@ authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
 project: 'nowcasting'
+coverImageUnsplashId: 'XGAZzyLzn18'
+coverImagePhotographerName: 'American Public Power Association'
 ---
 
 Solar PV is the single biggest source of uncertainty in the National Grid's forecasts. To mitigate against the risk of a large cloud sweeping across the country (and hence the grid losing gigawatts of PV generation), the National Grid keep lots of natural gas generators idling ('spinning reserve'). These gas turbines are kept idling because they take several hours to start up from cold, but they can be ramped up very quickly from idle; and the physics of the grid dictate that - at every instant - supply must precisely match demand. So, any loss in PV supply must be immediately replaced. Spinning reserve costs a lot of money and pumps out a lot of CO2. If the National Grid had better PV forecasts, even for the next few hours, they could reduce the amount of spinning reserve required, and hence reduce emissions (by about 100,000 tonnes per year) and reduce costs.

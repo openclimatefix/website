@@ -9,7 +9,7 @@
 }
 
 h1 {
-  @apply text-5xl font-serif leading-tight mb-4 mt-10;
+  @apply text-4xl font-serif leading-tight mb-4 mt-10;
 }
 h2 {
   @apply text-3xl font-serif;

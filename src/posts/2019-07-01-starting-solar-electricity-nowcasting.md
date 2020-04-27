@@ -6,6 +6,8 @@ authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
 project: 'nowcasting'
+coverImageUnsplashId: 'd7FbDJkJSFw'
+coverImagePhotographerName: 'Markus Spiske'
 ---
 
 At [Open Climate Fix](http://openclimatefix.org), we're about to start work on our solar electricity (PV) nowcasting project. The aim of this project is to help reduce emissions (and costs) by forecasting solar electricity power production at high temporal and spatial resolution, but with a forecast time horizon of a few hours. We'll use machine learning to combine satellite images, numerical weather predictions, and live solar PV data. All our research code will be open source; and we'll blog about our results (including negative results); and we're working hard to make it easy for other researchers to access the data necessary to do this research :)
