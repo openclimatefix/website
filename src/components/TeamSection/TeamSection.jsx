@@ -7,30 +7,30 @@ export default function TeamSection() {
     <div className="grid grid-cols-2 md:grid-cols-4 max-w-5xl">
       <TeamMember
         name="Jack Kelly"
-        image="https://pbs.twimg.com/profile_images/1101483049827614722/TioU1lZ3_400x400.png"
+        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
         linkedin="https://www.linkedin.com/in/jackkelly0/"
         twitter="https://twitter.com/jack_kelly"
         github="https://github.com/JackKelly"
       />
       <TeamMember
         name="Dan Travers"
-        image="https://pbs.twimg.com/profile_images/1147128036619444225/-Uerkl_1_400x400.jpg"
+        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg"
         linkedin="https://www.linkedin.com/in/dan-travers-56982912/"
         twitter="https://twitter.com/danieltravers"
       />
       <TeamMember
-        name="Flo Wirtz"
-        image="https://media-exp1.licdn.com/dms/image/C5603AQGCaDwubr4d_A/profile-displayphoto-shrink_200_200/0?e=1593648000&v=beta&t=G7zbnXmJx3WpiTv9jDuaFofnmpYakQAHByAnc9jdkAM"
-        linkedin="https://www.linkedin.com/in/florianwirtz/"
-        twitter="https://twitter.com/flowirtz"
-        github="https://github.com/FWirtz"
-      />
-      <TeamMember
         name="Damien Tanner"
-        image="https://pbs.twimg.com/profile_images/1068478549714247680/1ErTdUuj_400x400.jpg"
+        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/damien.jpg"
         linkedin="https://www.linkedin.com/in/dctanner/"
         twitter="https://twitter.com/dctanner/"
         github="https://github.com/dctanner"
+      />
+      <TeamMember
+        name="Flo Wirtz"
+        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/flo.jpg"
+        linkedin="https://www.linkedin.com/in/florianwirtz/"
+        twitter="https://twitter.com/flowirtz"
+        github="https://github.com/FWirtz"
       />
     </div>
   );
