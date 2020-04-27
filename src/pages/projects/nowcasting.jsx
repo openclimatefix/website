@@ -105,17 +105,21 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: ASC }
       filter: { frontmatter: { project: { eq: "nowcasting" } } }
     ) {
       totalCount
       edges {
         node {
           id
+          excerpt(pruneLength: 160)
           frontmatter {
             title
-            date
+            date(formatString: "MMMM DD, YYYY")
             path
+            authorName
+            authorImage
+            coverImageUnsplashId
           }
         }
       }
