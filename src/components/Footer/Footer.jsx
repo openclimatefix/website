@@ -1,16 +1,10 @@
 import React from 'react';
 
 import { MdEmail } from 'react-icons/md';
-import {
-  FaTwitter,
-  FaDonate,
-  FaDiscourse,
-  FaYoutube,
-} from 'react-icons/fa';
+import { FaTwitter, FaDonate, FaDiscourse, FaYoutube } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
 
 import footerStyles from './footer.module.css';
-
 
 export default function Footer() {
   return (
@@ -59,9 +53,7 @@ export default function Footer() {
           <FaDonate />
         </a>
       </div>
-      <p className="mt-4">
-        Open Climate Fix Ltd.
-      </p>
+      <p className="mt-4">Open Climate Fix Ltd.</p>
     </footer>
   );
 }

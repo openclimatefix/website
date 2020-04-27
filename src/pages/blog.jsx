@@ -6,7 +6,6 @@ import SEO from '../components/seo';
 import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 
-
 const BlogPage = ({
   data: {
     allMarkdownRemark: { edges },
@@ -18,8 +17,8 @@ const BlogPage = ({
     <p>
       One of our biggest goals at Open Climate Fix is transparency. We want to
       let people take part in the work we do and we think that is only possible
-      by openly communicating about it. This blog is one part of how we want
-      to achieve that.
+      by openly communicating about it. This blog is one part of how we want to
+      achieve that.
     </p>
     <PostList posts={edges} />
   </Layout>
@@ -35,7 +34,7 @@ BlogPage.propTypes = {
               date: PropTypes.string.isRequired,
             }).isRequired,
           }),
-        }).isRequired,
+        }).isRequired
       ),
     }),
   }).isRequired,
