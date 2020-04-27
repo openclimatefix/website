@@ -4,6 +4,7 @@ path: '/blog/2019-07-01-starting-solar-electricity-nowcasting'
 date: '2019-07-01'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
+authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
 project: 'nowcasting'
 ---
 

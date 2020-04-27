@@ -4,6 +4,7 @@ date: '2019-07-09'
 title: 'Starting work on solar PV mapping'
 authorName: 'Damien Tanner'
 authorTwitter: 'dctanner'
+authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/damien.jpg'
 project: 'mapping'
 ---
 

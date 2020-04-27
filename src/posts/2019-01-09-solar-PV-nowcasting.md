@@ -4,6 +4,7 @@ path: '/blog/2019-01-09-solar-PV-nowcasting'
 date: '2019-01-09'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
+authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
 project: 'nowcasting'
 ---
 
