@@ -5,6 +5,8 @@ title: 'Using computing to fix climate change'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
+coverImageUnsplashId: '1SAnrIxw5OY'
+coverImagePhotographerName: 'Kari Shea'
 ---
 
 If you'd like to use computer science to help mitigate climate change, then check out these resources:
