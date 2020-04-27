@@ -1,0 +1,4 @@
+.iconList  > a > svg {
+  @apply inline-block fill-current w-4 h-4 mx-1;
+}
+  
