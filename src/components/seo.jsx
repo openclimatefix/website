@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({
-  description, lang, meta, title,
-}) {
+function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -17,7 +15,7 @@ function SEO({
           }
         }
       }
-    `,
+    `
   );
 
   const metaDescription = description || site.siteMetadata.description;
@@ -48,7 +46,8 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
+          content:
+            'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
         },
         {
           name: 'twitter:card',
@@ -68,7 +67,8 @@ function SEO({
         },
         {
           name: 'twitter:image',
-          content: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
+          content:
+            'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
         },
         {
           name: 'twitter:site',
@@ -82,7 +82,8 @@ function SEO({
 SEO.defaultProps = {
   lang: 'en',
   meta: [],
-  description: 'Open Climate Fix is a new non-profit research and development lab, totally focused on reducing greenhouse gas emissions as rapidly as possible. Every part of the organisation is designed to maximise climate impact, such as our open and collaborative approach, our rapid prototyping, and our attention on finding scalable & practical solutions.',
+  description:
+    'Open Climate Fix is a new non-profit research and development lab, totally focused on reducing greenhouse gas emissions as rapidly as possible. Every part of the organisation is designed to maximise climate impact, such as our open and collaborative approach, our rapid prototyping, and our attention on finding scalable & practical solutions.',
 };
 
 SEO.propTypes = {

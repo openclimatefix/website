@@ -10,7 +10,9 @@ const dirPath = require('path');
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = dirPath.resolve('src/components/BlogPost/BlogPost.jsx');
+  const blogPostTemplate = dirPath.resolve(
+    'src/components/BlogPost/BlogPost.jsx'
+  );
 
   const result = await graphql(`
     {
@@ -42,7 +44,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: blogPostTemplate,
       context: {
         prev: index === 0 ? null : posts[index - 1].node,
-        next: index === (posts.length - 1) ? null : posts[index + 1].node,
+        next: index === posts.length - 1 ? null : posts[index + 1].node,
       },
     });
   });

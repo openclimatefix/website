@@ -31,7 +31,9 @@ const Layout = ({ children }) => {
     <>
       <SEO title={siteTitle} />
       <Header />
-      <main className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">{children}</main>
+      <main className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
+        {children}
+      </main>
       <Footer />
     </>
   );

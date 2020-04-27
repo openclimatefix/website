@@ -3,4 +3,4 @@ module.exports = {
     __PATH_PREFIX__: true,
   },
   extends: ['react-app', 'airbnb'],
-}
+};

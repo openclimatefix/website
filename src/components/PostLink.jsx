@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 
-
 const PostLink = ({ post }) => (
   <li>
     <span>
       {post.frontmatter.date}
-&ensp;
+      &ensp;
     </span>
     <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
   </li>

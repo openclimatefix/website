@@ -15,14 +15,10 @@ export default function BlogPost({
   pageContext,
 }) {
   const { prev, next } = pageContext;
-  const { markdownRemark: { frontmatter, html } } = data;
   const {
-    authorName,
-    authorTwitter,
-    path,
-    title,
-    date,
-  } = frontmatter;
+    markdownRemark: { frontmatter, html },
+  } = data;
+  const { authorName, authorTwitter, path, title, date } = frontmatter;
 
   return (
     <Layout>
@@ -31,7 +27,7 @@ export default function BlogPost({
         <h1>{title}</h1>
         <p className="mt-4 text-sm text-gray mb-12">
           {date}
-  &nbsp;
+          &nbsp;
           <AuthorInline name={authorName} twitter={authorTwitter} />
         </p>
         <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />

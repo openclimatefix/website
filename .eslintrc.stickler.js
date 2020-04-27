@@ -4,6 +4,6 @@ module.exports = {
   },
   extends: ['react-app', 'airbnb'],
   rules: {
-    "import/no-unresolved": "off",
+    'import/no-unresolved': 'off',
   },
-}
+};

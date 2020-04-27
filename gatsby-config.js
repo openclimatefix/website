@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Open Climate Fix',
-    description: 'Open Climate Fix is a new non-profit research and development lab, totally focused on reducing greenhouse gas emissions as rapidly as possible. Every part of the organisation is designed to maximise climate impact, such as our open and collaborative approach, our rapid prototyping, and our attention on finding scalable & practical solutions.',
+    description:
+      'Open Climate Fix is a new non-profit research and development lab, totally focused on reducing greenhouse gas emissions as rapidly as possible. Every part of the organisation is designed to maximise climate impact, such as our open and collaborative approach, our rapid prototyping, and our attention on finding scalable & practical solutions.',
     author: '@openclimatefix',
     siteUrl: 'https://openclimatefix.org',
   },
@@ -74,20 +75,19 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: (
-              { query: { site, allMarkdownRemark } },
-            ) => allMarkdownRemark.edges.map((edge) => {
-              const url = `${site.siteMetadata.siteUrl}/blog${edge.node.fields.slug}`;
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
+              allMarkdownRemark.edges.map(edge => {
+                const url = `${site.siteMetadata.siteUrl}/blog${edge.node.fields.slug}`;
 
-              return {
-                ...edge.node.frontmatter,
-                description: edge.node.excerpt,
-                date: edge.node.frontmatter.date,
-                url,
-                guid: url,
-                custom_elements: [{ 'content:encoded': edge.node.html }],
-              };
-            }),
+                return {
+                  ...edge.node.frontmatter,
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url,
+                  guid: url,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                };
+              }),
             query: `
               {
                 allMarkdownRemark(

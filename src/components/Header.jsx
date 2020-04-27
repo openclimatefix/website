@@ -11,7 +11,7 @@ class Header extends Component {
   }
 
   toggleMenu = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       menuClosed: !prevState.menuClosed,
     }));
   };
@@ -21,9 +21,7 @@ class Header extends Component {
 
     return (
       <header className="bg-black">
-        <nav
-          className="mx-auto md:max-w-4xl lg:max-w-4xl xl:max-w-4xl flex items-center justify-between flex-wrap p-6"
-        >
+        <nav className="mx-auto md:max-w-4xl lg:max-w-4xl xl:max-w-4xl flex items-center justify-between flex-wrap p-6">
           <Link to="/">
             <div className="flex items-center flex-shrink-0 text-white mr-6">
               <svg
@@ -63,8 +61,8 @@ class Header extends Component {
             </button>
           </div>
           <div
-            className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${menuClosed
-              && 'hidden'}`}
+            className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${menuClosed &&
+              'hidden'}`}
           >
             <div className="text-sm lg:flex-grow">
               <Link
