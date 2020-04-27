@@ -4,6 +4,7 @@ date: '2019-10-03'
 title: 'Using computing to fix climate change'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
+authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
 ---
 
 If you'd like to use computer science to help mitigate climate change, then check out these resources:

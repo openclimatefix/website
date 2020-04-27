@@ -7,7 +7,7 @@ import { DiscussionEmbed } from 'disqus-react';
 import SEO from '../seo';
 import Layout from '../Layout';
 
-import AuthorInline from './AuthorInline';
+import AuthorDateBlock from './AuthorInline';
 import PostNavigation from './PostNavigation';
 
 export default function BlogPost({
@@ -18,18 +18,26 @@ export default function BlogPost({
   const {
     markdownRemark: { frontmatter, html },
   } = data;
-  const { authorName, authorTwitter, path, title, date } = frontmatter;
+  const {
+    authorName,
+    authorTwitter,
+    authorImage,
+    path,
+    title,
+    date,
+  } = frontmatter;
 
   return (
     <Layout>
       <SEO title={`Blog: ${title}`} />
       <article className="">
         <h1>{title}</h1>
-        <p className="mt-4 text-sm text-gray mb-12">
-          {date}
-          &nbsp;
-          <AuthorInline name={authorName} twitter={authorTwitter} />
-        </p>
+        <AuthorDateBlock
+          name={authorName}
+          twitter={authorTwitter}
+          date={date}
+          image={authorImage}
+        />
         <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
       <PostNavigation prev={prev} next={next} />
@@ -51,6 +59,7 @@ export const pageQuery = graphql`
         title
         authorName
         authorTwitter
+        authorImage
       }
     }
   }
@@ -66,6 +75,7 @@ BlogPost.propTypes = {
         title: PropTypes.string.isRequired,
         authorName: PropTypes.string.isRequired,
         authorTwitter: PropTypes.string,
+        authorImage: PropTypes.string.isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,
