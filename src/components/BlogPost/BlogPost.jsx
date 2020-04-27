@@ -41,15 +41,25 @@ export default function BlogPost({
           image={authorImage}
         />
         <figure className="mb-4">
-            <img
-              style={{maxHeight: "24rem"}}
-              className="object-cover w-full"
-              src={`https://source.unsplash.com/${coverImageUnsplashId}/624x384`}
-              alt='Blog Post Cover Image'
-            />
-            <figcaption className="text-xs text-gray-600 text-center mt-1">
-              Photo by <a className="underline" href={`https://unsplash.com/photos/${coverImageUnsplashId}`}>{coverImagePhotographerName}</a> on <a className="underline" href="https://unsplash.com/">Unsplash</a>
-            </figcaption>
+          <img
+            style={{ maxHeight: '24rem' }}
+            className="object-cover w-full"
+            src={`https://source.unsplash.com/${coverImageUnsplashId}/624x384`}
+            alt="Blog Post Cover Image"
+          />
+          <figcaption className="text-xs text-gray-600 text-center mt-1">
+            Photo by{' '}
+            <a
+              className="underline"
+              href={`https://unsplash.com/photos/${coverImageUnsplashId}`}
+            >
+              {coverImagePhotographerName}
+            </a>{' '}
+            on{' '}
+            <a className="underline" href="https://unsplash.com/">
+              Unsplash
+            </a>
+          </figcaption>
         </figure>
         <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
