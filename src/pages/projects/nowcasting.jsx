@@ -76,7 +76,7 @@ const NowcastingPage = ({ data }) => {
           the impact on emissions and cost.
         </p>
       </main>
-      <p className="text-xl mt-6 mb-1">More Information</p>
+      <h2 >Updates</h2>
       <PostList posts={edges} />
     </Layout>
   );
@@ -105,7 +105,7 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: ASC }
+      sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { project: { eq: "nowcasting" } } }
     ) {
       totalCount
