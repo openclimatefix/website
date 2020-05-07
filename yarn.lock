@@ -840,6 +840,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.9.6":
+  version "7.9.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
+  integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.8.3", "@babel/template@^7.8.6":
   version "7.8.6"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.8.6.tgz#86b22af15f828dfb086474f964dcc3e39c43ce2b"
@@ -5761,6 +5768,17 @@ gatsby-react-router-scroll@^2.2.1:
     scroll-behavior "^0.9.12"
     warning "^3.0.0"
 
+gatsby-remark-autolink-headers@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.3.1.tgz#2f7077444a310543361ba298a26c45b5f4680304"
+  integrity sha512-VFtmQkP2cF2XE5+5sZyQ1ttR0zwTgO9ECJEBRTXMqGfiv94GzuSdW9qkw8LJqxHpgo5tt8oC7W4DSqSlln2qrw==
+  dependencies:
+    "@babel/runtime" "^7.9.6"
+    github-slugger "^1.3.0"
+    lodash "^4.17.15"
+    mdast-util-to-string "^1.1.0"
+    unist-util-visit "^1.4.1"
+
 gatsby-remark-reading-time@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-remark-reading-time/-/gatsby-remark-reading-time-1.1.0.tgz#f23590ae34233c3625e656e0368ad0e0e84761a1"
@@ -6117,7 +6135,7 @@ github-from-package@0.0.0:
   resolved "https://registry.yarnpkg.com/github-from-package/-/github-from-package-0.0.0.tgz#97fb5d96bfde8973313f20e8288ef9a167fa64ce"
   integrity sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=
 
-github-slugger@^1.2.1:
+github-slugger@^1.2.1, github-slugger@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.3.0.tgz#9bd0a95c5efdfc46005e82a906ef8e2a059124c9"
   integrity sha512-gwJScWVNhFYSRDvURk/8yhcFBee6aFjye2a7Lhb2bUyRulpIoek9p0I9Kt7PT67d/nUlZbFu8L9RLiA0woQN8Q==
