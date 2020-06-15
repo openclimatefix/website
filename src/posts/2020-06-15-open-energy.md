@@ -5,8 +5,8 @@ date: '2020-06-15'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
-coverImageUnsplashId: 'cxoR55-bels'
-coverImagePhotographerName: 'Markus Winkler'
+coverImageUnsplashId: 'ahi73ZN5P0Y'
+coverImagePhotographerName: 'Federico Beccari'
 project: 'open-energy'
 ---
 
