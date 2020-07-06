@@ -1,0 +1,32 @@
+.logogrid {
+    @apply flex flex-wrap;
+}
+
+.logogrid a {
+    @apply flex items-center justify-center h-32;
+
+    flex-basis: 25%;
+    -webkit-flex-basis: 25%;
+    -ms-flex-basis: 25%;
+}
+
+.logogrid img {
+    max-width: 80%;
+    max-height: 74%;
+}
+
+@media (max-width: 840px) {
+    .logogrid a {
+        flex-basis: 33.3333333333%;
+        -webkit-flex-basis: 33.3333333333%;
+        -ms-flex-basis: 33.3333333333%;
+    }
+}
+
+@media (max-width: 550px) {
+    .logogrid a {
+        flex-basis: 50%;
+        -webkit-flex-basis: 50%;
+        -ms-flex-basis: 50%;
+    }
+}
