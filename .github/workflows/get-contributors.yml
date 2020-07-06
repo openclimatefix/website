@@ -1,0 +1,36 @@
+name: Retrieve latest Contributors
+
+on:
+  schedule:
+    # At 4am every night
+    - cron:  '0 4 * * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    name: Fetch latest Contributorss
+    steps:
+    - name: Get Contributors
+      id: getcontri
+      uses: openclimatefix/merge-all-contributors@v1.0.3
+      with:
+        orgName: 'openclimatefix'
+    # Use the output from the `getcontri` step
+    - name: Print Contributors
+      run: |
+        echo "We found these contributors:"
+        echo "${{ steps.getcontri.outputs.contributors }}"
+    - uses: actions/checkout@v2
+    - name: Write to file
+      run: |
+        echo '{"contributors": ${{ steps.getcontri.outputs.contributors }} }' > src/data/contributors/contributors.json
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        # Required
+        commit_message: 👥 Add latest contributors
+
+        # Optional commit user and author settings
+        commit_user_name: ocf-bot
+        commit_user_email: info@openclimatefix.org
+        commit_author: ocf-bot <info@openclimatefix.org>
+  
