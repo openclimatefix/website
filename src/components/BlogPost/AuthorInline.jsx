@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function AuthorDateBlock({ name, twitter, date, image }) {
-  console.log(image);
   return (
     <div className="mt-4 mb-6 text-sm text-gray flex">
       <img className="w-12 h-12 rounded-full mr-3" src={image} />
