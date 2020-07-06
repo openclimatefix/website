@@ -38,10 +38,10 @@ export default function TeamSection() {
 
 function TeamMember({ name, image, linkedin, twitter, github }) {
   return (
-    <div class="sm:max-w-xs bg-white p-2 mb-6">
-      <img class="w-24 h-24 rounded-full mx-auto" src={image} />
-      <div class="text-center mt-3">
-        <h3 class="text-lg">{name}</h3>
+    <div className="sm:max-w-xs bg-white p-2 mb-6">
+      <img className="w-24 h-24 rounded-full mx-auto" src={image} />
+      <div className="text-center mt-3">
+        <h3 className="text-lg">{name}</h3>
         <span className={teamsectionStyles.iconList}>
           {linkedin && (
             <a href={linkedin} className="mr-1">
