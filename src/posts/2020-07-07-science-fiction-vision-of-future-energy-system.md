@@ -1,6 +1,6 @@
 ---
 title: 'Science fiction vision of the future energy system'
-path: '/blog/2020-07-07-science-fiction-vision-of-future-energy-system.md'
+path: '/blog/2020-07-07-science-fiction-vision-of-future-energy-system'
 date: '2020-07-07'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
