@@ -31,3 +31,5 @@ We are designing a model for Open Energy which is as open as possible and relies
 ## What is the balance of government regulation versus free market?
 
 In any market or community there is a place for government incentives and regulation.  The Open Energy framework is agnostic towards how much regulation is applied.  We are preparing for a model where free market incentives operate, but equally where regulation can be easily introduced to "nudge" monopoly data owners to make data available.  By dropping barriers to entry, reducing friction and minimizing the footprint of a centralized architecture, we believe innovation will flourish.
+
+To find out more about Open Climate Fix’s collaboration with Icebreaker One and PassivSystems [read more here](https://icebreakerone.org/2020/06/01/open-energy/).
