@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CloudHero from '../components/CloudHero';
 import TeamSection from '../components/TeamSection';
+import LogoCloud from '../components/LogoCloud';
 
 import '../components/layout.css';
 
@@ -93,6 +94,11 @@ const IndexPage = () => (
           </Link>
         </p>
       </div>
+
+      <h2 id="partners" className="mt-16 mb-2">
+        Partners
+      </h2>
+      <LogoCloud />
 
       <h2 id="founders" className="mt-16 mb-2">
         Team
