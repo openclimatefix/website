@@ -5768,6 +5768,13 @@ gatsby-react-router-scroll@^2.2.1:
     scroll-behavior "^0.9.12"
     warning "^3.0.0"
 
+gatsby-remark-acronyms@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-acronyms/-/gatsby-remark-acronyms-1.1.0.tgz#056a8b67788cb6915ed4fc832fd16529d2ca964f"
+  integrity sha512-fppFQX5V5O/nTEG3ykXjUsNz0lE2mqgtCTn7zGMdcm1ADgkFF64HorwZM8KG4lNBBlYmA9EnKg7NK5/tNMCQ6g==
+  dependencies:
+    unist-util-visit "^1.4.1"
+
 gatsby-remark-autolink-headers@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-2.3.1.tgz#2f7077444a310543361ba298a26c45b5f4680304"
