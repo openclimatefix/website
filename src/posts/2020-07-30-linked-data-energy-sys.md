@@ -1,7 +1,7 @@
 ---
 title: 'Linked Data for the Energy System'
-path: '/blog/2020-07-20-linked-data-energy-sys'
-date: '2020-07-20'
+path: '/blog/2020-07-30-linked-data-energy-sys'
+date: '2020-07-30'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
