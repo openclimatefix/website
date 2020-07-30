@@ -15,6 +15,7 @@
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.22",
+    "gatsby-remark-acronyms": "^1.1.0",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-reading-time": "^1.1.0",
     "gatsby-source-filesystem": "^2.3.23",
