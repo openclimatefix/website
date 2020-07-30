@@ -99,8 +99,7 @@ const IndexPage = () => (
         </p>
         <p>
           <Link to="/projects">
-            &rarr; Learn more about our projects Solar PV Nowcasting and PV
-            Mapping
+            &rarr; Learn more about our projects
           </Link>
         </p>
       </div>

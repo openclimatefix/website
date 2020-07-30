@@ -32,7 +32,7 @@ const fundingPage = () => (
           ESA awarded us an AI Kick-Start co-funding for six months. Kick-Start
           activities are compact Feasability Studies to explore new service
           concepts that use space tech. We will ask potential users of&nbsp;
-          <Link to="/projects/nowcasting">nowcasting</Link>
+          <Link to="/projects/forecasting">nowcasting</Link>
           &nbsp;what they need; and how best to serve those needs.
         </p>
       </div>
