@@ -1,45 +1,93 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+
 import logocloudStyles from './logocloud.module.css';
 
-
-export default function LogoCloud() {
-  const logos = [{
-    src: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png",
-    href: "#"
-  }, {
-    src: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_raais.png",
-    href: "#"
-  }, {
-    src: "https://camo.githubusercontent.com/1abc6e2b23f17a79a55ee991e6981e46cf338695/68747470733a2f2f63646e2e737667706f726e2e636f6d2f6c6f676f732f7a65706c696e2e737667",
-    href: "#"
-  }, {
-    src: "https://camo.githubusercontent.com/6de73ae841384e69cf10c444cc63022655649a6c/68747470733a2f2f63646e2e737667706f726e2e636f6d2f6c6f676f732f73656d616e7469632d7765622e737667",
-    href: "#"
-  }, {
-    src: "https://camo.githubusercontent.com/deeb3fdf4ccc12c58598858c8a9b96aed919c044/68747470733a2f2f63646e2e737667706f726e2e636f6d2f6c6f676f732f6170707369676e616c2e737667",
-    href: "#"
-  }, {
-    src: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png",
-    href: "#"
-  }, {
-    src: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png",
-    href: "#"
-  }, {
-    src: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png",
-    href: "#"
-  }, {
-    src: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png",
-    href: "#"
-  }, {
-    src: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png",
-    href: "#"
-  }];
+export default function LogoCloud({ logos }) {
+  const LOGOS = logos || [
+    {
+      name: 'ESA Business Applications',
+      image: 'esa_space_solutions.png',
+      link: 'https://business.esa.int/',
+    },
+    {
+      name: 'Open Data Institute',
+      image: 'odi.png',
+      link: 'https://theodi.org/',
+    },
+    {
+      name: 'The Alan Turing Institute',
+      image: 'turing.png',
+      link: 'https://www.turing.ac.uk/',
+    },
+    {
+      name: 'The Climate Subak',
+      image: 'subak.png',
+      link: 'https://www.subak.org/',
+    },
+    {
+      name: 'Machine Intelligence Garage',
+      image: 'MI-Garage_Badge_cohort.png',
+      link: 'https://www.migarage.ai/',
+    },
+    {
+      name: 'RAAIS Foundation',
+      image: 'raais_foundation.png',
+      link: 'https://www.raais.org/',
+    },
+    {
+      name: 'HAO',
+      image: 'hao_black.png',
+      link: 'https://haocreative.ca/',
+    },
+    {
+      name: 'Icebreaker One',
+      image: 'icebreakerOneURL.png',
+      link: 'https://icebreakerone.org/',
+    },
+  ];
 
   return (
-    <div className={logocloudStyles.logogrid}>
-      {logos.map(({src, href}, index) => (
-        <a key={`logo-${index}`} href={href}><img src={src} /></a>
-      ))}
-    </div>
+    <StaticQuery
+      query={graphql`
+        query LogosQuery {
+          allFile(filter: { relativeDirectory: { eq: "logos" } }) {
+            edges {
+              node {
+                relativePath
+                childImageSharp {
+                  fluid(maxWidth: 300, maxHeight: 250) {
+                    ...GatsbyImageSharpFluid
+                  }
+                  fixed(width: 300) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <div className={logocloudStyles.logogrid}>
+          {LOGOS.map(({ name, image, link }) => {
+            const img = data.allFile.edges.find(({ node }) =>
+              node.relativePath.endsWith(image)
+            ).node;
+
+            return (
+              <a key={`logo-${name}`} href={link} type="button">
+                <img
+                  src={img.childImageSharp.fixed.src}
+                  title={name}
+                  alt={`Logo for ${name}`}
+                  style={{ filter: 'grayscale(100%)' }}
+                />
+              </a>
+            );
+          })}
+        </div>
+      )}
+    />
   );
 }
