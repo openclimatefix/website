@@ -1,7 +1,7 @@
 ---
 title: 'Linked Data for the Energy System'
-path: '/blog/2020-07-30-linked-data-energy-sys'
-date: '2020-07-30'
+path: '/blog/2020-08-18-linked-data-energy-sys'
+date: '2020-08-18'
 authorName: 'Jack Kelly'
 authorTwitter: 'jack_kelly'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
@@ -30,7 +30,7 @@ But, today, these four steps require an incredible amount of tedious 'manual' wo
 
 In this document, we’ll look at a single technical framework that could help solve all these problems: linked data.
 
-![image alt text](https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-07-20_image_0.png)
+![Linked Data Overview](https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-08-18_image_0.png)
 
 ## Overview of the web of energy data
 
@@ -68,6 +68,8 @@ In this document, we’ll look at a single technical framework that could help s
 
 Just like the world wide web, content on the 'web of energy data' will be:
 
+* **No "big-bang" IT projects**: Allow industry to adapt piece-by-piece.
+
 * **Distributed**: Organisations host data on their own servers so will retain full control. No single point of failure. Scales rapidly.
 
 * **Easy to interpret**: Metadata will use a common technical language.
@@ -96,13 +98,11 @@ Just like the world wide web, content on the 'web of energy data' will be:
 
 ## Principles
 
-* No "big-bang" IT projects. Allow industry to adapt piece-by-piece.
-
 * *Enable* the rest of the ecosystem: Don't *compete*.
 
 * Collaborate deeply.
 
-* All our code & research will be open.
+* All code & research will be open.
 
 * Build on existing work. Don't reinvent the wheel.
 
@@ -128,17 +128,15 @@ In [Sir Tim Berners-Lee’s 2009 TED talk on Linked Data](https://www.ted.com/ta
 
 3. That description also includes *relationships* by linking to URLs of related *things*. For example, a transformer would link to the meters attached to that transformer, and those meters would link to descriptions of time series datasets recorded from those meters, and those descriptions would link to the data.
 
-![image alt text](https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-07-20_image_1.png)
-
 # What would a 'web of energy data' look like?
 
-Maybe the National Grid ESO would publish linked data describing the transmission system. For example, each grid supply point (GSP) could be identified by a unique web address (e.g. `NationalGridESO.com/GSP#NEWX_1`). Accessing that web address would return a machine-readable file describing that GSP and linking to descriptions of the supergrid transformers that make up the GSP (see Figure below). To make life as easy as possible for the ESO, this data would be converted from the ESO's existing CIM models.
+Maybe the National Grid ESO would publish linked data describing the transmission system. For example, each grid supply point (GSP) could be identified by a unique web address (e.g. NationalGridESO.com/GSP#NEWX_1). Accessing that web address would return a machine-readable file describing that GSP and linking to descriptions of the supergrid transformers that make up the GSP (see Figure below). To make life as easy as possible for the ESO, this data would be converted from the ESO's existing CIM models.
 
 The DNOs could publish descriptions of the distribution system. These descriptions would be machine-readable and use a common standard, hence making it trivial to combine models from all DNOs into a description of the entire distribution system.
 
 In the figure below, the rectangles represent metadata files published on the ESO and a DSO's website. Note that the DSO doesn't need to create their own representation of each GSP. Instead, the DSO's metadata just links to the ESO's description of each GSP.
 
-![image alt text](https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-07-20_image_2.png)
+![ESO vs DSO Data](https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-08-18_image_1.png)
 
 DSR aggregators could publish metadata describing their portfolios and pricing, etc.
 
@@ -164,9 +162,9 @@ Note that we don't need to build a 'full' search engine: The knowledge graph wil
 
 There are several off-the-shelf graph databases available: We don't need to invent much technology; we mostly just have to bolt together existing technology. 
 
-How does the knowledge graph find metadata to crawl? To start with, people will manually enter the web addresses of new *things*. The crawler will follow links to other energy *things* from each metadata file. As the metadata becomes more interconnected, the crawler will be able to find more and more metadata on its own.
+How does the knowledge graph find metadata to crawl? To start with, people will manually enter the web addresses of descriptions of energy *things*. From that first metadata file, the crawler will follow links to other metadata files. As the metadata becomes more interconnected, the crawler will be able to find more and more metadata on its own.
 
-The knowledge graph may perform a other functions: it could track search statistics, to allow the community to measure interest in particular datasets; it could validate the metadata it crawls to automatically alert data owners when metadata needs to be fixed; and it could associate datasets with documentation, discussion and tools.
+The knowledge graph may perform other functions: it could track search statistics to allow the community to measure interest in particular datasets; it could validate the metadata it crawls to automatically alert data owners when metadata needs to be fixed; and it could associate datasets with documentation, discussion and tools.
 
 (The most famous 'knowledge graph' is probably [Google's knowledge graph](https://en.wikipedia.org/wiki/Knowledge_Graph). You see results from Google's knowledge graph when Google shows an 'infobox' with search results.)
 
@@ -194,19 +192,19 @@ See the [appendix](https://docs.google.com/document/d/1C4YMYOFEiNjYXSK4-wJ8_zZM_
 
         5. The metadata should be compatible with existing search engines.
 
-        6. Keep it simple! Unnecessary complexity has killed many a linked data project in the past.
+        6. Keep it simple! Unnecessary complexity has killed many linked data projects in the past.
 
     4. Figure out the technical & organisational structures to enable the community to evolve the standard over time.
 
 2. Convert some existing datasets to the new format. e.g.
 
-    5. Renewable Energy Planning Database (REPD)
+    1. Renewable Energy Planning Database (REPD)
 
-    6. System Wide Resource Register (SWRR)
+    2. System Wide Resource Register (SWRR)
 
-    7. Embedded Capacity Register (ECR)
+    3. Embedded Capacity Register (ECR)
 
-    8. (Once these conversions are done, these datasets will be crawlable by Google Dataset Search)
+    4. (Once these conversions are done, these datasets will be crawlable by Google Dataset Search)
 
 3. Work with existing data providers to help them convert their public data to the new format.
 
@@ -214,11 +212,11 @@ See the [appendix](https://docs.google.com/document/d/1C4YMYOFEiNjYXSK4-wJ8_zZM_
 
 5. Build tools to make it as easy as possible to contribute to the ‘linked web of energy data’. Example tools might include:
 
-    9. Energy companies are very comfortable using Excel. So let’s build a web tool to convert metadata descriptions created in Excel to the format used by the ‘linked web of energy data’.
+    1. Energy companies are very comfortable using Excel. So let’s build a web tool to convert metadata descriptions created in Excel to the format used by the ‘linked web of energy data’.
 
-    10. A ‘wizard’ to author metadata from scratch.
+    2. A ‘wizard’ to author metadata from scratch.
 
-    11. Validators to check metadata.
+    3. Validators to check metadata.
 
 # Unique identifiers are essential
 
@@ -240,7 +238,7 @@ Maybe, like today, the energy system of the future wouldn't have a single asset 
 
 But, unlike today, all asset registers would be trivial to combine because they'd all use the same identifiers, and they'd use the same 'language' to describe assets, and they'd be *linked*. And there'd be (at least one) knowledge graph that would automatically combine and link all the asset registers together.
 
-So, from a users' perspective, it should *feel *like there's just one asset register: the knowledge graph. But, from a data publishers' perspective, they get to keep total control over the data that describes their 'patch' of the energy system.
+So, from a users' perspective, it should *feel* like there's just one asset register: the knowledge graph. But, from a data publishers' perspective, they get to keep total control over the data that describes their 'patch' of the energy system.
 
 # A dynamic asset register
 
@@ -251,6 +249,22 @@ Imagine an asset register which not only describes the 'static' properties of ea
 Maybe we don't want to openly publish the full details of domestic assets. For example, home owners may not want to broadcast to the world that they have an expensive battery installed in their garage.
 
 The public metadata description of domestic assets could just describe an *approximate* geographical location. The public metadata could link to restricted metadata that would give authorised users the exact location.
+
+# Layers of the Energy Onion
+
+The energy system is becoming harder to manage as it becomes more complex.  David Sykes's fascinating [Energy Onion article](https://medium.com/@david.sykes70/the-energy-onion-a-simple-conceptual-model-for-a-smart-system-3c1f2c5cbd1a) gives insight as to how to manage this complexity: by considering the energy system as a sequence of layers:
+
+![Energy System Layers](https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-08-18_image_2.png)
+
+(Image from David's blog)
+
+This is reminiscent of the way software engineers manage complexity by building layers of abstraction. e.g. Operating systems abstract away the complexity of the hardware.  (Or, an even geekier analogy: the TCP/IP networking stack).  Maybe David's layers of the energy onion could be thought of as layers of abstraction?
+
+Inner layers would provide services to the layer immediately above.  For example, services which optimise a building's energy assets to maximise self consumption would be entirely responsible for managing assets within each building.  This layer would provide services to the next layer: local balancing and cooperation.  These two layers would communicate in both directions.  But, crucially, the local balancing layer wouldn't try to micromanage individual assets.  Instead, it would (politely) ask the building's energy management system to ramp up / ramp down.
+
+The key to managing complexity is to ensure that outer layers don't micromanage inner layers:  An outer layer can't directly control an inner layer's assets.  Instead, outer layers must go through the inner layer's interface.
+
+This way of thinking about the energy system also helps inform our priorities for defining standards for data sharing:  The priority is to define data standards for the communication *between* layers.  The communication *within* layers is an 'implementation detail' that outer layers don't need to worry about.  (Also see this Vox article: [Renewable energy threatens to overwhelm the grid.  Here's how it can adapt.](https://www.vox.com/energy-and-environment/2018/11/30/17868620/renewable-energy-power-grid-architecture))
 
 # How does this fit in with the billion existing energy data projects?
 
@@ -264,13 +278,13 @@ To list a few existing projects:
 
 * A Modernising Energy Data Access (MEDA) project. 
 
-* Led by IcebreakerOne, in collaboration with PassivSystems & Open Climate Fix.
+* Led by [Icebreaker One](https://icebreakerone.org/), in collaboration with PassivSystems & Open Climate Fix.
 
-* MEDA projects finish phase 1 this Friday (2020-07-10)
+* MEDA projects finished phase 1 on 2020-07-10
 
 * MEDA projects find out if they’ve won phase 2 funding in August. 
 
-* Open Energy is mostly focused on solving the *business* challenges associated with sharing energy data, but will also have a working group looking at data standards.
+* Icebreaker One is mostly focused on solving the *business* challenges associated with sharing energy data, but may also have a working group looking at data standards.
 
 * This working group will make a start on building a ‘linked web of energy data’ if Open Energy wins MEDA phase 2 funding :)
 
@@ -278,11 +292,9 @@ To list a few existing projects:
 
 We’re very keen to ensure the ‘linked web of energy data’ is compatible with the National Digital Twin, to make it easy to build a ‘twin’ that includes the energy system and the built environment.
 
-## Data portals
+## Data portals (Flexr, ESO Data Portal, etc.)
 
-* Such as Electralink Flexr & ESO Data Portal & ESO’s new data platform (described in the [ESO’s RIIO-2 Business Plan](https://www.nationalgrideso.com/our-strategy/business-planning-riio/riio-2-final-business-plan))
-
-* The ambition would be to work with Flexr & ESO & others to ensure the ‘common technical language’ is capable of expressing all the concepts these portals need to express, and then to help these portals expose metadata using the ‘common technical language’.
+The ambition would be to work with Flexr & ESO & others to ensure the ‘common technical language’ is capable of expressing all the concepts these portals need to express, and then to help these portals expose metadata using the ‘common technical language’.
 
 ## [Common Information Model (CIM)](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity))
 
@@ -320,7 +332,7 @@ We’re very keen to ensure the ‘linked web of energy data’ is compatible wi
 
 * A W3C linked data standard for the Internet of Things
 
-* "Each thing is identified by a URI that can be dereferenced to obtain a machine interpretable description. The URI can also be used as an identifier in rich descriptions as a basis for semantic interoperability between suppliers and consumers of services. Thing descriptions expressed in JSON-LD cover the behavior, interaction affordances, data schema, security configuration and protocol bindings."
+* "*Each thing is identified by a URI that can be dereferenced to obtain a machine interpretable description. The URI can also be used as an identifier in rich descriptions as a basis for semantic interoperability between suppliers and consumers of services. Thing descriptions expressed in JSON-LD cover the behavior, interaction affordances, data schema, security configuration and protocol bindings.*"
 
 ## [Linux Foundation Energy - Open Energy Data Initiative](https://www.lfenergy.org/projects/oedi/)
 
@@ -328,5 +340,16 @@ We’re very keen to ensure the ‘linked web of energy data’ is compatible wi
 
 * Open-source tools to access & analyse the datasets
 
-For more details, please see the [appendix](https://docs.google.com/document/d/1C4YMYOFEiNjYXSK4-wJ8_zZM_q1OKDgRSPNXhnrzr-k/edit?usp=sharing).
+## [HyperCat](https://hypercatiot.github.io/)
 
+* "*HyperCat is an open, lightweight JSON-based hypermedia catalogue format for exposing collections of URIs. Each HyperCat catalogue may expose any number of URIs, each with any number of RDF-like triple statements about it. HyperCat is simple to work with and allows developers to publish linked-data descriptions of resources.  HyperCat is designed for exposing information about IoT assets over the web. It allows a server to provide a set of resources to a client, each with a set of semantic annotations. Implementers are free to choose or invent any set of annotations to suit their needs. A set of best practices and tools are currently under development. Where implementers choose similar or overlapping semantics, the possibilities for interoperability are increased*"
+
+* [GitHub repos](https://github.com/HyperCatIoT) haven't been updated since 2016
+
+## [SpecialPrivacy.EU](https://www.specialprivacy.eu/)
+
+* *"The ***_SPECIAL_*** project (**S**calable **P**olicy-awar**e** Linked Data Ar**c**hitecture For Pr**i**vacy, Tr**a**nsparency and Comp**l**iance) addresses the contradiction between Big Data innovation and data protection compliance requirements by proposing a technical solution that makes the achievement of both of these goals realistic. SPECIAL allows citizens and organisations to share more data, while guaranteeing compliance with data protection, thus enabling both trust and the creation of valuable new insights from shared data."*
+
+* 3 year project.  Ended at the end of 2019.
+
+For more details, please see the [appendix](https://docs.google.com/document/d/1C4YMYOFEiNjYXSK4-wJ8_zZM_q1OKDgRSPNXhnrzr-k/edit?usp=sharing).
