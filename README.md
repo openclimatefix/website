@@ -42,7 +42,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://jack-kelly.com"><img src="https://avatars2.githubusercontent.com/u/460756?v=4" width="100px;" alt=""/><br /><sub><b>Jack Kelly</b></sub></a><br /><a href="#business-JackKelly" title="Business development">💼</a> <a href="https://github.com/openclimatefix/website/commits?author=JackKelly" title="Code">💻</a> <a href="#content-JackKelly" title="Content">🖋</a> <a href="#ideas-JackKelly" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/FWirtz"><img src="https://avatars1.githubusercontent.com/u/6052785?v=4" width="100px;" alt=""/><br /><sub><b>Flo</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=FWirtz" title="Code">💻</a> <a href="#ideas-FWirtz" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-FWirtz" title="Maintenance">🚧</a> <a href="#projectManagement-FWirtz" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://github.com/flowirtz"><img src="https://avatars1.githubusercontent.com/u/6052785?v=4" width="100px;" alt=""/><br /><sub><b>Flo</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=flowirtz" title="Code">💻</a> <a href="#ideas-flowirtz" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-flowirtz" title="Maintenance">🚧</a> <a href="#projectManagement-flowirtz" title="Project Management">📆</a></td>
     <td align="center"><a href="http://tanner.me"><img src="https://avatars2.githubusercontent.com/u/227?v=4" width="100px;" alt=""/><br /><sub><b>Damien Taner</b></sub></a><br /><a href="#blog-dctanner" title="Blogposts">📝</a></td>
     <td align="center"><a href="https://github.com/schillerk"><img src="https://avatars1.githubusercontent.com/u/8676510?v=4" width="100px;" alt=""/><br /><sub><b>Kyle Schiller</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=schillerk" title="Code">💻</a> <a href="#design-schillerk" title="Design">🎨</a></td>
     <td align="center"><a href="http://www.ollicle.com"><img src="https://avatars1.githubusercontent.com/u/63586?v=4" width="100px;" alt=""/><br /><sub><b>Oliver Boermans</b></sub></a><br /><a href="#content-ollicle" title="Content">🖋</a> <a href="https://github.com/openclimatefix/website/issues?q=author%3Aollicle" title="Bug reports">🐛</a> <a href="#ideas-ollicle" title="Ideas, Planning, & Feedback">🤔</a></td>
@@ -55,12 +55,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/sukhbeersingh"><img src="https://avatars2.githubusercontent.com/u/44414281?v=4" width="100px;" alt=""/><br /><sub><b>sukhbeersingh</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=sukhbeersingh" title="Code">💻</a></td>
     <td align="center"><a href="https://geekayush.github.io/"><img src="https://avatars2.githubusercontent.com/u/22499864?v=4" width="100px;" alt=""/><br /><sub><b>Ayush Srivastava</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=geekayush" title="Code">💻</a></td>
     <td align="center"><a href="https://grantbourque.com"><img src="https://avatars1.githubusercontent.com/u/616290?v=4" width="100px;" alt=""/><br /><sub><b>Grant Bourque</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=grantbdev" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/dfulu"><img src="https://avatars0.githubusercontent.com/u/41546094?v=4" width="100px;" alt=""/><br /><sub><b>James Fulton</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=dfulu" title="Code">💻</a> <a href="#ideas-dfulu" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

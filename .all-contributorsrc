@@ -36,7 +36,7 @@
     },
     {
       "login": "dctanner",
-      "name": "Damien Taner",
+      "name": "Damien Tanner",
       "avatar_url": "https://avatars2.githubusercontent.com/u/227?v=4",
       "profile": "http://tanner.me",
       "contributions": [
@@ -126,6 +126,16 @@
       "profile": "https://grantbourque.com",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "dfulu",
+      "name": "James Fulton",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/41546094?v=4",
+      "profile": "https://github.com/dfulu",
+      "contributions": [
+        "code",
+        "ideas"
       ]
     }
   ],

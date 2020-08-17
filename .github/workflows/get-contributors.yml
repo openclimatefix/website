@@ -8,7 +8,7 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-    name: Fetch latest Contributorss
+    name: Fetch latest Contributors
     steps:
     - name: Get Contributors
       id: getcontri
@@ -28,6 +28,7 @@ jobs:
       with:
         # Required
         commit_message: 👥 Add latest contributors
+        push_options: --force
 
         # Optional commit user and author settings
         commit_user_name: ocf-bot

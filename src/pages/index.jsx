@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CloudHero from '../components/CloudHero';
 import TeamSection from '../components/TeamSection';
+import LogoCloud from '../components/LogoCloud';
 
 import '../components/layout.css';
 
@@ -59,115 +60,83 @@ const IndexPage = () => (
         </ol>
       </div>
 
-      <h2 id="solar-pv" className="mt-16 mb-2">
-        Our first area of focus: Solar Photovoltaics
+      <h2 id="partners" className="mt-16 mb-2">
+        Partners
       </h2>
-      <div className="markdown">
-        <p>
-          Solar Photovoltaics (PV) is the largest source of uncertainty in
-          electricity system operators&rsquo; forecasts. If a dark cloud moves
-          across the sky, the grid can be taken by surprise and lose hundreds of
-          megawatts of PV generation within minutes. This lost PV generation
-          must be replaced immediately. But thermal generators take hours to
-          spin-up from cold. The end result is that, whenever the sun is
-          shining, the grid keeps lots of spinning-reserve online: mostly gas
-          turbines, which are kept idling, but not generating electricity. This
-          is expensive and carbon intensive.
-        </p>
-        <p>
-          The grid would require less spinning reserve if they had better PV
-          forecasts for the next few hours. That is, better PV forecasts would
-          reduce carbon emissions, and save money. In the UK, better PV
-          forecasts should save &pound;1-10 million per year (
-          <a href="https://www.researchgate.net/profile/Jamie_Taylor7/project/PV-Live/attachment/58342d5c08ae5e4c8b365783/AS:431187387785227@1479814492614/download/JamieTaylor_PV_Live_v1_20161122.pdf">
-            Taylor et al, 2016
-          </a>
-          ), and about 100,000 tonnes of CO
-          <sub>2</sub> per year. Scaled up globally, the carbon savings should
-          be of the order of tens of millions of tonnes per year.
-        </p>
-        <p>
-          <Link to="/projects">
-            &rarr; Learn more about our projects Solar PV Nowcasting and PV
-            Mapping
-          </Link>
-        </p>
-      </div>
+      <LogoCloud />
 
       <h2 id="founders" className="mt-16 mb-2">
         Team
       </h2>
       <TeamSection />
 
-      <h2 id="funding" className="mt-16 mb-2">
-        Funding
+      <h2 id="projects" className="mt-16 mb-2">
+        Projects
       </h2>
       <div className="markdown">
         <p>
-          Our intention is that Open Climate Fix will reduce emissions by at
-          least millions of tonnes, at a cost of a few dollars per tonne, so
-          considerably cheaper than most other interventions.
+          From understanding where solar generation capacity like solar panels
+          is located, opening up energy data to predicting how much energy will
+          be produced &ndash; our projects cover a variety of topics.
         </p>
-        <a href="https://business.esa.int/">
-          <img
-            className="mt-10"
-            style={{ maxWidth: '12rem' }}
-            alt="Logo ESA Space Solutions"
-            src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_esa.png"
-          />
-        </a>
-        <div>
-          <p>
-            <a href="https://business.esa.int/">ESA Business Applications</a>{' '}
-            aims to show that space is open for business and has the power to
-            improve our everyday lives on Earth. They do this by helping
-            companies to integrate space data and technology into commercial
-            services.
-          </p>
-          <p>
-            ESA awarded us an AI Kick-Start co-funding for six months.
-            Kick-Start activities are compact Feasability Studies to explore new
-            service concepts that use space tech. We will ask potential users
-            of&nbsp;
-            <Link to="/projects/nowcasting">nowcasting</Link>
-            &nbsp;what they need; and how best to serve those needs.
-          </p>
-        </div>
-        <a href="https://www.raais.org/">
-          <img
-            className="mt-10"
-            style={{ maxWidth: '12rem' }}
-            alt="Logo RAAIS Foundation"
-            src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_raais.png"
-          />
-        </a>
-        <div>
-          <p>
-            &ldquo;The <a href="https://www.raais.org/">RAAIS Foundation</a>{' '}
-            mission is to advance education and research in artificial
-            intelligence for the common good.
-          </p>
-          <p>
-            We believe that the real-world impact of AI research will go well
-            beyond solely for-profit applications.
-          </p>
-          <p>
-            The Foundation creates educational content for the general public to
-            build awareness and knowledge about AI technology and its impact on
-            the world.
-          </p>
-          <p>
-            The Foundation awards grants for open source research and projects
-            that align with our mission. In particular, we support communities
-            that would otherwise not have a chance to participate in advancing
-            AI.&rdquo;
-          </p>
-        </div>
-        <hr />
+
+        <h3 id="forecasting">1. Forecasting</h3>
         <p>
-          If you are into climate philanthropy - or if you know of anyone else
-          who is, please{' '}
-          <a href="mailto:info@openclimatefix.org">get in touch</a>.
+          Forecasting solar photovoltaic (PV) power production is hard: As
+          clouds move over PV panels, the power output moves up and down
+          rapidly. To keep the energy grid in balance, operators need to have
+          readily available power generation reserves which usually come from
+          fossil fuel sources.
+        </p>
+        <p>
+          If we have more accurate predictions of how much electricity a PV
+          installation will produce over the next few hours then we can reduce
+          the amount of fossil fuel reserve required. By making solar energy
+          more predictable we will make it easier for the grid to absorb more PV
+          generation and for investors to reduce the risk of solar investments.
+          Supported by the European Space Agency and many other partners we are
+          investigating how to use Machine Learning and satellite images to
+          improve forecasts of PV power generation.
+        </p>
+        <p>
+          <Link to="/projects/forecasting">
+            &gt; Learn more about Forecasting
+          </Link>
+        </p>
+
+        <h3 id="open-energy-data">2. Open Energy Data</h3>
+        <p>
+          Data is needed for everything: To balance the grid, to decide where to
+          install the next wind farm, to train machine learning models and more.
+          However, data is hard to access, especially in the energy sector. It’s
+          hard to find data and it’s often difficult to use. Together with the
+          Open Data Institute, Icebreaker One, Passiv Systems, along with
+          others; and based on the recommendations of the Energy Data Taskforce
+          in 2019, we are working on enabling sharing of energy data - focussed
+          initially on PV data - to improve the efficiency of the grid.
+        </p>
+        <p>
+          <Link to="/projects/open-energy-data">
+            &gt; Learn more about Open Energy Data
+          </Link>
+        </p>
+
+        <h3 id="pv-mapping">3. Photovoltaic Mapping</h3>
+        <p>
+          To accurately forecast solar power generation, we need to know where
+          all the PV panels are. That is still largely unknown today in the UK.
+          We are supporting the{' '}
+          <a href="https://www.openstreetmap.org/">OpenStreetMap</a> community
+          to map the location of the world's PV panels. OpenStreetMap is the
+          Wikipedia of maps: anyone can edit the database. We use a combination
+          of machine learning and the wisdom of the crowd to locate PV panels
+          and add them to OpenStreetMap. We are also working on ways to combine
+          and then de-duplicate existing asset registers.
+        </p>
+        <p>
+          <Link to="/projects/pv-mapping">
+            &gt; Learn more about Photovoltaic Mapping
+          </Link>
         </p>
       </div>
 
