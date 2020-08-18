@@ -21,9 +21,9 @@ export default function LogoCloud({ logos }) {
       link: 'https://www.turing.ac.uk/',
     },
     {
-      name: 'The Climate Subak',
-      image: 'subak.png',
-      link: 'https://www.subak.org/',
+      name: 'UCL',
+      image: 'UCL.jpg',
+      link: 'https://www.ucl.ac.uk/',
     },
     {
       name: 'Machine Intelligence Garage',
@@ -31,19 +31,24 @@ export default function LogoCloud({ logos }) {
       link: 'https://www.migarage.ai/',
     },
     {
-      name: 'RAAIS Foundation',
-      image: 'raais_foundation.png',
-      link: 'https://www.raais.org/',
+      name: 'The Climate Subak',
+      image: 'subak.png',
+      link: 'https://www.subak.org/',
     },
-    {
-      name: 'HAO',
-      image: 'hao_black.png',
-      link: 'https://haocreative.ca/',
-    },
+    // {
+    //   name: 'HAO',
+    //   image: 'hao_black.png',
+    //   link: 'https://haocreative.ca/',
+    // },
     {
       name: 'Icebreaker One',
       image: 'icebreakerOneURL.png',
       link: 'https://icebreakerone.org/',
+    },
+    {
+      name: 'RAAIS Foundation',
+      image: 'raais_foundation.png',
+      link: 'https://www.raais.org/',
     },
   ];
 
