@@ -30,7 +30,7 @@ export default function TeamSection() {
         image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/flo.jpg"
         linkedin="https://www.linkedin.com/in/florianwirtz/"
         twitter="https://twitter.com/flowirtz"
-        github="https://github.com/FWirtz"
+        github="https://github.com/flowirtz"
       />
     </div>
   );
