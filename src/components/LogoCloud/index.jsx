@@ -26,6 +26,11 @@ export default function LogoCloud({ logos }) {
       link: 'https://www.ucl.ac.uk/',
     },
     {
+      name: 'Innovate UK',
+      image: 'innovateuk.png',
+      link: 'https://www.gov.uk/government/organisations/innovate-uk',
+    },
+    {
       name: 'Machine Intelligence Garage',
       image: 'MI-Garage_Badge_cohort.png',
       link: 'https://www.migarage.ai/',
@@ -35,11 +40,11 @@ export default function LogoCloud({ logos }) {
       image: 'subak.png',
       link: 'https://www.subak.org/',
     },
-    // {
-    //   name: 'HAO',
-    //   image: 'hao_black.png',
-    //   link: 'https://haocreative.ca/',
-    // },
+    {
+      name: 'HAO',
+      image: 'hao_black.png',
+      link: 'https://haocreative.ca/',
+    },
     {
       name: 'Icebreaker One',
       image: 'icebreakerOneURL.png',
