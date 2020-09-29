@@ -10,8 +10,6 @@ coverImagePhotographerName: 'Alina Grubnyak'
 project: 'open-energy'
 ---
 
-# Summary
-
 Say you want to build an innovative new information service for the energy system. Maybe that’s an interactive map of energy assets; or a resource assessment tool that automatically determines the cheapest place to install new distributed energy resources (DERs); or a new energy forecasting service; or a digital twin of the entire energy system; or a new demand side flexibility service; or something no one has even thought of yet...
 
 To build any information service, you’ll need to:
