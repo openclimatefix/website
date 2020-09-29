@@ -49,7 +49,7 @@ const NowcastingPage = ({ data }) => {
           they could reduce the amount of spinning reserve required, and hence
           reduce emissions (by about 100,000 tonnes per year for the UK{' '}
           <a href="https://docs.google.com/document/d/1sfBJ48_hxSEH-XFrwmH0leS4rSsrBKgwzfoeoqGRPfg/edit#heading=h.m4udy6vx0t7k">
-            [Reference]
+            [Details]
           </a>
           ) and reduce costs.
         </p>
