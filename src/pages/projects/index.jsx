@@ -36,6 +36,9 @@ const ProjectsPage = () => (
         <Link to="/projects/forecasting">
           &gt; Learn more about Forecasting
         </Link>
+        <Link to="https://mailchi.mp/openclimatefix/pv-forecasting-for-energy-traders">
+          &gt; Learn more about Forecasting for Energy Traders
+        </Link>
       </p>
 
       <h2 id="open-energy-data">2. Open Energy Data</h2>
