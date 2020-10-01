@@ -11,8 +11,8 @@ const OpenEnergyPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
-      <SEO title="Project: Photovoltaic Mapping" />
-      <h1>Photovoltaic Mapping</h1>
+      <SEO title="Project: Solar Panel Mapping" />
+      <h1>Solar Panel Mapping</h1>
       <div className="markdown">
         <figure className="mb-4">
           <img
