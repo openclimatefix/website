@@ -30,8 +30,8 @@ const IndexPage = () => (
         </p>
         <p>
           By using an open-source approach, we can draw upon a much larger pool
-          of knowledge and skills than any individual company, so combining
-          existing islands of knowledge and accelerating progress.
+          of expertise than any individual company, so combining existing 
+          islands of knowledge and accelerating progress.
         </p>
         <p>
           Our approach will be to search for ML (Machine Learning) problems
