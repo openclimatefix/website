@@ -23,6 +23,9 @@ const NowcastingPage = ({ data }) => {
             allowFullScreen
           />
         </div>
+        <p>
+          Video showing energy production of PV systems in the UK as clouds move overhead.
+        </p>
         <h2>Why?</h2>
         <p>
           Solar Photovoltaics (PV) is one of the most significant sources of
@@ -34,36 +37,32 @@ const NowcastingPage = ({ data }) => {
           reserve).
         </p>
         <p>
-          These gas turbines are kept idling because they take several hours to
-          start up from cold, but they can be ramped up very quickly from idle;
-          and the physics of the grid dictate that - at every instant - supply
-          must precisely match demand. So, any loss in PV supply must be
-          immediately replaced. Spinning reserve costs a lot of money and pumps
+          The physics of the grid dictate that - at every instant - supply must
+          precisely match demand. So, any loss in PV supply must be immediately 
+          replaced. These gas turbines are kept idling because they take several 
+          hours to start up from cold, but they can be ramped up very quickly 
+          from idle. Spinning reserve costs a lot of money and pumps
           out a lot of CO2.
-        </p>
-        <p>
-          These gas turbines are kept ramped down because they take several
-          hours to start up from cold, but they can be ramped up quickly once
-          they're running. The physics of the grid dictate that, at every
-          instant, supply must precisely match demand. So, any loss in PV supply
-          must be immediately replaced. Spinning reserve costs a lot of money
-          and pumps out a lot of CO2.
         </p>
         <p>
           If National Grid had better PV forecasts, even for the next few hours,
           they could reduce the amount of spinning reserve required, and hence
           reduce emissions (by about 100,000 tonnes per year for the UK{' '}
           <a href="https://docs.google.com/document/d/1sfBJ48_hxSEH-XFrwmH0leS4rSsrBKgwzfoeoqGRPfg/edit#heading=h.m4udy6vx0t7k">
-            [Explanation]
+            [Details]
           </a>
           ) and reduce costs.
         </p>
         <p>
+          Electricity traders and PV farm owners will be able to use better short
+          -term PV forecasts to optimise trading decisions in intra-day markets.
+        </p>
+        <p>
           Further, this unpredictability of PV power inhibits the investment and
           onboarding of new PV generation farms, as the local and national
-          system operators are concerned about these unexpected events
-          destabilising the grid. By providing greater visibility of PV power
-          output, we can make PV power investments more palatable for all
+          system operators are concerned about these unexpected weather events
+          destabilising the grid. By providing greater predictability of PV 
+          power output, we can make PV power investments lower risk for all
           stakeholders.
         </p>
 
@@ -87,16 +86,20 @@ const NowcastingPage = ({ data }) => {
         <p>
           Our main interest is in trying to build machine learning models to
           forecast solar PV (which basically boils down to trying to predict the
-          movement and evolution of clouds). We'd like to spend the majority of
+          movement and evolution of clouds). We will spend the majority of
           the next year or two writing code to experiment with new ways to
           predict sunlight for the next few hours. Inputs to the model may
           include satellite images of clouds, numerical weather predictions,
-          vertical cloud profiles, and geographical information.
+          vertical cloud profiles, and geographical information. We will utilize
+          the team’s experience in Machine Learning as well as contributors from
+          the open source community to accelerate progress.
         </p>
         <p>
-          As quickly as possible, we'd like to get prototype PV forecasts
-          displayed in the National Grid control room, so we can start measuring
-          the impact on emissions and cost.
+          As quickly as possible, we'd like to get early-stage prototype PV
+          forecasts used displayed in the National Grid control room, to
+          validate our model’s effectiveness and so we can start measuring the
+          impact on emissions and cost.  Beyond that we will release a
+          nowcasting product for general market consumption.
         </p>
       </div>
       <h2 className="mt-16">Project Partners</h2>
