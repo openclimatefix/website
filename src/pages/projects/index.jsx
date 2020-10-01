@@ -59,7 +59,7 @@ const ProjectsPage = () => (
         </Link>
       </p>
 
-      <h2 id="pv-mapping">3. Photovoltaic Mapping</h2>
+      <h2 id="pv-mapping">3. Solar Panel Mapping</h2>
       <p>
         To accurately forecast solar power generation, we need to know where all
         the PV panels are. That is still largely unknown today in the UK. We are
@@ -73,7 +73,7 @@ const ProjectsPage = () => (
       </p>
       <p>
         <Link to="/projects/pv-mapping">
-          &gt; Learn more about Photovoltaic Mapping
+          &gt; Learn more about Solar Panel Mapping
         </Link>
       </p>
     </main>
