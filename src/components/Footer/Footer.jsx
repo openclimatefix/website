@@ -53,7 +53,8 @@ export default function Footer() {
           <FaDonate />
         </a>
       </div>
-      <p className="mt-4">Open Climate Fix Ltd.</p>
+      <p className="mt-4"><a className="hover:underline" href="https://docs.google.com/document/d/1ld-faFUnXpOmxXcxI8cxpH_S6NHnpQEzqQrYe6Y6Sjg/edit?usp=sharing">Privacy Notice</a></p>
+      <p className="mt-4">&copy; Open Climate Fix Ltd.</p>
     </footer>
   );
 }
