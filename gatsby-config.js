@@ -77,14 +77,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    {
-      resolve: 'gatsby-plugin-gtag',
-      options: {
-        trackingId: 'UA-144752608-1',
-        head: false,
-        anonymize: true, // enable ip anonymization
-      },
-    },
     'gatsby-transformer-json',
     {
       resolve: 'gatsby-source-filesystem',
