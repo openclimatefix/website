@@ -13,7 +13,7 @@ import SEO from './seo';
 import Header from './Header';
 import Footer from './Footer';
 import './layout.css';
-import SpecialAnnouncement from './SpecialAnnouncement';
+// import SpecialAnnouncement from './SpecialAnnouncement';
 
 
 const Layout = ({ children }) => {
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO title={siteTitle} />
-      <SpecialAnnouncement />
+      { /* <SpecialAnnouncement /> */ }
       <Header />
       <main className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
         {children}
