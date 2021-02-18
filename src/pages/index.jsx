@@ -36,7 +36,7 @@ const IndexPage = () => (
           islands of knowledge and accelerating progress.
         </p>
         <p>
-          Our approach will be to search for ML (Machine Learning) problems
+          Our approach is to search for ML (Machine Learning) problems
           where, if we solve a well-defined ML task, then there is likely to be
           a large climate impact. Then, for each of these challenges, we will:
         </p>
@@ -50,9 +50,7 @@ const IndexPage = () => (
               Run a collaborative &ldquo;global research project&rdquo;
             </strong>{' '}
             where everyone from 16-year-olds to PhD students to corporate
-            research labs can help solve the ML task (and, over the last 6
-            weeks, we have received over 300 emails from people who’d love to
-            get involved).
+            research labs can help solve the ML task.
           </li>
           <li>
             <strong>Help to put good solutions into production</strong>, once
