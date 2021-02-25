@@ -3,7 +3,7 @@
     "login": "JackKelly",
     "name": "Jack Kelly",
     "avatar_url": "https://avatars2.githubusercontent.com/u/460756?v=4",
-    "profile": "http://jack-kelly.com",
+    "profile": "https://jack-kelly.com",
     "contributions": ["business", "code", "content", "ideas"]
   }, {
     "login": "flowirtz",
@@ -15,7 +15,7 @@
     "login": "dctanner",
     "name": "Damien Taner",
     "avatar_url": "https://avatars2.githubusercontent.com/u/227?v=4",
-    "profile": "http://tanner.me",
+    "profile": "https://tanner.me",
     "contributions": ["blog"]
   }, {
     "login": "schillerk",
@@ -27,7 +27,7 @@
     "login": "ollicle",
     "name": "Oliver Boermans",
     "avatar_url": "https://avatars1.githubusercontent.com/u/63586?v=4",
-    "profile": "http://www.ollicle.com",
+    "profile": "https://www.ollicle.com",
     "contributions": ["content", "bug", "ideas"]
   }, {
     "login": "eambutu",
@@ -75,7 +75,7 @@
     "login": "tomwhite",
     "name": "Tom White",
     "avatar_url": "https://avatars3.githubusercontent.com/u/85085?v=4",
-    "profile": "http://tom-e-white.com",
+    "profile": "https://tom-e-white.com",
     "contributions": ["code"]
   }]
 }
