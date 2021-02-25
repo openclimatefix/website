@@ -34,7 +34,7 @@ export default function BlogPost({
   return (
     <Layout>
       <SEO
-        title={`Blog: ${title}`}
+        title={title}
         imageUrl={coverImageUrl}
         description={excerpt}
         authorTwitter={authorTwitter}
