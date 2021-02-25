@@ -13,7 +13,7 @@
     "contributions": ["code", "ideas", "maintenance", "projectManagement"]
   }, {
     "login": "dctanner",
-    "name": "Damien Taner",
+    "name": "Damien Tanner",
     "avatar_url": "https://avatars2.githubusercontent.com/u/227?v=4",
     "profile": "https://tanner.me",
     "contributions": ["blog"]
@@ -72,10 +72,28 @@
     "profile": "https://grantbourque.com",
     "contributions": ["code"]
   }, {
+    "login": "dfulu",
+    "name": "James Fulton",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/41546094?v=4",
+    "profile": "https://github.com/dfulu",
+    "contributions": ["code", "ideas"]
+  }, {
+    "login": "mantagen",
+    "name": "MG",
+    "avatar_url": "https://avatars.githubusercontent.com/u/12934669?v=4",
+    "profile": "https://github.com/mantagen",
+    "contributions": ["code"]
+  }, {
     "login": "tomwhite",
     "name": "Tom White",
     "avatar_url": "https://avatars3.githubusercontent.com/u/85085?v=4",
     "profile": "https://tom-e-white.com",
     "contributions": ["code"]
+  }, {
+    "login": "dantravers",
+    "name": "Dan Travers",
+    "avatar_url": "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg",
+    "profile": "https://openclimatefix.org/#member-dan",
+    "contributions": ["business", "content", "ideas"]
   }]
 }
