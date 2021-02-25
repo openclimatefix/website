@@ -7,7 +7,7 @@ function CloudHero() {
     <div className="static">
       <div
         id="overlay"
-        className="absolute z-10 bg-transparent w-screen flex items-center justify-center"
+        className="absolute z-10 bg-transparent w-full flex items-center justify-center"
         style={{ height: 'calc(100vh - 80px)' }}
       >
         <div className="text-white text-center">
@@ -25,7 +25,7 @@ function CloudHero() {
         style={{ height: 'calc(100vh - 80px)' }}
       />
       <div
-        className="w-screen bg-black"
+        className="w-full bg-black"
         style={{ height: 'calc(100vh - 80px)' }}
       />
     </div>
