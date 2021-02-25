@@ -137,6 +137,15 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "mantagen",
+      "name": "MG",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12934669?v=4",
+      "profile": "https://github.com/mantagen",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
