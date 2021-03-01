@@ -30,69 +30,6 @@ In this document, we’ll look at a single technical framework that could help s
 
 ![Linked Data Overview](https://raw.githubusercontent.com/openclimatefix/website/master/src/images/blog/2020-08-18_image_0.png)
 
-## Overview of the web of energy data
-
-* Data & metadata files will reside on data custodians' web servers.
-
-* A search engine will provide an entry point into the 'web of energy data'.
-
-    * The search engine will construct a 'knowledge graph' of the web of energy data by crawling the metadata files.
-
-    * This is far more than 'just' a list of assets and datasets! It will understand the *relationships* and the *meaning* of the data, hence enabling:
-
-        * highly specific searches
-
-        * discovery of data & assets by walking the knowledge graph
-
-* A Directory (adapted from Open Banking) will associate parties with security credentials. This will limit access to *shared* data: data which is available only to specific groups of people, for specific purposes. For example, access controls might be necessary for personally identifiable information; or commercially sensitive information; or information that could be used to disrupt the energy system.
-
-* Every *thing* (substation, dataset, energy company, etc.) will have a unique ID.
-
-* This ID will take the form of a web address (URL).
-
-* Accessing that web address will return metadata describing the *thing*.
-
-* The metadata will be in a standard format and use a standard vocabulary; and will *link* to related resources (just as web pages link to other web pages).
-
-* Taken together, these linked metadata files will form a distributed graph ('network') representing the energy system itself and energy datasets; and their relationships.
-
-* Metadata will be compatible with search engines, so users can also enter the "web of energy data" through conventional search engines.
-
-* Open data (as distinct from *meta*data) can be published in any machine-readable format. But there may be recommended formats for new datasets.
-
-* A standard API will be defined to allow data providers to restrict access to *shared* data (data that is sensitive or requires payment).
-
-## Benefits
-
-Just like the world wide web, content on the 'web of energy data' will be:
-
-* **No "big-bang" IT projects**: Allow industry to adapt piece-by-piece.
-
-* **Distributed**: Organisations host data on their own servers so will retain full control. No single point of failure. Scales rapidly.
-
-* **Easy to interpret**: Metadata will use a common technical language.
-
-* **Easy to create**: The metadata standard will be as simple as possible, and as similar as possible to existing vocabularies.
-
-* **Uniquely identifiable**: Hence trivial to combine. Unique identifiers for energy assets & datasets is the first step towards combining existing energy asset registers.
-
-* **Linked** to related assets.
-
-* **Searchable** & **Discoverable** through the Knowledge Graph.
-
-* **Secured** using a Directory adapted from Open Banking.
-
-## What does success look like?
-
-* Substantially reduced costs and time to publish and consume energy data.
-
-* Spawn a vibrant ecosystem of innovative energy information services.
-
-* Data and assets will be easy to find as searching the web for a local restaurant.
-
-* Enable an energy system capable of orchestrating millions of DERs.
-
-* Hence help reduce carbon emissions to net-zero without breaking the bank! (The bit that Open Climate Fix is most passionate about!)
 
 ## Principles
 
@@ -263,6 +200,70 @@ Inner layers would provide services to the layer immediately above.  For example
 The key to managing complexity is to ensure that outer layers don't micromanage inner layers:  An outer layer can't directly control an inner layer's assets.  Instead, outer layers must go through the inner layer's interface.
 
 This way of thinking about the energy system also helps inform our priorities for defining standards for data sharing:  The priority is to define data standards for the communication *between* layers.  The communication *within* layers is an 'implementation detail' that outer layers don't need to worry about.  (Also see this Vox article: [Renewable energy threatens to overwhelm the grid.  Here's how it can adapt.](https://www.vox.com/energy-and-environment/2018/11/30/17868620/renewable-energy-power-grid-architecture))
+
+## Overview of the web of energy data
+
+* Data & metadata files will reside on data custodians' web servers.
+
+* A search engine will provide an entry point into the 'web of energy data'.
+
+    * The search engine will construct a 'knowledge graph' of the web of energy data by crawling the metadata files.
+
+    * This is far more than 'just' a list of assets and datasets! It will understand the *relationships* and the *meaning* of the data, hence enabling:
+
+        * highly specific searches
+
+        * discovery of data & assets by walking the knowledge graph
+
+* A Directory (adapted from Open Banking) will associate parties with security credentials. This will limit access to *shared* data: data which is available only to specific groups of people, for specific purposes. For example, access controls might be necessary for personally identifiable information; or commercially sensitive information; or information that could be used to disrupt the energy system.
+
+* Every *thing* (substation, dataset, energy company, etc.) will have a unique ID.
+
+* This ID will take the form of a web address (URL).
+
+* Accessing that web address will return metadata describing the *thing*.
+
+* The metadata will be in a standard format and use a standard vocabulary; and will *link* to related resources (just as web pages link to other web pages).
+
+* Taken together, these linked metadata files will form a distributed graph ('network') representing the energy system itself and energy datasets; and their relationships.
+
+* Metadata will be compatible with search engines, so users can also enter the "web of energy data" through conventional search engines.
+
+* Open data (as distinct from *meta*data) can be published in any machine-readable format. But there may be recommended formats for new datasets.
+
+* A standard API will be defined to allow data providers to restrict access to *shared* data (data that is sensitive or requires payment).
+
+## Benefits
+
+* **No "big-bang" IT projects**: Allow industry to adapt piece-by-piece.
+
+Just like the world wide web, content on the 'web of energy data' will be:
+
+* **Distributed**: Organisations host data on their own servers so will retain full control. No single point of failure. Scales rapidly.
+
+* **Easy to interpret**: Metadata will use a common technical language.
+
+* **Easy to create**: The metadata standard will be as simple as possible, and as similar as possible to existing vocabularies.
+
+* **Uniquely identifiable**: Hence trivial to combine. Unique identifiers for energy assets & datasets is the first step towards combining existing energy asset registers.
+
+* **Linked** to related assets.
+
+* **Searchable** & **Discoverable** through the Knowledge Graph.
+
+* **Secured** using a Directory adapted from Open Banking.
+
+## What does success look like?
+
+* Substantially reduced costs and time to publish and consume energy data.
+
+* Spawn a vibrant ecosystem of innovative energy information services.
+
+* Data and assets will be as easy to find as searching the web for a local restaurant.
+
+* Enable an energy system capable of orchestrating millions of distributed energy resources (DERs).
+
+* Hence help reduce carbon emissions to net-zero without breaking the bank! (The bit that Open Climate Fix is most passionate about!)
 
 # How does this fit in with the billion existing energy data projects?
 
