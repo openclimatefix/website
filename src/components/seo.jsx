@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, imageUrl, authorTwitter }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,14 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const metaImageUrl =
+    imageUrl ||
+    'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png';
+
+  // Note: this assumes that authorTwitter does not include @
+  const metaAuthorTwitter = authorTwitter
+    ? `@${authorTwitter}`
+    : site.siteMetadata.author;
 
   return (
     <Helmet
@@ -29,9 +37,9 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       link={[
         {
-          href: "https://fonts.googleapis.com/css2?family=Inter&display=swap",
-          rel: "stylesheet"
-        }
+          href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap',
+          rel: 'stylesheet',
+        },
       ]}
       meta={[
         {
@@ -52,8 +60,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: 'og:image',
-          content:
-            'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
+          content: metaImageUrl,
         },
         {
           name: 'twitter:card',
@@ -61,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:creator',
-          content: site.siteMetadata.author,
+          content: metaAuthorTwitter,
         },
         {
           name: 'twitter:title',
@@ -73,8 +80,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:image',
-          content:
-            'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png',
+          content: metaImageUrl,
         },
         {
           name: 'twitter:site',

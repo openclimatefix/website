@@ -16,7 +16,7 @@ export default function BlogPost({
 }) {
   const { prev, next } = pageContext;
   const {
-    markdownRemark: { frontmatter, html },
+    markdownRemark: { frontmatter, excerpt, html },
   } = data;
   const {
     authorName,
@@ -29,9 +29,16 @@ export default function BlogPost({
     coverImagePhotographerName,
   } = frontmatter;
 
+  const coverImageUrl = `https://source.unsplash.com/${coverImageUnsplashId}/624x384`;
+
   return (
     <Layout>
-      <SEO title={`Blog: ${title}`} />
+      <SEO
+        title={title}
+        imageUrl={coverImageUrl}
+        description={excerpt}
+        authorTwitter={authorTwitter}
+      />
       <article className="">
         <h1>{title}</h1>
         <AuthorDateBlock
@@ -44,7 +51,7 @@ export default function BlogPost({
           <img
             style={{ maxHeight: '24rem' }}
             className="object-cover w-full"
-            src={`https://source.unsplash.com/${coverImageUnsplashId}/624x384`}
+            src={coverImageUrl}
             alt="Blog Post Cover Image"
           />
           <figcaption className="text-xs text-gray-600 text-center mt-1">
@@ -76,6 +83,7 @@ export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt(pruneLength: 160)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
@@ -94,6 +102,7 @@ BlogPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       html: PropTypes.string.isRequired,
+      excerpt: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
         date: PropTypes.string.isRequired,
         path: PropTypes.string.isRequired,
