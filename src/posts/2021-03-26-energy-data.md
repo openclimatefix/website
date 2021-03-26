@@ -16,16 +16,13 @@ Over time, these stories, or fictional constructs, evolved to build a legal syst
 
 So how does this relate to data in the energy industry? Firstly I should state that I am a semi-insider, having worked in energy for twenty years across a number of countries. So I don’t want to compare my industry to a group of apes... But I would claim that too much communication about critical data-related aspects of the energy industry is still reliant on personal relationships and individuals’ direct experiences. We are stuck in a sort of “tribe” in the energy data landscape, where it is difficult to share knowledge at scale, difficult for newcomers to enter and can be slow to evolve. Take these key examples:
 
-**Finding Energy Data**
-
+## Finding Energy Data
 There is no centralized “catalogue” of energy data in the UK. There are several smaller catalogues set up by companies or the government, but there is no place where it is possible to search across all these catalogues. It is possible to find some data easily, and there is a level of automated search, but it is still a lot easier if you know who to ask and much data is hidden!
 
-**Licencing Energy Data**
-
+## Licencing Energy Data
 There is a real mixed bag of licencing arrangement in the energy industry. Much data is publicly available, which is fantastic. But public data is not truly 'open' unless it comes with an open data license. And there is no consistent approach to licencing data beyond that. Where data is not open, but “shared” (where owners are willing to make that data available to specific people for specific purposes), the contracts are negotiated and executed bilaterally. Again - we need to move beyond direct relationships towards a framework for sharing into which new entrants can enter and immediately understand and trust the “rules of the game”.  The [Open Energy](https://icebreakerone.org/energy/) project (led by Icebreaker One, and on which Open Climate Fix partnered) is looking into these issues.
 
-**Privacy**
-
+## Privacy
 Given the extreme sensitivity of personal data and the most granular energy data describes personal consumption patterns, there is a clear need to put in place controls to protect individuals’ privacy. This could be aggregating household-level consumption data to the street level before distributing, or it could be obfuscating the registration of a vehicle using an EV charge point, but unfortunately, we find again there is no standard practice or recommended playbook for how to protect privacy for energy data. So individuals make arrangements and decisions in isolation. A framework and code of practice beneath that would be an extremely valuable fictional construct to reduce data friction.
 
 Combined with the huge natural complexity and data richness of the energy industry, a newcomer could be forgiven for feeling lost in the jungle when it comes to accessing energy data. I would maintain that we are a long way from where we need to be. There are many projects underway to address these concerns, such as Modernising Energy Data and the Energy Data Visibility Project, and we as an industry need to give them our full support and focus. 
