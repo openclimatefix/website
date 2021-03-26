@@ -13,7 +13,7 @@ const OpenEnergyPage = ({ data }) => {
     <Layout>
       <SEO title="Project: Open Energy Data" />
       <h1>Open Energy Data</h1>
-      <div className="markdown">
+      <div className="prose">
         <figure className="mb-4">
           <img
             style={{ maxHeight: '24rem' }}
@@ -112,7 +112,7 @@ const OpenEnergyPage = ({ data }) => {
           },
         ]}
       />
-      <div className="markdown">
+      <div className="prose">
         <p>
           We have worked with{' '}
           <a href="https://icebreakerone.org/">Icebreaker One</a> on a proposal

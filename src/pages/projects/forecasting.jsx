@@ -13,19 +13,21 @@ const NowcastingPage = ({ data }) => {
     <Layout>
       <SEO title="Project: Forecasting" />
       <h1>Forecasting</h1>
-      <div className="markdown">
+      <div className="prose">
+      <figure className="mb-4">
         <div className="video-wrapper">
-          <iframe
-            title="Forecasting Video"
-            src="https://www.youtube.com/embed/IOp-tj-IJpk"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-        <p>
+            <iframe
+              title="Forecasting Video"
+              src="https://www.youtube.com/embed/IOp-tj-IJpk"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <figcaption className="text-xs text-gray-600 text-center mt-1">
           Video showing energy production of PV systems in the UK as clouds move overhead.
-        </p>
+          </figcaption>
+        </figure>
         <h2>Why?</h2>
         <p>
           Solar Photovoltaics (PV) is one of the most significant sources of
@@ -112,7 +114,7 @@ const NowcastingPage = ({ data }) => {
           },
         ]}
       />
-      <div className="markdown">
+      <div className="prose">
         <p>
           <a href="https://business.esa.int/">ESA Business Applications</a> aims
           to show that space is open for business and has the power to improve

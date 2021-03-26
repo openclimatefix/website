@@ -8,7 +8,7 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
     <h1>Projects</h1>
-    <main className="markdown">
+    <main className="prose">
       <p>
         From understanding where solar generation capacity like solar panels is
         located, opening up energy data to predicting how much energy will be

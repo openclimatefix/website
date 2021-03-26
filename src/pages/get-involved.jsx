@@ -5,7 +5,7 @@ import ContributorShowcase from '../components/ContributorShowcase';
 const getInvolvedPage = () => (
   <Layout>
     <h1>Get Involved</h1>
-    <div className="markdown">
+    <div className="prose">
       <ul>
         <li>
           <a href="https://opencollective.com/openclimatefix">Donate</a> to our

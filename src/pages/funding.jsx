@@ -7,7 +7,7 @@ const fundingPage = () => (
     <h1 id="funding" className="mt-16 mb-2">
       Funding
     </h1>
-    <div className="markdown">
+    <div className="prose">
       <p>
         Our intention is that Open Climate Fix will reduce emissions by at least
         millions of tonnes, at a cost of a few dollars per tonne, so
