@@ -1,4 +1,6 @@
-/* eslint-disable import/no-extraneous-dependencies, global-require */
-module.exports = () => ({
-  plugins: [require('tailwindcss'), require('postcss-nesting')],
-});
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}

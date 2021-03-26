@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 
-import logocloudStyles from './logocloud.module.css';
+import {logogrid} from './logocloud.module.css';
 
 export default function LogoCloud({ logos }) {
   const LOGOS = logos || [
@@ -79,7 +79,7 @@ export default function LogoCloud({ logos }) {
         }
       `}
       render={data => (
-        <div className={logocloudStyles.logogrid}>
+        <div className={logogrid}>
           {LOGOS.map(({ name, image, link }) => {
             const img = data.allFile.edges.find(({ node }) =>
               node.relativePath.endsWith(image)
