@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './CloudHero.module.css';
+import {background} from './CloudHero.module.css';
 
 function CloudHero() {
   return (
@@ -21,7 +21,7 @@ function CloudHero() {
       </div>
       <div
         id="clouds"
-        className={styles.background}
+        className={background}
         style={{ height: 'calc(100vh - 80px)' }}
       />
       <div
