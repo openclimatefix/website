@@ -5,8 +5,8 @@ date: '2021-03-26'
 authorName: 'Dan Travers'
 authorTwitter: 'danieltravers'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg'
-coverImageUnsplashId: '9RbQ8itwAr4'
-coverImagePhotographerName: 'Subtle Cinematics'
+coverImageUnsplashId: '3IxuF9MCjkA'
+coverImagePhotographerName: 'Crawford Jolly'
 project: 'open-energy'
 ---
 
