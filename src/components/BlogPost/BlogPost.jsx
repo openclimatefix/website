@@ -68,7 +68,7 @@ export default function BlogPost({
             </a>
           </figcaption>
         </figure>
-        <div className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
       <PostNavigation prev={prev} next={next} />
       <DiscussionEmbed

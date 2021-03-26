@@ -13,20 +13,21 @@ const NowcastingPage = ({ data }) => {
     <Layout>
       <SEO title="Project: Forecasting" />
       <h1>Forecasting</h1>
-      <div className="markdown">
+      <div className="prose">
+      <figure className="mb-4">
         <div className="video-wrapper">
-          <iframe
-            title="Forecasting Video"
-            src="https://www.youtube.com/embed/IOp-tj-IJpk"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-        <p>
-          Video showing energy production of PV systems in the UK as clouds move
-          overhead.
-        </p>
+            <iframe
+              title="Forecasting Video"
+              src="https://www.youtube.com/embed/IOp-tj-IJpk"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <figcaption className="text-xs text-gray-600 text-center mt-1">
+          Video showing energy production of PV systems in the UK as clouds move overhead.
+          </figcaption>
+        </figure>
         <h2>Why?</h2>
         <p>
           Solar Photovoltaics (PV) is one of the most significant sources of
@@ -119,7 +120,7 @@ const NowcastingPage = ({ data }) => {
           },
         ]}
       />
-      <div className="markdown">
+      <div className="prose">
         <p>
           We are a{' '}
           <a href="https://openclimatefix.org/blog/2021-04-13-googleorg-support">

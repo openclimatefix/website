@@ -21,7 +21,7 @@ const IndexPage = () => (
       <h2 id="about" className="mt-16 mb-2">
         About
       </h2>
-      <div className="markdown">
+      <div className="prose">
         <p>
           Open Climate Fix is a non-profit product lab,
           totally focused on reducing greenhouse gas emissions as rapidly as
@@ -73,7 +73,7 @@ const IndexPage = () => (
       <h2 id="projects" className="mt-16 mb-2">
         Projects
       </h2>
-      <div className="markdown">
+      <div className="prose">
         <p>
           From understanding where solar generation capacity like solar panels
           is located, opening up energy data to predicting how much energy will
