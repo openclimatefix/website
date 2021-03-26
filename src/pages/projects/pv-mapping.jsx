@@ -13,7 +13,7 @@ const OpenEnergyPage = ({ data }) => {
     <Layout>
       <SEO title="Project: Solar Panel Mapping" />
       <h1>Solar Panel Mapping</h1>
-      <div className="markdown">
+      <div className="prose">
         <figure className="mb-4">
           <img
             style={{ maxHeight: '24rem' }}
