@@ -1,14 +1,14 @@
 import { StaticQuery, graphql } from 'gatsby';
 import React from 'react';
-import styles from './ContributorShowcase.module.css';
+import {griditem, grid, image} from './ContributorShowcase.module.css';
 
 function renderContributorsFromData(data) {
   const cont = [];
   data.contributorsJson.contributors.forEach(item => {
     cont.push(
-      <div className={styles.griditem} key={item.profile}>
+      <div className={griditem} key={item.profile}>
         <img
-          className={styles.image}
+          className={image}
           alt={item.profile}
           src={item.avatar_url}
         />
@@ -41,7 +41,7 @@ function ContributorShowcase() {
           }
         `}
         render={data => (
-          <div className={styles.grid}>{renderContributorsFromData(data)}</div>
+          <div className={grid}>{renderContributorsFromData(data)}</div>
         )}
       />
     </>

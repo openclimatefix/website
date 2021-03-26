@@ -1,5 +1,5 @@
 import React from 'react';
-import teamsectionStyles from './teamsection.module.css';
+import {iconList} from './teamsection.module.css';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function TeamSection() {
@@ -42,7 +42,7 @@ function TeamMember({ name, image, linkedin, twitter, github }) {
       <img className="w-24 h-24 rounded-full mx-auto" src={image} />
       <div className="text-center mt-3">
         <h3 className="text-lg">{name}</h3>
-        <span className={teamsectionStyles.iconList}>
+        <span className={iconList}>
           {linkedin && (
             <a href={linkedin} className="mr-1">
               <FaLinkedin />
