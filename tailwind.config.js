@@ -8,7 +8,12 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        'ocf-yellow': '#FFC425',
+        'ocf-blue': '#468AC9'
+      }
+    },
   },
   variants: {
     extend: {},

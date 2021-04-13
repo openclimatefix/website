@@ -140,13 +140,13 @@ const IndexPage = () => (
         </p>
       </div>
 
-      <a
+      {/* <a
         id="newsletter"
         className="block text-center mt-16 mb-20 m-auto bg-black hover:bg-gray-800 border-black hover:border-gray-800 text-2xl border-4 text-white py-1 px-2 rounded max-w-sm"
         href="http://eepurl.com/guCjvH"
       >
         Subscribe to our Newsletter
-      </a>
+      </a> */}
     </main>
     <Footer />
   </>
