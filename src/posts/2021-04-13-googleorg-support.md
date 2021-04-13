@@ -22,5 +22,5 @@ It feels like so many exciting things are happening at the same time right now! 
 
 ---
 
-[> Read more about this in our Press Release](https://drive.google.com/file/d/1g8MIVjz-XQIsgVuamcVNZ9PRF2yEWuhj/view?usp=sharing)
-[> Learn more about Nowcasting](https://openclimatefix.org/projects/forecasting)
+- [Read more about this in our Press Release](https://drive.google.com/file/d/1g8MIVjz-XQIsgVuamcVNZ9PRF2yEWuhj/view?usp=sharing)
+- [Learn more about Nowcasting](https://openclimatefix.org/projects/forecasting)
