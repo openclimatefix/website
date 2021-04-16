@@ -61,7 +61,7 @@ const IndexPage = () => (
       </div>
 
       <h2 id="partners" className="mt-16 mb-2">
-        Partners
+        Supporters
       </h2>
       <LogoCloud />
 

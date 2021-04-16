@@ -24,7 +24,8 @@ const NowcastingPage = ({ data }) => {
           />
         </div>
         <p>
-          Video showing energy production of PV systems in the UK as clouds move overhead.
+          Video showing energy production of PV systems in the UK as clouds move
+          overhead.
         </p>
         <h2>Why?</h2>
         <p>
@@ -38,11 +39,11 @@ const NowcastingPage = ({ data }) => {
         </p>
         <p>
           The physics of the grid dictate that - at every instant - supply must
-          precisely match demand. So, any loss in PV supply must be immediately 
-          replaced. These gas turbines are kept idling because they take several 
-          hours to start up from cold, but they can be ramped up very quickly 
-          from idle. Spinning reserve costs a lot of money and pumps
-          out a lot of CO2.
+          precisely match demand. So, any loss in PV supply must be immediately
+          replaced. These gas turbines are kept idling because they take several
+          hours to start up from cold, but they can be ramped up very quickly
+          from idle. Spinning reserve costs a lot of money and pumps out a lot
+          of CO2.
         </p>
         <p>
           If National Grid had better PV forecasts, even for the next few hours,
@@ -54,14 +55,15 @@ const NowcastingPage = ({ data }) => {
           ) and reduce costs.
         </p>
         <p>
-          Electricity traders and PV farm owners will be able to use better short
-          -term PV forecasts to optimise trading decisions in intra-day markets.
+          Electricity traders and PV farm owners will be able to use better
+          short-term PV forecasts to optimise trading decisions in intra-day
+          markets.
         </p>
         <p>
           Further, this unpredictability of PV power inhibits the investment and
           onboarding of new PV generation farms, as the local and national
           system operators are concerned about these unexpected weather events
-          destabilising the grid. By providing greater predictability of PV 
+          destabilising the grid. By providing greater predictability of PV
           power output, we can make PV power investments lower risk for all
           stakeholders.
         </p>
@@ -86,23 +88,23 @@ const NowcastingPage = ({ data }) => {
         <p>
           Our main interest is in trying to build machine learning models to
           forecast solar PV (which basically boils down to trying to predict the
-          movement and evolution of clouds). We will spend the majority of
-          the next year or two writing code to experiment with new ways to
-          predict sunlight for the next few hours. Inputs to the model may
-          include satellite images of clouds, numerical weather predictions,
-          vertical cloud profiles, and geographical information. We will utilize
-          the team’s experience in Machine Learning as well as contributors from
-          the open source community to accelerate progress.
+          movement and evolution of clouds). We will spend the majority of the
+          next year or two writing code to experiment with new ways to predict
+          sunlight for the next few hours. Inputs to the model may include
+          satellite images of clouds, numerical weather predictions, vertical
+          cloud profiles, and geographical information. We will utilize the
+          team’s experience in Machine Learning as well as contributors from the
+          open source community to accelerate progress.
         </p>
         <p>
           As quickly as possible, we'd like to get early-stage prototype PV
           forecasts used displayed in the National Grid control room, to
           validate our model’s effectiveness and so we can start measuring the
-          impact on emissions and cost.  Beyond that we will release a
-          nowcasting product for general market consumption.
+          impact on emissions and cost. Beyond that we will release a nowcasting
+          product for general market consumption.
         </p>
       </div>
-      <h2 className="mt-16">Project Partners</h2>
+      <h2 className="mt-16">Project Supporters</h2>
       <LogoCloud
         logos={[
           {
@@ -110,21 +112,34 @@ const NowcastingPage = ({ data }) => {
             image: 'esa_space_solutions.png',
             link: 'https://business.esa.int/',
           },
+          {
+            name: 'Google.org',
+            image: 'google_org.png',
+            link: 'https://www.google.org/',
+          },
         ]}
       />
       <div className="markdown">
         <p>
-          <a href="https://business.esa.int/">ESA Business Applications</a> aims
-          to show that space is open for business and has the power to improve
-          our everyday lives on Earth. They do this by helping companies to
-          integrate space data and technology into commercial services.
+          We are a{' '}
+          <a href="https://openclimatefix.org/blog/2021-04-13-googleorg-support">
+            successful applicant to the Google.org Impact Challenge on Climate
+          </a>
+          . The Google.org Impact Challenge on Climate commits €10M to fund bold
+          ideas that aim to use technology to accelerate Europe’s progress
+          toward a greener, more resilient future. Selected organisations may
+          receive up to €2M in funding and possible customised post-grant
+          support from the Google for Startups Accelerator to help bring their
+          ideas to life.
         </p>
         <p>
-          ESA awarded us an AI Kick-Start co-funding for six months. Kick-Start
-          activities are compact Feasability Studies to explore new service
-          concepts that use space tech. We will ask potential users of
-          forecasting what they need; and how best to serve those needs.
+          <a href="https://business.esa.int/">ESA Business Applications</a>{' '}
+          awarded us an AI Kick-Start co-funding for six months. Kick-Start
+          activities are compact Feasibility Studies to explore new service
+          concepts that use space tech. We asked potential users of forecasting
+          what they need; and how best to serve those needs.
         </p>
+        <p></p>
       </div>
 
       <h2 className="mt-16">Updates</h2>

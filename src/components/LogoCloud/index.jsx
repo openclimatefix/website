@@ -11,6 +11,11 @@ export default function LogoCloud({ logos }) {
       link: 'https://business.esa.int/',
     },
     {
+      name: 'Google.org',
+      image: 'google_org.png',
+      link: 'https://www.google.org/',
+    },
+    {
       name: 'Open Data Institute',
       image: 'odi.png',
       link: 'https://theodi.org/',
