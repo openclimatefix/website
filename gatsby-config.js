@@ -7,6 +7,12 @@ module.exports = {
     siteUrl: 'https://openclimatefix.org',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `openclimatefix.org`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss',
     {
