@@ -37,8 +37,8 @@ const ProjectsPage = () => (
           &gt; Learn more about Forecasting
         </Link>
         <br />
-        <Link to="https://mailchi.mp/openclimatefix/pv-forecasting-for-energy-traders">
-          &gt; Learn more about Forecasting for Energy Traders
+        <Link to="https://www.wired.co.uk/article/solar-weather-forecasting">
+          &gt; Wired: Bad weather forecasts are a climate crisis disaster
         </Link>
       </p>
 
