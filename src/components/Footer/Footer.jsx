@@ -4,12 +4,12 @@ import { MdEmail } from 'react-icons/md';
 import { FaTwitter, FaDonate, FaDiscourse, FaYoutube } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
 
-import footerStyles from './footer.module.css';
+import {iconList} from './footer.module.css';
 
 export default function Footer() {
   return (
     <footer className="bg-black p-6 text-white text-center">
-      <div className={footerStyles.iconList}>
+      <div className={iconList}>
         <a
           href="https://github.com/openclimatefix"
           target="_blank"
