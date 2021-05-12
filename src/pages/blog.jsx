@@ -13,14 +13,16 @@ const BlogPage = ({
 }) => (
   <Layout>
     <SEO title="Blog" />
-    <h1>Blog</h1>
-    <p>
-      One of our biggest goals at Open Climate Fix is transparency. We want to
-      let people take part in the work we do and we think that is only possible
-      by openly communicating about it. This blog is one part of how we want to
-      achieve that.
-    </p>
-    <PostList posts={edges} />
+    <div className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
+      <h1>Blog</h1>
+      <p>
+        One of our biggest goals at Open Climate Fix is transparency. We want to
+        let people take part in the work we do and we think that is only
+        possible by openly communicating about it. This blog is one part of how
+        we want to achieve that.
+      </p>
+      <PostList posts={edges} />
+    </div>
   </Layout>
 );
 

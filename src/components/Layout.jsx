@@ -15,7 +15,6 @@ import Footer from './Footer';
 import './layout.css';
 // import SpecialAnnouncement from './SpecialAnnouncement';
 
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -32,11 +31,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO title={siteTitle} />
-      { /* <SpecialAnnouncement /> */ }
+      {/* <SpecialAnnouncement /> */}
       <Header />
-      <main className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   );
