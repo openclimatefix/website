@@ -12,87 +12,89 @@ const OpenEnergyPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Project: Solar Panel Mapping" />
-      <h1>Solar Panel Mapping</h1>
-      <div className="prose">
-        <figure className="mb-4">
-          <img
-            style={{ maxHeight: '24rem' }}
-            className="object-cover w-full"
-            src={'https://source.unsplash.com/d7FbDJkJSFw/624x384'}
-            alt="Blog Post Cover Image"
-          />
-          <figcaption className="text-xs text-gray-600 text-center mt-1">
-            Photo by{' '}
-            <a
-              className="underline"
-              href={`https://unsplash.com/photos/d7FbDJkJSFw`}
-            >
-              Markus Spiske
+      <div className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
+        <h1>Solar Panel Mapping</h1>
+        <div className="prose">
+          <figure className="mb-4">
+            <img
+              style={{ maxHeight: '24rem' }}
+              className="object-cover w-full"
+              src={'https://source.unsplash.com/d7FbDJkJSFw/624x384'}
+              alt="Blog Post Cover Image"
+            />
+            <figcaption className="text-xs text-gray-600 text-center mt-1">
+              Photo by{' '}
+              <a
+                className="underline"
+                href={`https://unsplash.com/photos/d7FbDJkJSFw`}
+              >
+                Markus Spiske
+              </a>{' '}
+              on{' '}
+              <a className="underline" href="https://unsplash.com/">
+                Unsplash
+              </a>
+            </figcaption>
+          </figure>
+          <h2>Why?</h2>
+          <p>
+            Solar PV mapping is very closely related to our PV Forecasting
+            project. Forecasting will provide solar PV yield predictions for any
+            location. To be able to arrive at an accurate forecast for solar
+            power generation out-turn for entire geographical regions, we need
+            to know where all the PV panels are!
+          </p>
+
+          <h2>What?</h2>
+          <p>
+            The OpenStreetMap (OSM) community has already done an incredible job
+            mapping over 100,000 PV installations in the UK (out of over 1
+            million we believe to exist in the UK) and many more across the
+            world. Our goal is to help grow the effort and drastically increase
+            the amount of PV mapped in OSM.
+          </p>
+          <p>
+            Recent research (
+            <a href="http://web.stanford.edu/group/deepsolar/home">DeepSolar</a>{' '}
+            and
+            <a href="https://arxiv.org/pdf/1902.10895.pdf">
+              SolarMapper from DUKE
             </a>{' '}
-            on{' '}
-            <a className="underline" href="https://unsplash.com/">
-              Unsplash
+            are just two examples) has shown the power of machine learning (ML)
+            for identifying PV panels in satellite and aerial imagery at scale.
+            We want to help pull together the datasets that are generated into a
+            global open database which can be used for updating OSM.
+          </p>
+          <p>
+            By helping to create a comprehensive open database of PV
+            installations, we think that many other people will find interesting
+            ways to use the data.
+          </p>
+
+          <h2>How?</h2>
+          <p>
+            Map PV installations manually from street level or satellite imagery
+            directly in OSM. There are{' '}
+            <a href="https://wiki.openstreetmap.org/wiki/Renewable_energy_in_the_United_Kingdom/Rooftop_Solar_PV">
+              more details on the OSM wiki
             </a>
-          </figcaption>
-        </figure>
-        <h2>Why?</h2>
-        <p>
-          Solar PV mapping is very closely related to our PV Forecasting
-          project. Forecasting will provide solar PV yield predictions for any
-          location. To be able to arrive at an accurate forecast for solar power
-          generation out-turn for entire geographical regions, we need to know
-          where all the PV panels are!
-        </p>
+            .
+          </p>
+        </div>
+        <h2 className="mt-16">Project Partners</h2>
+        <LogoCloud
+          logos={[
+            {
+              name: 'The Alan Turing Institute',
+              image: 'turing.png',
+              link: 'https://www.turing.ac.uk/',
+            },
+          ]}
+        />
 
-        <h2>What?</h2>
-        <p>
-          The OpenStreetMap (OSM) community has already done an incredible job
-          mapping over 100,000 PV installations in the UK (out of over 1 million
-          we believe to exist in the UK) and many more across the world. Our
-          goal is to help grow the effort and drastically increase the amount of
-          PV mapped in OSM.
-        </p>
-        <p>
-          Recent research (
-          <a href="http://web.stanford.edu/group/deepsolar/home">DeepSolar</a>{' '}
-          and
-          <a href="https://arxiv.org/pdf/1902.10895.pdf">
-            SolarMapper from DUKE
-          </a>{' '}
-          are just two examples) has shown the power of machine learning (ML)
-          for identifying PV panels in satellite and aerial imagery at scale. We
-          want to help pull together the datasets that are generated into a
-          global open database which can be used for updating OSM.
-        </p>
-        <p>
-          By helping to create a comprehensive open database of PV
-          installations, we think that many other people will find interesting
-          ways to use the data.
-        </p>
-
-        <h2>How?</h2>
-        <p>
-          Map PV installations manually from street level or satellite imagery
-          directly in OSM. There are{' '}
-          <a href="https://wiki.openstreetmap.org/wiki/Renewable_energy_in_the_United_Kingdom/Rooftop_Solar_PV">
-            more details on the OSM wiki
-          </a>
-          .
-        </p>
+        <h2 className="mt-16">Updates</h2>
+        <PostList posts={edges} />
       </div>
-      <h2 className="mt-16">Project Partners</h2>
-      <LogoCloud
-        logos={[
-          {
-            name: 'The Alan Turing Institute',
-            image: 'turing.png',
-            link: 'https://www.turing.ac.uk/',
-          },
-        ]}
-      />
-
-      <h2 className="mt-16">Updates</h2>
-      <PostList posts={edges} />
     </Layout>
   );
 };

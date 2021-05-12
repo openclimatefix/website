@@ -39,7 +39,7 @@ export default function BlogPost({
         description={excerpt}
         authorTwitter={authorTwitter}
       />
-      <article className="">
+      <article className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
         <h1>{title}</h1>
         <AuthorDateBlock
           name={authorName}
