@@ -1,4 +1,3 @@
-// TODO: Check a href vs Link usage
 import { Link } from 'gatsby';
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
@@ -25,23 +24,23 @@ function Header() {
       <Disclosure as="nav" className="bg-black">
         {({ open }) => (
           <>
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex items-center justify-between h-16 border-2 border-red-300">
-                <div className="flex items-center border-2 border-red-300">
-                  <div className="flex-shrink-0 text-white uppercase tracking-widest">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-center justify-between h-16">
+                <Link to="/" className="flex items-center">
+                  <div className="flex-shrink-0 text-white uppercase tracking-widest font-bold ">
                     Open Climate Fix
                   </div>
-                </div>
-                <div className="hidden md:block border-2 border-red-300">
+                </Link>
+                <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4 uppercase">
                     {navigation.map(({ name, href }) => (
-                      <a
+                      <Link
                         key={name}
-                        href={href}
-                        className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"
+                        to={href}
+                        className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium tracking-widest"
                       >
                         {name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

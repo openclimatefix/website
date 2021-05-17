@@ -38,7 +38,7 @@ export default function Example() {
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-16 md:px-8">
+      <div className="max-w-5xl mx-auto py-12 px-4 sm:px-6 md:py-16 md:px-8">
         <div className="md:grid md:grid-cols-5 md:gap-16">
           <div
             className="md:mt-0 mx-auto md:mx-0 py-10"
