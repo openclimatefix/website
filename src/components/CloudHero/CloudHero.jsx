@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {background} from './CloudHero.module.css';
+import { background } from './CloudHero.module.css';
 
 function CloudHero() {
   return (

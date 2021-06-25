@@ -27,7 +27,7 @@ const NowcastingPage = ({ data }) => {
         <div className="max-w-6xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 border-2 border-indigo-600">
           {/* COVER */}
           <div className="bg-white rounded-lg shadow">
-            <div class="aspect-w-16 aspect-h-9 rounded-lg border-2 border-indigo-600 overflow-hidden">
+            <div className="aspect-w-16 aspect-h-9 rounded-lg border-2 border-indigo-600 overflow-hidden">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/IOp-tj-IJpk?controls=0"
                 frameborder="0"
