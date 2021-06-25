@@ -30,11 +30,11 @@ h3 {
 html,
 body,
 #___gatsby,
-#gatsby-focus-wrapper  {
+#gatsby-focus-wrapper {
   height: 100%;
 }
 
- #gatsby-focus-wrapper {
+#gatsby-focus-wrapper {
   display: flex;
   flex-direction: column;
 }

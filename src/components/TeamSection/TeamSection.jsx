@@ -1,5 +1,5 @@
 import React from 'react';
-import {iconList} from './teamsection.module.css';
+import { iconList } from './teamsection.module.css';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function TeamSection() {

@@ -23,22 +23,21 @@ const IndexPage = () => (
       </h2>
       <div className="prose">
         <p>
-          Open Climate Fix is a non-profit product lab,
-          totally focused on reducing greenhouse gas emissions as rapidly as
-          possible. Every part of the organisation is designed to maximise
-          climate impact, such as our open and collaborative approach, our rapid
-          prototyping, and our attention on finding scalable &amp; practical
-          solutions.
+          Open Climate Fix is a non-profit product lab, totally focused on
+          reducing greenhouse gas emissions as rapidly as possible. Every part
+          of the organisation is designed to maximise climate impact, such as
+          our open and collaborative approach, our rapid prototyping, and our
+          attention on finding scalable &amp; practical solutions.
         </p>
         <p>
           By using an open-source approach, we can draw upon a much larger pool
-          of expertise than any individual company, so combining existing 
+          of expertise than any individual company, so combining existing
           islands of knowledge and accelerating progress.
         </p>
         <p>
-          Our approach is to search for ML (Machine Learning) problems
-          where, if we solve a well-defined ML task, then there is likely to be
-          a large climate impact. Then, for each of these challenges, we will:
+          Our approach is to search for ML (Machine Learning) problems where, if
+          we solve a well-defined ML task, then there is likely to be a large
+          climate impact. Then, for each of these challenges, we will:
         </p>
         <ol>
           <li>

@@ -1,26 +1,25 @@
-@media (min-width: 300px) { 
+@media (min-width: 300px) {
   .grid {
     display: grid;
     grid-template-columns: auto auto;
   }
 }
 
-
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
   }
 }
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
