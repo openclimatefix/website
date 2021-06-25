@@ -27,7 +27,7 @@ function Header() {
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex items-center justify-between h-16">
                 <Link to="/" className="flex items-center">
-                  <div className="flex-shrink-0 text-white uppercase tracking-widest font-bold ">
+                  <div className="flex-shrink-0 text-white uppercase tracking-widest font-bold">
                     Open Climate Fix
                   </div>
                 </Link>
@@ -37,7 +37,7 @@ function Header() {
                       <Link
                         key={name}
                         to={href}
-                        className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium tracking-widest"
+                        className="text-white hover:text-yellow-400 px-3 py-2 text-sm font-medium tracking-widest"
                       >
                         {name}
                       </Link>
@@ -46,7 +46,7 @@ function Header() {
                 </div>
                 <div className="-mr-2 flex md:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-black-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black-800 focus:ring-white">
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-yellow-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black-800 focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -64,7 +64,7 @@ function Header() {
                   <a
                     key={{ name }}
                     href={href}
-                    className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase"
+                    className="text-white hover:text-yellow-400 block px-3 py-2 rounded-md text-base font-medium uppercase"
                   >
                     {name}
                   </a>
