@@ -1,45 +1,95 @@
 import React from 'react';
 import { iconList } from './teamsection.module.css';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
+import { StaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-export default function TeamSection() {
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-4 max-w-5xl">
-      <TeamMember
-        name="Jack Kelly"
-        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
-        linkedin="https://www.linkedin.com/in/jackkelly0/"
-        twitter="https://twitter.com/jack_kelly"
-        github="https://github.com/JackKelly"
-      />
-      <TeamMember
-        name="Dan Travers"
-        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg"
-        linkedin="https://www.linkedin.com/in/dan-travers-56982912/"
-        twitter="https://twitter.com/danieltravers"
-      />
-      <TeamMember
+// ADVISORS
+{/* <Person
         name="Damien Tanner"
-        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/damien.jpg"
+        image="damien.jpg"
         linkedin="https://www.linkedin.com/in/dctanner/"
         twitter="https://twitter.com/dctanner/"
         github="https://github.com/dctanner"
-      />
-      <TeamMember
-        name="Flo Wirtz"
-        image="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/flo.jpg"
-        linkedin="https://www.linkedin.com/in/florianwirtz/"
-        twitter="https://twitter.com/flowirtz"
-        github="https://github.com/flowirtz"
-      />
-    </div>
+      /> */}
+
+export default function TeamSection() {
+  return (
+    <StaticQuery
+      query={graphql`
+        query PeopleQuery {
+          allFile(filter: { relativeDirectory: { eq: "people" } }) {
+            edges {
+              node {
+                relativePath
+                childImageSharp {
+                  gatsbyImageData(
+                    height: 200
+                  )
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(data) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 max-w-5xl">
+          <Person
+            name="Jack Kelly"
+            image={getImageFromList("jack.png", data)}
+            linkedin="https://www.linkedin.com/in/jackkelly0/"
+            twitter="https://twitter.com/jack_kelly"
+            github="https://github.com/JackKelly"
+          />
+          <Person
+            name="Dan Travers"
+            image={getImageFromList("dan.jpg", data)}
+            linkedin="https://www.linkedin.com/in/dan-travers-56982912/"
+            twitter="https://twitter.com/danieltravers"
+          />
+          <Person
+            name="Flo Wirtz"
+            image={getImageFromList("flo.jpg", data)}
+            linkedin="https://www.linkedin.com/in/florianwirtz/"
+            twitter="https://twitter.com/flowirtz"
+            github="https://github.com/flowirtz"
+          />
+          <Person
+            name="Jacob Bieker"
+            image={getImageFromList("jacob.jpg", data)}
+            linkedin="https://www.linkedin.com/in/jacobbieker/"
+            github="https://github.com/jacobbieker"
+          />
+        </div>
+      )}
+    />
   );
 }
 
-function TeamMember({ name, image, linkedin, twitter, github }) {
+function getImageFromList(imageName, list) {
+  return getImage(
+    list.allFile.edges.find(({ node }) =>
+      node.relativePath.endsWith(imageName)
+    ).node
+  );
+}
+
+
+
+function Person({ name, image, linkedin, twitter, github }) {
+  const pic = getImage(image);
+
   return (
-    <div className="sm:max-w-xs bg-white p-2 mb-6">
-      <img className="w-24 h-24 rounded-full mx-auto" src={image} />
+    <div className="sm:max-w-xs p-2 mb-6">
+      <div className="flex justify-center">
+        <div className="inline-block">
+          <GatsbyImage
+            className="w-24 h-24 rounded-full"
+            image={pic}
+            alt={`Portrait picture of ${name}`}
+          />
+        </div>
+      </div>
       <div className="text-center mt-3">
         <h3 className="text-lg">{name}</h3>
         <span className={iconList}>

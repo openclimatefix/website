@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import { logogrid } from './logocloud.module.css';
 
 export default function LogoCloud({ logos }) {
   const LOGOS = logos || [
@@ -36,11 +36,6 @@ export default function LogoCloud({ logos }) {
       link: 'https://www.gov.uk/government/organisations/innovate-uk',
     },
     {
-      name: 'Machine Intelligence Garage',
-      image: 'MI-Garage_Badge_cohort.png',
-      link: 'https://www.migarage.ai/',
-    },
-    {
       name: 'The Climate Subak',
       image: 'subak.png',
       link: 'https://www.subak.org/',
@@ -71,12 +66,13 @@ export default function LogoCloud({ logos }) {
               node {
                 relativePath
                 childImageSharp {
-                  fluid(maxWidth: 300, maxHeight: 250) {
-                    ...GatsbyImageSharpFluid
-                  }
-                  fixed(width: 300) {
-                    ...GatsbyImageSharpFixed
-                  }
+                  gatsbyImageData(
+                    height: 250
+                    placeholder: BLURRED
+                    transformOptions: {
+                      grayscale: true
+                    }
+                  )
                 }
               }
             }
@@ -84,19 +80,27 @@ export default function LogoCloud({ logos }) {
         }
       `}
       render={(data) => (
-        <div className={logogrid}>
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 my-2">
           {LOGOS.map(({ name, image, link }) => {
-            const img = data.allFile.edges.find(({ node }) =>
-              node.relativePath.endsWith(image)
-            ).node;
+            const img = getImage(
+              data.allFile.edges.find(({ node }) =>
+                node.relativePath.endsWith(image)
+              ).node
+            );
 
             return (
-              <a key={`logo-${name}`} href={link} type="button">
-                <img
-                  src={img.childImageSharp.fixed.src}
+              <a
+                className="col-span-1 flex justify-center"
+                key={`logo-${name}`}
+                href={link}
+                type="button"
+              >
+                <GatsbyImage
+                  className="h-14"
+                  objectFit="contain"
+                  image={img}
                   title={name}
                   alt={`Logo for ${name}`}
-                  style={{ filter: 'grayscale(100%)' }}
                 />
               </a>
             );
