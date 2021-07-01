@@ -59,6 +59,7 @@ export default function TeamSection() {
             image={getImageFromList("jacob.jpg", data)}
             linkedin="https://www.linkedin.com/in/jacobbieker/"
             github="https://github.com/jacobbieker"
+            twitter="https://twitter.com/JacobBieker"
           />
         </div>
       )}
