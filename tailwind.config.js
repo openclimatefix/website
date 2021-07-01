@@ -8,7 +8,22 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'figure figcaption': {
+              textAlign: 'center',
+            },
+            'figure img': {
+              borderRadius: '0.5rem',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            },
+          },
+        },
+      },
+    },
   },
   variants: {
     extend: {},
