@@ -7,32 +7,55 @@ import Layout from '../../components/Layout';
 import PostList from '../../components/PostList';
 import LogoCloud from '../../components/LogoCloud';
 
+import { StaticImage } from 'gatsby-plugin-image';
+
 const NowcastingPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
 
   return (
     <Layout>
       <SEO title="Project: Nowcasting" />
-      <div className="bg-gray-800 pb-32">
-        <header className="py-32">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl text-white border-2 border-indigo-600 text-center font-light">
+      <div className="grid">
+        <StaticImage
+          style={{
+            gridArea: '1/1',
+            maxHeight: 600,
+          }}
+          layout="fullWidth"
+          alt=""
+          src="../../images/cover/clouds.png"
+        />
+        <div
+          className="grid relative place-items-center"
+          style={{
+            gridArea: '1/1',
+          }}
+        >
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 md:pb-44">
+            <h1 className="text-4xl text-white text-center font-light filter drop-shadow-lg hidden">
               Nowcasting
             </h1>
+            <StaticImage
+              placeholder="blurred"
+              objectFit="contain"
+              alt="Nowcasting Logo"
+              className="h-12 sm:h-16"
+              src="../../images/logos/nowcasting_white.png"
+            />
           </div>
-        </header>
+        </div>
       </div>
 
-      <main className="-mt-32">
+      <main className="-mt-20 md:-mt-44">
         <div className="max-w-6xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 border-2 border-indigo-600">
           {/* COVER */}
-          <div className="bg-white rounded-lg shadow">
-            <div className="aspect-w-16 aspect-h-9 rounded-lg border-2 border-indigo-600 overflow-hidden">
+          <div className="bg-white rounded-lg shadow max-w-4xl mx-auto">
+            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/IOp-tj-IJpk?controls=0"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -212,7 +235,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-function Pineapple({ edges }) {
-  return <div>la</div>;
-}
