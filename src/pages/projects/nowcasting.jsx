@@ -47,26 +47,26 @@ const NowcastingPage = ({ data }) => {
       </div>
 
       <main className="-mt-20 md:-mt-44">
-        <div className="max-w-6xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 border-2 border-indigo-600">
+        <div className="max-w-6xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
           {/* COVER */}
           <div className="bg-white rounded-lg shadow max-w-4xl mx-auto">
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/IOp-tj-IJpk?controls=0"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; encrypted-media; gyroscope"
                 allowFullScreen
               ></iframe>
             </div>
           </div>
 
           {/* MAIN CONTENT */}
-          <article className="mt-10 prose mx-auto border-2 border-indigo-600">
-            <p>
-              Forecasting solar photovoltaic (PV) power production is hard: As
-              clouds move over PV panels, the power output moves up and down
-              rapidly. We devised a solution to keep the balance.
-            </p>
+          <article className="mt-10 prose mx-auto">
+              <p className="text-2xl border-l-4 pl-6">
+                Forecasting solar photovoltaic (PV) power production is hard: As
+                clouds move over PV panels, the power output moves up and down
+                rapidly. We devised a solution to keep the balance.
+              </p>
             <h2>Why?</h2>
             <p>
               Solar Photovoltaics (PV) is one of the most significant sources of
@@ -88,8 +88,7 @@ const NowcastingPage = ({ data }) => {
             <figure>
               <img
                 src="https://source.unsplash.com/XGAZzyLzn18/624x384"
-                alt=""
-                className="rounded-lg"
+                alt="Solar panels on a field"
               />
               <figcaption>
                 Photo by{' '}
@@ -177,7 +176,7 @@ const NowcastingPage = ({ data }) => {
             />
             <h2 className="mt-16">Updates</h2>
           </article>
-          <div className="max-w-prose border-2 border-red-600 mx-auto">
+          <div className="max-w-prose mx-auto">
             <PostList posts={edges} />
           </div>
         </div>
