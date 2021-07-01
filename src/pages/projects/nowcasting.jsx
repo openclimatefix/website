@@ -49,8 +49,8 @@ const NowcastingPage = ({ data }) => {
       <main className="-mt-20 md:-mt-44">
         <div className="max-w-6xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
           {/* COVER */}
-          <div className="bg-white rounded-lg shadow max-w-4xl mx-auto">
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+          <div className="bg-white rounded-lg  max-w-4xl mx-auto">
+            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/IOp-tj-IJpk?controls=0"
                 frameBorder="0"
