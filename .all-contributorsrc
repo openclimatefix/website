@@ -146,6 +146,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "melnyczuk",
+      "name": "Howard Melnyczuk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23401306?v=4",
+      "profile": "http://melnycz.uk",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
