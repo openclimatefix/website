@@ -58,6 +58,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/dfulu"><img src="https://avatars0.githubusercontent.com/u/41546094?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Fulton</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=dfulu" title="Code">💻</a> <a href="#ideas-dfulu" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/mantagen"><img src="https://avatars.githubusercontent.com/u/12934669?v=4?s=100" width="100px;" alt=""/><br /><sub><b>MG</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=mantagen" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://melnycz.uk"><img src="https://avatars.githubusercontent.com/u/23401306?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Howard Melnyczuk</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=melnyczuk" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
