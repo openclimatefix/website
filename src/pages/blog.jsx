@@ -57,6 +57,7 @@ export const pageQuery = graphql`
             authorName
             authorImage
             coverImageUnsplashId
+            project
           }
           fields {
             readingTime {
