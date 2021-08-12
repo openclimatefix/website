@@ -33,7 +33,7 @@ export default function TeamSection() {
         }
       `}
       render={(data) => (
-        <div className="grid grid-cols-2 md:grid-cols-4 max-w-5xl">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 max-w-5xl">
           <Person
             name="Jack Kelly"
             image={getImageFromList("jack.png", data)}
@@ -60,6 +60,12 @@ export default function TeamSection() {
             linkedin="https://www.linkedin.com/in/jacobbieker/"
             github="https://github.com/jacobbieker"
             twitter="https://twitter.com/JacobBieker"
+          />
+          <Person
+            name="Peter Dudfield"
+            image={getImageFromList("peter.jpg", data)}
+            linkedin="https://www.linkedin.com/in/peter-dudfield-b379b7a6/"
+            github="https://github.com/peterdudfield"
           />
         </div>
       )}
