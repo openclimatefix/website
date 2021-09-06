@@ -4,7 +4,7 @@ const navigation = {
   links: [
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Careers', href: 'https://apply.workable.com/openclimatefix/' },
+    { name: 'Careers', href: 'https://openclimatefix.homerun.co/' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: 'mailto:info@openclimatefix.org' },
     {
