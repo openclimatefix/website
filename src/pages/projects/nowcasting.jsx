@@ -26,13 +26,13 @@ const NowcastingPage = ({ data }) => {
           src="../../images/cover/clouds.png"
         />
         <div
-          className="grid relative place-items-center"
+          className="relative grid place-items-center"
           style={{
             gridArea: '1/1',
           }}
         >
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 md:pb-44">
-            <h1 className="text-4xl text-white text-center font-light filter drop-shadow-lg hidden">
+          <div className="max-w-6xl px-4 pb-20 mx-auto sm:px-6 lg:px-8 md:pb-44">
+            <h1 className="hidden text-4xl font-light text-center text-white filter drop-shadow-lg">
               Nowcasting
             </h1>
             <StaticImage
@@ -47,10 +47,10 @@ const NowcastingPage = ({ data }) => {
       </div>
 
       <main className="-mt-20 md:-mt-44">
-        <div className="max-w-6xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl px-4 pb-12 mx-auto sm:px-6 lg:px-8">
           {/* COVER */}
-          <div className="bg-white rounded-lg  max-w-4xl mx-auto">
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
+          <div className="max-w-4xl mx-auto bg-white rounded-lg">
+            <div className="overflow-hidden rounded-lg shadow-xl aspect-w-16 aspect-h-9">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/IOp-tj-IJpk?controls=0"
                 frameBorder="0"
@@ -61,9 +61,9 @@ const NowcastingPage = ({ data }) => {
           </div>
 
           {/* TEXT CONTENT */}
-          <div className="max-w-prose mx-auto">
-            <article className="mt-10 prose mx-auto">
-              <p className="text-2xl border-l-4 pl-6">
+          <div className="mx-auto max-w-prose">
+            <article className="mx-auto mt-10 prose">
+              <p className="pl-6 text-2xl border-l-4">
                 Forecasting solar photovoltaic (PV) power production is hard: As
                 clouds move over PV panels, the power output moves up and down
                 rapidly. We devised a solution to keep the balance.
@@ -174,9 +174,14 @@ const NowcastingPage = ({ data }) => {
                   image: 'google_org.png',
                   link: 'https://www.google.org/',
                 },
+                {
+                  name: 'NVIDIA Foundation',
+                  image: 'nvidia.png',
+                  link: 'https://www.nvidia.com/en-us/foundation/',
+                },
               ]}
             />
-            <div className="prose mt-16">
+            <div className="mt-16 prose">
               <h2>Updates</h2>
             </div>
             <PostList posts={edges} />

@@ -12,7 +12,7 @@ const NowcastingPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Project: Forecasting" />
-      <div className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
+      <div className="container px-6 mx-auto mb-16 md:max-w-2xl lg:max-w-2xl xl:max-w-2xl">
         <h1>Forecasting</h1>
         <div className="prose">
           <figure className="mb-4">
@@ -25,7 +25,7 @@ const NowcastingPage = ({ data }) => {
                 allowFullScreen
               />
             </div>
-            <figcaption className="text-xs text-gray-600 text-center mt-1">
+            <figcaption className="mt-1 text-xs text-center text-gray-600">
               Video showing energy production of PV systems in the UK as clouds
               move overhead.
             </figcaption>
@@ -121,6 +121,11 @@ const NowcastingPage = ({ data }) => {
               name: 'Google.org',
               image: 'google_org.png',
               link: 'https://www.google.org/',
+            },
+            {
+              name: 'NVIDIA Foundation',
+              image: 'nvidia.png',
+              link: 'https://www.nvidia.com/en-us/foundation/',
             },
           ]}
         />

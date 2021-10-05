@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-
 export default function LogoCloud({ logos }) {
   const LOGOS = logos || [
     {
@@ -14,6 +13,11 @@ export default function LogoCloud({ logos }) {
       name: 'Google.org',
       image: 'google_org.png',
       link: 'https://www.google.org/',
+    },
+    {
+      name: 'NVIDIA Foundation',
+      image: 'nvidia.png',
+      link: 'https://www.nvidia.com/en-us/foundation/',
     },
     {
       name: 'Open Data Institute',
@@ -69,9 +73,7 @@ export default function LogoCloud({ logos }) {
                   gatsbyImageData(
                     height: 250
                     placeholder: BLURRED
-                    transformOptions: {
-                      grayscale: true
-                    }
+                    transformOptions: { grayscale: true }
                   )
                 }
               }
@@ -80,7 +82,7 @@ export default function LogoCloud({ logos }) {
         }
       `}
       render={(data) => (
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 my-2">
+        <div className="grid grid-cols-2 gap-8 my-2 sm:grid-cols-3 md:grid-cols-4">
           {LOGOS.map(({ name, image, link }) => {
             const img = getImage(
               data.allFile.edges.find(({ node }) =>
@@ -90,7 +92,7 @@ export default function LogoCloud({ logos }) {
 
             return (
               <a
-                className="col-span-1 flex justify-center"
+                className="flex justify-center col-span-1"
                 key={`logo-${name}`}
                 href={link}
                 type="button"
