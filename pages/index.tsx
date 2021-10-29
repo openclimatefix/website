@@ -4,6 +4,7 @@ import Image, { ImageLoaderProps } from "next/image";
 
 import cloudsBackground from "../public/backgrounds/clouds.jpg";
 import ocfLogoWhite from "../public/logos/ocf_logo_white.svg";
+import Footer from "../components/footer";
 
 const cloudflareImageLoader = ({
   src,
@@ -69,7 +70,9 @@ const Home: NextPage = () => {
         <section className="w-screen h-screen p-10 text-white bg-ocf-black-100">
           TODO
         </section>
+        <section className="bg-yellow-400 h-72 w-full">Newsletter</section>
       </main>
+      <Footer />
     </div>
   );
 };
