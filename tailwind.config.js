@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        "ocf-black-100": "#1A1A1A",
+      },
     },
   },
   variants: {

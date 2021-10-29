@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@responsive {
+  .text-shadow {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}
