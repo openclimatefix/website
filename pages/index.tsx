@@ -43,6 +43,7 @@ const Home: NextPage = () => {
           <div className="absolute top-20 container mx-auto h-8 lg:h-10 inset-0 px-6 sm:px-12">
             <div className="relative w-full h-full">
               <Image
+                unoptimized={true}
                 src={ocfLogoWhite}
                 alt="Logo of Open Climate Fix"
                 layout="fill"
