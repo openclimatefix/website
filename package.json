@@ -1,74 +1,23 @@
 {
-  "name": "ocf-website",
+  "name": "website",
+  "version": "0.1.0",
   "private": true,
-  "description": "Source for the website of openclimatefix.org",
-  "version": "1.0.2",
-  "author": "Open Climate Fix <info@openclimatefix.org>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "@headlessui/react": "^1.0.0",
-    "@heroicons/react": "^1.0.1",
-    "@tailwindcss/typography": "^0.4.0",
-    "disqus-react": "^1.0.11",
-    "gatsby": "^3.1.2",
-    "gatsby-plugin-feed": "^3.1.0",
-    "gatsby-plugin-image": "^1.8.0",
-    "gatsby-plugin-manifest": "^3.1.0",
-    "gatsby-plugin-offline": "^4.1.0",
-    "gatsby-plugin-plausible": "^0.0.7",
-    "gatsby-plugin-react-helmet": "^4.1.0",
-    "gatsby-plugin-sharp": "^3.8.0",
-    "gatsby-remark-acronyms": "^1.1.2",
-    "gatsby-remark-autolink-headers": "^3.1.0",
-    "gatsby-remark-reading-time": "^1.1.0",
-    "gatsby-source-filesystem": "^3.8.0",
-    "gatsby-transformer-json": "^3.1.0",
-    "gatsby-transformer-remark": "^3.1.0",
-    "gatsby-transformer-sharp": "^3.8.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0"
+    "next": "12.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.0",
-    "@tailwindcss/forms": "^0.3.2",
-    "autoprefixer": "^10.2.5",
-    "eslint": "^7.22.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-react-app": "^6.0.0",
-    "eslint-plugin-flowtype": "^5.4.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "gatsby-plugin-postcss": "^4.1.0",
-    "gh-pages": "^3.1.0",
-    "postcss": "^8.2.8",
-    "postcss-nesting": "^7.0.1",
-    "prettier": "^2.2.1",
-    "tailwindcss": "^2.0.4"
-  },
-  "keywords": [
-    "gatsby",
-    "open climate fix"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/openclimatefix/openclimatefix.github.io -a",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint": "eslint . --ext .js,.jsx",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.33",
+    "eslint": "7",
+    "eslint-config-next": "12.0.1",
+    "typescript": "4.4.4"
   }
 }

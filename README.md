@@ -1,71 +1,34 @@
-<p align="center">
-  <img alt="Open Climate Fix" src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logo_dark_square%402x.png" width="150" />
-</p>
-<h1 align="center">
-  Open Climate Fix Website
-</h1>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-) [![Open Collective backers and sponsors](https://img.shields.io/opencollective/all/openclimatefix?style=flat-square)](https://opencollective.com/openclimatefix) [![GitHub issues](https://img.shields.io/github/issues/openclimatefix/website?style=flat-square)](https://github.com/openclimatefix/website/issues) [![Deploy to GH Pages](https://img.shields.io/github/workflow/status/openclimatefix/website/Deploy%20to%20GH%20Pages?label=deployment&style=flat-square)](https://github.com/openclimatefix/website/actions?query=workflow%3A%22Deploy+to+GH+Pages%22)
+## Getting Started
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+First, run the development server:
 
-## 🚀 Quick start
-
-1.  **Install.**
-
-```sh
-yarn install
-yarn run develop
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-2.  **Open the source code and start editing!**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The site is now running at `http://localhost:8000`!
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-_Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-Open the `openclimatefix.github.io` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This website is built using Gatsby. Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
+## Learn More
 
-## 💫 Deploy
+To learn more about Next.js, take a look at the following resources:
 
-This page is auto-deployed on GitHub Pages.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## ✨ Contributors
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## Deploy on Vercel
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="http://jack-kelly.com"><img src="https://avatars2.githubusercontent.com/u/460756?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jack Kelly</b></sub></a><br /><a href="#business-JackKelly" title="Business development">💼</a> <a href="https://github.com/openclimatefix/website/commits?author=JackKelly" title="Code">💻</a> <a href="#content-JackKelly" title="Content">🖋</a> <a href="#ideas-JackKelly" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/flowirtz"><img src="https://avatars1.githubusercontent.com/u/6052785?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Flo</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=flowirtz" title="Code">💻</a> <a href="#ideas-flowirtz" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-flowirtz" title="Maintenance">🚧</a> <a href="#projectManagement-flowirtz" title="Project Management">📆</a></td>
-    <td align="center"><a href="http://tanner.me"><img src="https://avatars2.githubusercontent.com/u/227?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Damien Tanner</b></sub></a><br /><a href="#blog-dctanner" title="Blogposts">📝</a></td>
-    <td align="center"><a href="https://github.com/schillerk"><img src="https://avatars1.githubusercontent.com/u/8676510?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kyle Schiller</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=schillerk" title="Code">💻</a> <a href="#design-schillerk" title="Design">🎨</a></td>
-    <td align="center"><a href="http://www.ollicle.com"><img src="https://avatars1.githubusercontent.com/u/63586?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Oliver Boermans</b></sub></a><br /><a href="#content-ollicle" title="Content">🖋</a> <a href="https://github.com/openclimatefix/website/issues?q=author%3Aollicle" title="Bug reports">🐛</a> <a href="#ideas-ollicle" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://www.phillipkwang.com"><img src="https://avatars3.githubusercontent.com/u/11009767?v=4?s=100" width="100px;" alt=""/><br /><sub><b>eambutu</b></sub></a><br /><a href="https://github.com/openclimatefix/website/issues?q=author%3Aeambutu" title="Bug reports">🐛</a> <a href="https://github.com/openclimatefix/website/commits?author=eambutu" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.raais.org/"><img src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/sponsor_raais.png?s=100" width="100px;" alt=""/><br /><sub><b>RAAIS Foundation</b></sub></a><br /><a href="#financial-openclimatefix" title="Financial">💵</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/hansal7014"><img src="https://avatars2.githubusercontent.com/u/28968198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hansal Bachkaniwala</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=hansal7014" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/drwm-base"><img src="https://avatars3.githubusercontent.com/u/50212366?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=drwm-base" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/sukhbeersingh"><img src="https://avatars2.githubusercontent.com/u/44414281?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sukhbeersingh</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=sukhbeersingh" title="Code">💻</a></td>
-    <td align="center"><a href="https://geekayush.github.io/"><img src="https://avatars2.githubusercontent.com/u/22499864?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ayush Srivastava</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=geekayush" title="Code">💻</a></td>
-    <td align="center"><a href="https://grantbourque.com"><img src="https://avatars1.githubusercontent.com/u/616290?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Grant Bourque</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=grantbdev" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/dfulu"><img src="https://avatars0.githubusercontent.com/u/41546094?v=4?s=100" width="100px;" alt=""/><br /><sub><b>James Fulton</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=dfulu" title="Code">💻</a> <a href="#ideas-dfulu" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/mantagen"><img src="https://avatars.githubusercontent.com/u/12934669?v=4?s=100" width="100px;" alt=""/><br /><sub><b>MG</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=mantagen" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://melnycz.uk"><img src="https://avatars.githubusercontent.com/u/23401306?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Howard Melnyczuk</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=melnyczuk" title="Code">💻</a></td>
-  </tr>
-</table>
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

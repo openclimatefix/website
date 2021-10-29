@@ -1,6 +1,0 @@
-.background {
-  background: url('https://raw.githubusercontent.com/openclimatefix/website/master/src/images/clouds_repeat.jpg')
-    repeat;
-
-  @apply absolute left-0 w-full bg-fixed;
-}
