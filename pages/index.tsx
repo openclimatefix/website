@@ -1,9 +1,20 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Image, { ImageLoaderProps } from "next/image";
 
 import cloudsBackground from "../public/backgrounds/clouds.jpg";
 import ocfLogoWhite from "../public/logos/ocf_logo_white.svg";
+
+const cloudflareImageLoader = ({
+  src,
+  width,
+  quality,
+}: ImageLoaderProps): string => {
+  if (!quality) {
+    quality = 75;
+  }
+  return `https://ocf-images.openclimatefix.workers.dev?width=${width}&quality=${quality}&image=https://ocf-website.pages.dev${src}`;
+};
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +30,7 @@ const Home: NextPage = () => {
           <div className="h-full w-full absolute inset-0">
             <div className="relative w-full h-full">
               <Image
+                loader={cloudflareImageLoader}
                 src={cloudsBackground}
                 alt="Background image displaying clouds"
                 layout="fill"
@@ -31,6 +43,7 @@ const Home: NextPage = () => {
           <div className="absolute top-20 container mx-auto h-8 lg:h-10 inset-0 px-6 sm:px-12">
             <div className="relative w-full h-full">
               <Image
+                loader={cloudflareImageLoader}
                 src={ocfLogoWhite}
                 alt="Background image displaying clouds"
                 layout="fill"
