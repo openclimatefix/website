@@ -1,0 +1,6 @@
+{
+  "https://framer.com/m/Project-Card-xnRJ.js@aFyEK26OzzkyvUemSElA": { "resolved": "https://framerusercontent.com/modules/JwNCPovbHeBNmMi32Y81/aFyEK26OzzkyvUemSElA/WUHRbCCfC.js", "integrity": "sha512-UKgZUOLuEBHdCWtIdI2CaWUDQ9b+XahgSC3X5uDnhFd2C9Pp3pxUo1G/+JGChKkMvqvXBvK2c0avMOnwVbgDXg==", "contentType": "text/javascript; charset=UTF-8" },
+  "https://framer.com/m/framer/randomID.js@^2.0.0": { "resolved": "https://framerusercontent.com/modules/9v9kZvfG4dVIvUGXWTUG/0XmuCxJqtgJLC9OHPU64/randomID.js", "integrity": "sha512-I+aLLdwOzklP4OSw18GaKkpPVOXMsJom4XsE1f7sHs6QAIRtiS0+u4KK+06kc4T24On08AaP54d6F3ZS5zhlNA==", "contentType": "text/javascript; charset=UTF-8" },
+  "https://framer.com/m/framer/useConstant.js@^1.0.0": { "resolved": "https://framerusercontent.com/modules/e6iTGMqgmkFJvN0mYhkr/KWXeR1JD2kMVZ95etjSs/useConstant.js", "integrity": "sha512-AWOENGlFPMLr/lWIIT5WyYDo8DWBJGywUpoDdSttgt2m0GZ/vm4xU5hI2eykze45HhprugVxpPjMFusU/FDpaA==", "contentType": "text/javascript; charset=UTF-8" },
+  "version": 1
+}
