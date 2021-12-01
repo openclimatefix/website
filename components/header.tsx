@@ -16,7 +16,7 @@ export default function Header() {
         <>
           <div className="container relative flex justify-between mx-auto p-7 sm:px-0">
             <a
-              href="#"
+              href="/"
               className="block text-base font-bold leading-7 tracking-widest text-white uppercase"
             >
               Open Climate Fix
