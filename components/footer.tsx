@@ -55,16 +55,16 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-4 md:flex md:items-center">
-            <p className="text-2xl font-thin text-center text-white md:text-left">
+            <p className="text-2xl font-thin leading-10 text-center text-white md:text-left">
               We use computers to{" "}
               <span className="inline-block border-b-2 border-yellow-400">
-                fix climate change
+                reduce carbon emissions
               </span>
               .
             </p>
           </div>
         </div>
-        <div className="mt-8 lg:flex lg:items-center lg:justify-between text-ocf-gray-10">
+        <div className="mt-12 lg:flex lg:items-center lg:justify-between text-ocf-gray-10">
           <nav className="grid grid-cols-2 gap-4 text-center md:grid-cols-6 md:order-2">
             {navigation.links.map(({ name, href }) => (
               <a href={href} key={name}>
@@ -73,7 +73,7 @@ export default function Footer() {
             ))}
           </nav>
 
-          <div className="flex justify-center mt-8 space-x-6 lg:mt-0 md:order-3">
+          <div className="flex justify-center mt-12 space-x-6 lg:mt-0 md:order-3">
             {navigation.social.map((item) => (
               <a
                 key={item.name}
@@ -86,7 +86,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <p className="mt-8 text-base text-center lg:mt-0 md:order-1">
+          <p className="mt-12 text-base text-center lg:mt-0 md:order-1">
             &copy; 2021 Open Climate Fix
           </p>
         </div>
