@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 
 import Newsletter from "../components/newsletter";
 import Image from "../components/image";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -49,12 +50,11 @@ const Home: NextPage = () => {
                 Using Computers to
                 <br /> Reduce Carbon Emissions
               </h1>
-              <a
-                href="/projects"
-                className="px-6 py-3 text-base font-semibold bg-yellow-400 sm:text-lg"
-              >
-                View Projects
-              </a>
+              <Link href="/projects">
+                <a className="px-6 py-3 text-base font-semibold bg-yellow-400 sm:text-lg">
+                  View Projects
+                </a>
+              </Link>
             </div>
           </div>
         </section>

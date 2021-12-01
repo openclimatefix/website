@@ -4,6 +4,7 @@ import Footer from "../../components/footer";
 import Header from "../../components/header";
 import Newsletter from "../../components/newsletter";
 import Image from "../../components/image";
+import Link from "next/link";
 
 import projectsBackground from "../../public/backgrounds/roadmap.jpg";
 import nowcastingBackground from "../../public/backgrounds/nowcasting.jpg";
@@ -27,12 +28,11 @@ const ProjectTeaser = ({
         <div className="">
           <h3 className="mb-4 text-3xl">{name}</h3>
           <p>{description}</p>
-          <a
-            className="inline-block px-8 py-5 my-8 text-white rounded-md sm:mb-0 bg-ocf-black-100"
-            href={link}
-          >
-            Learn More
-          </a>
+          <Link href={link}>
+            <a className="inline-block px-8 py-5 my-8 text-white rounded-md sm:mb-0 bg-ocf-black-100">
+              Learn More
+            </a>
+          </Link>
         </div>
       </div>
       <div className="relative hidden max-w-md mr-8 h-80 sm:block">

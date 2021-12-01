@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Popover, Transition } from "@headlessui/react";
+import Link from "next/link";
 
 export default function Header() {
   const navigation = [
@@ -15,12 +16,11 @@ export default function Header() {
       {({ open }) => (
         <>
           <div className="container relative flex justify-between mx-auto p-7 sm:px-0">
-            <a
-              href="/"
-              className="block text-base font-bold leading-7 tracking-widest text-white uppercase"
-            >
-              Open Climate Fix
-            </a>
+            <Link href="/">
+              <a className="block text-base font-bold leading-7 tracking-widest text-white uppercase">
+                Open Climate Fix
+              </a>
+            </Link>
             <Popover.Button className="sm:hidden">
               {open ? (
                 <XIcon className="inline-block text-white w-7 h-7" />
