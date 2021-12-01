@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         "ocf-black-100": "#1A1A1A",
+        "ocf-gray-10": "#F7F7F7",
       },
     },
   },
