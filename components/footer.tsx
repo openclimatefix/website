@@ -45,27 +45,27 @@ export default function Footer() {
       <h2 id="footerHeading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 md:py-16 md:px-8">
+      <div className="max-w-6xl px-4 py-12 mx-auto sm:px-6 md:py-16 md:px-8">
         <div className="md:grid md:grid-cols-5 md:gap-16">
           <div
-            className="md:mt-0 mx-auto md:mx-0 py-10"
+            className="py-10 mx-auto md:mt-0 md:mx-0"
             style={{ maxWidth: "10rem" }}
           >
             <OCFIcon fill="white" />
           </div>
 
           <div className="md:col-span-4 md:flex md:items-center">
-            <p className="text-2xl text-white font-thin text-center md:text-left">
+            <p className="text-2xl font-thin text-center text-white md:text-left">
               We use computers to{" "}
-              <span className="inline-block border-yellow-400 border-b-2">
+              <span className="inline-block border-b-2 border-yellow-400">
                 fix climate change
               </span>
               .
             </p>
           </div>
         </div>
-        <div className="mt-8 lg:flex lg:items-center lg:justify-between text-gray-400">
-          <nav className="grid grid-cols-2 md:grid-cols-6 gap-4 text-center md:order-2">
+        <div className="mt-8 lg:flex lg:items-center lg:justify-between text-ocf-gray-10">
+          <nav className="grid grid-cols-2 gap-4 text-center md:grid-cols-6 md:order-2">
             {navigation.links.map(({ name, href }) => (
               <a href={href} key={name}>
                 {name}
@@ -73,7 +73,7 @@ export default function Footer() {
             ))}
           </nav>
 
-          <div className="mt-8 lg:mt-0 justify-center flex space-x-6 md:order-3">
+          <div className="flex justify-center mt-8 space-x-6 lg:mt-0 md:order-3">
             {navigation.social.map((item) => (
               <a
                 key={item.name}
@@ -81,12 +81,12 @@ export default function Footer() {
                 className="text-yellow-400 hover:text-yellow-300"
               >
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
+                <item.icon className="w-6 h-6" aria-hidden="true" />
               </a>
             ))}
           </div>
 
-          <p className="mt-8 text-center text-base lg:mt-0 md:order-1">
+          <p className="mt-8 text-base text-center lg:mt-0 md:order-1">
             &copy; 2021 Open Climate Fix
           </p>
         </div>
