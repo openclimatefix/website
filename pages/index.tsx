@@ -1,23 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image, { ImageLoaderProps } from "next/image";
 
 import cloudsBackground from "../public/backgrounds/clouds.jpg";
 import ocfLogoWhite from "../public/logos/ocf_logo_white.svg";
 import Footer from "../components/footer";
 
 import Newsletter from "../components/newsletter";
-
-const cloudflareImageLoader = ({
-  src,
-  width,
-  quality,
-}: ImageLoaderProps): string => {
-  if (!quality) {
-    quality = 75;
-  }
-  return `https://ocf-images.openclimatefix.workers.dev?width=${width}&quality=${quality}&image=https://ocf-website.pages.dev${src}`;
-};
+import Image from "../components/image";
 
 const Home: NextPage = () => {
   return (
@@ -30,10 +19,9 @@ const Home: NextPage = () => {
 
       <main>
         <section className="w-screen h-screen">
-          <div className="h-full w-full absolute inset-0">
+          <div className="absolute inset-0 w-full h-full">
             <div className="relative w-full h-full">
               <Image
-                loader={cloudflareImageLoader}
                 src={cloudsBackground}
                 alt="Background image displaying clouds"
                 layout="fill"
@@ -43,7 +31,7 @@ const Home: NextPage = () => {
             </div>
             <div className="absolute inset-0 bg-blue-100 mix-blend-multiply" />
           </div>
-          <div className="absolute top-20 container mx-auto h-8 lg:h-10 inset-0 px-6 sm:px-12">
+          <div className="container absolute inset-0 h-8 px-6 mx-auto top-20 lg:h-10 sm:px-12">
             <div className="relative w-full h-full">
               <Image
                 unoptimized={true}
@@ -55,14 +43,15 @@ const Home: NextPage = () => {
               />
             </div>
           </div>
-          <div className="flex relative h-full container mx-auto px-6 sm:px-12 ">
+          <div className="container relative flex h-full px-6 mx-auto sm:px-12 ">
             <div className="my-auto">
-              <h1 className="text-3xl sm:text-5xl font-semibold lg:text-7xl lg:font-bold text-white mb-10 text-shadow leading-tight sm:leading-tight lg:leading-tight">
-                Using Computers <br /> to Fix Climate Change
+              <h1 className="mb-10 text-3xl font-semibold leading-tight text-white sm:text-5xl lg:text-7xl lg:font-bold text-shadow sm:leading-tight lg:leading-tight">
+                Using Computers to
+                <br /> Reduce Carbon Emissions
               </h1>
               <a
-                href="#"
-                className="bg-yellow-400 px-6 py-3 text-base sm:text-lg font-semibold"
+                href="/projects"
+                className="px-6 py-3 text-base font-semibold bg-yellow-400 sm:text-lg"
               >
                 View Projects
               </a>
