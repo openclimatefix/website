@@ -1,5 +1,5 @@
 import Image from "./image";
-import Header from "./header";
+import Navigation from "./navigation";
 
 interface IPageHeader {
   bgImage: StaticImageData;
@@ -18,7 +18,7 @@ const PageHeader = ({
 }: IPageHeader) => {
   return (
     <>
-      <Header />
+      <Navigation />
       <header>
         <header className="relative" style={{ height: "32.25rem" }}>
           <Image

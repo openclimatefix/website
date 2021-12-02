@@ -3,7 +3,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 
-export default function Header() {
+export default function Navigation() {
   const navigation = [
     { name: "About", href: "#" },
     { name: "Projects", href: "/projects" },
