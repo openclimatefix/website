@@ -78,7 +78,7 @@ const Projects: NextPage = () => {
         <ProjectTeaser
           name="Solar Panel Mapping"
           description="To accurately forecast solar power generation, we need to know where all the PV panels are. That is still largely unknown today in the UK."
-          link="/projects/mapping"
+          link="/projects/pv-mapping"
           image={mappingBackground}
         />
         <ProjectTeaserSpacer />

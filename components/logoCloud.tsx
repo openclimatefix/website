@@ -9,6 +9,7 @@ interface IPartnerLogo {
 import nvidiaLogo from "../public/partners/nvidia.png";
 import googleLogo from "../public/partners/google.png";
 import esaLogo from "../public/partners/esa.png";
+import turingLogo from "../public/partners/turing.png";
 
 export const PARTNER_LOGOS: {
   [name: string]: IPartnerLogo;
@@ -27,6 +28,11 @@ export const PARTNER_LOGOS: {
     name: "ESA Business Applications",
     link: "https://business.esa.int/",
     image: esaLogo,
+  },
+  turing: {
+    name: "The Alan Turing Institute",
+    image: turingLogo,
+    link: "https://www.turing.ac.uk/",
   },
 };
 
@@ -68,11 +74,6 @@ export default LogoCloud;
 //   name: "Open Data Institute",
 //   image: "odi.png",
 //   link: "https://theodi.org/",
-// },
-// {
-//   name: "The Alan Turing Institute",
-//   image: "turing.png",
-//   link: "https://www.turing.ac.uk/",
 // },
 // {
 //   name: "UCL",
