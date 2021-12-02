@@ -22,12 +22,12 @@ const OpenEnergyDataPage: NextPage = () => {
           <h2>Why?</h2>
           <p>
             We are facing the huge challenge of decarbonizing our electricity
-            grid. The good news is that we're making amazing progress installing
-            renewable generation and batteries and flexing demand. But these
-            millions of diverse, distributed systems must work together by
-            communicating in the same language. The bad news is that today,
-            these systems speak wildly different languages, and so it's very
-            hard for these systems to work together.
+            grid. The good news is that we are making amazing progress
+            installing renewable generation and batteries and flexing demand.
+            But these millions of diverse, distributed systems must work
+            together by communicating in the same language. The bad news is that
+            today, these systems speak wildly different languages, and so it is
+            very hard for these systems to work together.
           </p>
           <p>
             Sharing data in the energy system will reduce costs, lower the
@@ -73,7 +73,7 @@ const OpenEnergyDataPage: NextPage = () => {
             are already very busy doing a world-class job of keeping the lights
             on. So any new standard must be as simple to implement as possible.
             This is a great opportunity to remove the complexity that exists
-            only for historical reasons. What's really needed today? How can we
+            only for historical reasons. What is really needed today? How can we
             make these standards as easy-to-use as possible, whilst
             significantly improving the system?
           </p>

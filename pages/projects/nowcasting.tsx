@@ -83,13 +83,13 @@ const NowcastingPage: NextPage = () => {
 
           <h2>What?</h2>
           <p>
-            Nowcasting is a bit of an odd term. It means "forecasting for the
-            next few hours". In general, nowcasting doesn't use the hugely
-            complex and computationally-expensive numerical weather models that
-            run on supercomputers and constitute the bread-and-butter for most
-            forecasting agencies. Instead, nowcasting usually uses statistical
-            or machine learning techniques to take recent observations and roll
-            them forwards.
+            Nowcasting is a bit of an odd term. It means &ldquo;forecasting for
+            the next few hours&rdquo;. In general, nowcasting does not use the
+            hugely complex and computationally-expensive numerical weather
+            models that run on supercomputers and constitute the
+            bread-and-butter for most forecasting agencies. Instead, nowcasting
+            usually uses statistical or machine learning techniques to take
+            recent observations and roll them forwards.
           </p>
 
           <h2>How?</h2>
@@ -111,8 +111,8 @@ const NowcastingPage: NextPage = () => {
             contributors from the open source community to accelerate progress.
           </p>
           <p>
-            As quickly as possible, we'd like to get early-stage prototype PV
-            forecasts used displayed in the National Grid control room, to
+            As quickly as possible, we would like to get early-stage prototype
+            PV forecasts displayed in the National Grid control room, to
             validate our model’s effectiveness and so we can start measuring the
             impact on emissions and cost. Beyond that we will release a
             nowcasting product for general market consumption.
