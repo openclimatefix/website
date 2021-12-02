@@ -10,6 +10,8 @@ import nvidiaLogo from "../public/partners/nvidia.png";
 import googleLogo from "../public/partners/google.png";
 import esaLogo from "../public/partners/esa.png";
 import turingLogo from "../public/partners/turing.png";
+import odiLogo from "../public/partners/odi.png";
+import icebreakerLogo from "../public/partners/icebreaker.png";
 
 export const PARTNER_LOGOS: {
   [name: string]: IPartnerLogo;
@@ -33,6 +35,16 @@ export const PARTNER_LOGOS: {
     name: "The Alan Turing Institute",
     image: turingLogo,
     link: "https://www.turing.ac.uk/",
+  },
+  odi: {
+    name: "Open Data Institute",
+    image: odiLogo,
+    link: "https://theodi.org/",
+  },
+  icebreaker: {
+    name: "Icebreaker One",
+    image: icebreakerLogo,
+    link: "https://icebreakerone.org/",
   },
 };
 
@@ -66,16 +78,6 @@ export default LogoCloud;
 
 // const LOGOS = [
 // {
-//   name: "ESA Business Applications",
-//   image: "esa_space_solutions.png",
-//   link: "https://business.esa.int/",
-// },
-// {
-//   name: "Open Data Institute",
-//   image: "odi.png",
-//   link: "https://theodi.org/",
-// },
-// {
 //   name: "UCL",
 //   image: "UCL.jpg",
 //   link: "https://www.ucl.ac.uk/",
@@ -94,11 +96,6 @@ export default LogoCloud;
 //   name: "HAO",
 //   image: "hao_black.png",
 //   link: "https://haocreative.ca/",
-// },
-// {
-//   name: "Icebreaker One",
-//   image: "icebreakerOneURL.png",
-//   link: "https://icebreakerone.org/",
 // },
 // {
 //   name: "RAAIS Foundation",

@@ -85,7 +85,7 @@ const Projects: NextPage = () => {
         <ProjectTeaser
           name="Open Energy Data"
           description="Data is needed for everything: To balance the grid, to decide where to install the next wind farm, to train machine learning models and more."
-          link="/projects/open-energy"
+          link="/projects/open-energy-data"
           image={openEnergyBackground}
         />
       </section>
