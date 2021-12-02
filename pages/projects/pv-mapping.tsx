@@ -8,7 +8,7 @@ import Footer from "../../components/footer";
 
 import mappingBackground from "../../public/backgrounds/mapping.jpg";
 
-const NowcastingPage: NextPage = () => {
+const PVMappingPage: NextPage = () => {
   return (
     <div className="bg-white">
       <PageHeader
@@ -73,4 +73,4 @@ const NowcastingPage: NextPage = () => {
   );
 };
 
-export default NowcastingPage;
+export default PVMappingPage;
