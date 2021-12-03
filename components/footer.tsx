@@ -6,8 +6,8 @@ import YoutubeIcon from "./icons/youtube";
 
 const navigation = {
   links: [
-    { name: "About", href: "#" },
-    { name: "Projects", href: "#" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
     { name: "Careers", href: "https://openclimatefix.homerun.co/" },
     { name: "Blog", href: "#" },
     { name: "Contact", href: "mailto:info@openclimatefix.org" },
