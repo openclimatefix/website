@@ -14,7 +14,7 @@ const Contributors = ({}: IContributors) => {
   return (
     <ul className="grid grid-cols-4 lg:grid-cols-7">
       {CONTRIBUTORS.map(({ login, name, avatar_url }) => (
-        <li className="aspect-w-1 aspect-h-1">
+        <li className="aspect-w-1 aspect-h-1" key={login}>
           <img
             src={
               avatar_url ||
