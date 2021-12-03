@@ -6,13 +6,13 @@ import Newsletter from "../components/newsletter";
 import Image from "../components/image";
 import PageHeader from "../components/pageHeader";
 
-import projectsBackground from "../public/backgrounds/roadmap.jpg";
+import aboutBackground from "../public/backgrounds/clouds.jpg";
 import jackImage from "../public/people/jack.png";
 import danImage from "../public/people/dan.jpg";
 import floImage from "../public/people/flo.jpg";
 import jacobImage from "../public/people/jacob.jpg";
 import peterImage from "../public/people/peter.jpg";
-import kasiaImage from "../public/people/peter.jpg";
+import Contributors from "../components/contributors";
 
 interface IPerson {
   name: string;
@@ -63,24 +63,24 @@ const AboutUsPage: NextPage = () => {
       linkedinUrl: "https://www.linkedin.com/in/peter-dudfield-b379b7a6/",
       githubUrl: "https://github.com/peterdudfield",
     },
-    {
-      name: "Kasia Krasucka",
-      role: "Program Manager",
-      image: kasiaImage,
-      linkedinUrl: "https://www.linkedin.com/in/krasucka/",
-    },
+    // {
+    //   name: "Kasia Krasucka",
+    //   role: "Program Manager",
+    //   image: kasiaImage,
+    //   linkedinUrl: "https://www.linkedin.com/in/krasucka/",
+    // },
   ];
 
   return (
     <div className="bg-white">
       <PageHeader
-        bgImage={projectsBackground}
+        bgImage={aboutBackground}
         title="About Us"
         teaserText="Open Climate Fix is a non-profit product lab, totally focused on reducing greenhouse gas emissions as rapidly as possible."
       />
 
       <section className="container px-4 mx-auto sm:p-0 mb-36">
-        <article className="mx-auto mt-10 prose mb-36">
+        <article className="mx-auto mt-10 mb-20 prose">
           <p>
             Every part of the organisation is designed to maximise climate
             impact, such as our open and collaborative approach, our rapid
@@ -116,7 +116,7 @@ const AboutUsPage: NextPage = () => {
         </article>
         <ul
           role="list"
-          className="max-w-2xl mx-auto space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8 "
+          className="grid max-w-2xl grid-cols-2 mx-auto space-y-0 gap-x-6 gap-y-12 lg:grid-cols-3 lg:gap-x-8"
         >
           {people.map(
             ({ name, role, image, twitterUrl, linkedinUrl, githubUrl }) => (
@@ -205,6 +205,17 @@ const AboutUsPage: NextPage = () => {
             )
           )}
         </ul>
+        <div className="max-w-2xl mx-auto mt-32">
+          <Contributors />
+          <article className="mt-12 prose text-center">
+            <h3>Contribute</h3>
+            <p>
+              By using an open-source approach, we can draw upon a much larger
+              pool of expertise than any individual company, so combining
+              existing islands of knowledge and accelerating progress.
+            </p>
+          </article>
+        </div>
       </section>
       <Newsletter />
       <Footer />
