@@ -7,7 +7,7 @@ export default function Navigation() {
   const navigation = [
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
-    { name: "Blog", href: "#" },
+    { name: "Blog", href: "/blog" },
   ];
 
   return (
