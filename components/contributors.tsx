@@ -21,7 +21,7 @@ const Contributors = ({}: IContributors) => {
               `https://github.com/identicons/${login.replace(/[_-]/g, "")}.png`
             }
             alt={`Profile picture of contributor ${name}`}
-            className="filter grayscale"
+            className="grayscale"
           />
         </li>
       ))}

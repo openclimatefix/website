@@ -20,7 +20,7 @@ const PageHeader = ({
     <>
       <Navigation />
       <header>
-        <header className="relative" style={{ height: "32.25rem" }}>
+        <header className="relative h-[32.25rem]">
           <Image
             src={bgImage}
             alt="Background image"

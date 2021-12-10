@@ -27,10 +27,7 @@ export default function Navigation() {
                 <MenuIcon className="inline-block text-white w-7 h-7" />
               )}
             </Popover.Button>
-            <nav
-              className="hidden sm:inline-block text-ocf-gray-10"
-              style={{ top: "1.625rem" }}
-            >
+            <nav className="hidden sm:inline-block text-ocf-gray-10">
               {navigation.map((link) => (
                 <a key={link.name} href={link.href} className="ml-8 uppercase">
                   {link.name}
@@ -42,11 +39,11 @@ export default function Navigation() {
           <Transition
             as={Fragment}
             enter="transition duration-100 ease-out"
-            enterFrom="transform scale-95 opacity-0"
-            enterTo="transform scale-100 opacity-100"
+            enterFrom="scale-95 opacity-0"
+            enterTo="scale-100 opacity-100"
             leave="transition duration-75 ease-out"
-            leaveFrom="transform scale-100 opacity-100"
-            leaveTo="transform scale-95 opacity-0"
+            leaveFrom="scale-100 opacity-100"
+            leaveTo="scale-95 opacity-0"
           >
             <Popover.Panel
               className="relative text-3xl p-7 font-extralight"

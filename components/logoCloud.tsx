@@ -60,7 +60,7 @@ const LogoCloud = ({ logos }: { logos: IPartnerLogo[] }) => {
             type="button"
           >
             <Image
-              className="filter grayscale"
+              className="grayscale"
               layout="fill"
               objectFit="contain"
               src={image}

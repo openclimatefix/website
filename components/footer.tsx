@@ -47,10 +47,7 @@ export default function Footer() {
       </h2>
       <div className="max-w-6xl px-4 py-12 mx-auto sm:px-6 md:py-16 md:px-8">
         <div className="md:grid md:grid-cols-5 md:gap-16">
-          <div
-            className="py-10 mx-auto md:mt-0 md:mx-0"
-            style={{ maxWidth: "10rem" }}
-          >
+          <div className="py-10 mx-auto md:mt-0 md:mx-0 max-w-[10rem]">
             <OCFIcon fill="white" />
           </div>
 
