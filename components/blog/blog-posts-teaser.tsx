@@ -24,7 +24,7 @@ const BlogPostsTeaser = ({
   return (
     <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-6xl">
       {allPosts.map((post) => (
-        <Link href={`/blog/${post.slug}`}>
+        <Link href={`/blog/${post.slug}`} key={post.slug}>
           <a
             key={post.title}
             className="flex flex-col overflow-hidden rounded-lg shadow-lg"
