@@ -1,7 +1,7 @@
 import Image from "./image";
 import Navigation from "./navigation";
 
-interface IPageHeader {
+export interface IPageHeader {
   bgImage: StaticImageData;
   title: string;
   titleImage?: StaticImageData;
@@ -41,7 +41,7 @@ const PageHeader = ({
                 />
               </div>
             ) : (
-              <h2 className="relative z-20 text-3xl font-light text-center text-white md:text-6xl">
+              <h2 className="relative z-20 text-3xl font-light text-center text-white md:text-6xl text-shadow">
                 {title}
               </h2>
             )}
