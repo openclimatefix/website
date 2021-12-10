@@ -1,4 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next";
+import Head from "next/head";
 import React from "react";
 import BlogPostsTeaser from "../../components/blog/blog-posts-teaser";
 import Footer from "../../components/footer";
@@ -11,6 +12,10 @@ const BlogIndexPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="bg-white">
+      <Head>
+        <title>Open News | Open Climate Fix</title>
+        {/* <meta property="og:title" content="My page title" key="title" /> */}
+      </Head>
       <Navigation />
       <section className="container px-4 mx-auto sm:p-0 mb-36">
         <h2 className="relative z-20 text-5xl font-light text-center mt-14 text-ocf-black-100 mb-28">

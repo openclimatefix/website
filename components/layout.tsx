@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import Footer from "./footer";
 import Newsletter from "./newsletter";
@@ -15,6 +16,10 @@ const Layout = ({
 }: ILayout) => {
   return (
     <div className="bg-white">
+      <Head>
+        <title>{pageHeaderProps.title} | Open Climate Fix</title>
+        {/* <meta property="og:title" content="My page title" key="title" /> */}
+      </Head>
       <PageHeader {...pageHeaderProps} />
 
       <section className="container px-4 mx-auto sm:p-0 mb-36">

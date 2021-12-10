@@ -9,6 +9,7 @@ import React from "react";
 import Newsletter from "../../components/newsletter";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
+import Head from "next/head";
 
 const BlogPostPage = ({
   post,
@@ -20,6 +21,10 @@ const BlogPostPage = ({
 
   return (
     <div className="bg-white">
+      <Head>
+        <title>Blog: {post.title} | Open Climate Fix</title>
+        {/* <meta property="og:title" content="My page title" key="title" /> */}
+      </Head>
       <Navigation />
       <section className="container px-4 mx-auto sm:p-0 mb-36">
         <article className="max-w-[65ch] mx-auto mt-16 mb-36">
