@@ -1,13 +1,13 @@
 ---
-title: 'Science fiction vision of the future energy system'
-path: '/blog/2020-07-07-science-fiction-vision-of-future-energy-system.md'
-date: '2020-07-07'
-authorName: 'Jack Kelly'
-authorTwitter: 'jack_kelly'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
-coverImageUnsplashId: '71SHXwBLp5w'
-coverImagePhotographerName: 'Leyy'
-project: 'open-energy'
+title: "Science fiction vision of the future energy system"
+date: "2020-07-07"
+author:
+  name: "Jack Kelly"
+  twitter: "jack_kelly"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
+coverImageUnsplashId: "71SHXwBLp5w"
+coverImagePhotographerName: "Leyy"
+project: "open-energy"
 ---
 
 To give a feel for why we're so excited about sharing energy data, let me tell a science fiction story to illustrate what we hope a 'web of linked energy data' could enable….

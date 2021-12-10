@@ -1,12 +1,12 @@
 ---
-title: 'Starting a non-profit research lab to help fix climate change ASAP'
-path: '/blog/2019-01-07-non-profit'
-date: '2019-01-07'
-authorName: 'Jack Kelly'
-authorTwitter: 'jack_kelly'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
-coverImageUnsplashId: 'LrPKL7jOldI'
-coverImagePhotographerName: 'Sushobhan Badhai'
+title: "Starting a non-profit research lab to help fix climate change ASAP"
+date: "2019-01-07"
+author:
+  name: "Jack Kelly"
+  twitter: "jack_kelly"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
+coverImageUnsplashId: "LrPKL7jOldI"
+coverImagePhotographerName: "Sushobhan Badhai"
 ---
 
 I left Google DeepMind. This is a particularly odd decision because I love the team I worked with at DeepMind. Since joining DeepMind, I've been constantly amazed by this team's compassion, focus, intelligence, optimism, and desire for real-world impact. I've learnt a huge amount from DeepMind, and I will miss this team dearly. Leaving this awesome team is enormously difficult.

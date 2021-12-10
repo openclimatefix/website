@@ -1,12 +1,12 @@
 ---
-title: 'How to get involved with Open Climate Fix'
-path: '/blog/2019-03-06-how-to-get-involved'
-date: '2019-03-06'
-authorName: 'Jack Kelly'
-authorTwitter: 'jack_kelly'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
-coverImageUnsplashId: 'x-ghf9LjrVg'
-coverImagePhotographerName: 'Scott Blake'
+title: "How to get involved with Open Climate Fix"
+date: "2019-03-06"
+author:
+  name: "Jack Kelly"
+  twitter: "jack_kelly"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
+coverImageUnsplashId: "x-ghf9LjrVg"
+coverImagePhotographerName: "Scott Blake"
 ---
 
 I'm building a non-profit called [Open Climate Fix](http://openclimatefix.org), entirely focused on using open-science to help fix climate change ASAP. We'd love help :) This blog post lists a few concrete things we need help with.

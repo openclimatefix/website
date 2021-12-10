@@ -1,13 +1,13 @@
 ---
-title: 'Funding from the Open Data Institute to further explore Open Energy'
-path: '/blog/2020-07-28-funding-from-odi'
-date: '2020-07-28'
-authorName: 'Flo Wirtz'
-authorTwitter: 'flowirtz'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/flo.jpg'
-coverImageUnsplashId: 'AT5vuPoi8vc'
-coverImagePhotographerName: 'Charles Deluvio'
-project: 'open-energy'
+title: "Funding from the Open Data Institute to further explore Open Energy"
+date: "2020-07-28"
+author:
+  name: "Flo Wirtz"
+  twitter: "flowirtz"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/flo.jpg"
+coverImageUnsplashId: "AT5vuPoi8vc"
+coverImagePhotographerName: "Charles Deluvio"
+project: "open-energy"
 ---
 
 Last week, the Open Data Institute, a research institute founded by Sir Tim Berners-Lee, [announced funding for seven UK initiatives and projects](https://theodi.org/article/new-funding-for-uk-projects-working-on-sharing-data-that-leads-to-better-decisions-for-climate-change-energy-and-health/) as part of their Innovate UK funded R&D programme. Open Climate Fix is one of the seven winners of the fund and will be joining the programme until March 2021. The Open Data Institute works with companies and governments to build an open, trustworthy data ecosystem, where people can make better decisions using data. We will be using the funding, support and mentorship provided by experts at the Open Data Institute to further develop our work on opening up energy data.

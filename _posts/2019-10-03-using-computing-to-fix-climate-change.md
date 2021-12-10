@@ -1,12 +1,12 @@
 ---
-path: '/blog/2019-10-03-using-computing-to-fix-climate-change'
-date: '2019-10-03'
-title: 'Using computing to fix climate change'
-authorName: 'Jack Kelly'
-authorTwitter: 'jack_kelly'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
-coverImageUnsplashId: '1SAnrIxw5OY'
-coverImagePhotographerName: 'Kari Shea'
+date: "2019-10-03"
+title: "Using computing to fix climate change"
+author:
+  name: "Jack Kelly"
+  twitter: "jack_kelly"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
+coverImageUnsplashId: "1SAnrIxw5OY"
+coverImagePhotographerName: "Kari Shea"
 ---
 
 If you'd like to use computer science to help mitigate climate change, then check out these resources:

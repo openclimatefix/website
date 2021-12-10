@@ -1,13 +1,13 @@
 ---
-title: 'Linked Data for the Energy System'
-path: '/blog/2020-08-18-linked-data-energy-sys'
-date: '2020-08-18'
-authorName: 'Jack Kelly'
-authorTwitter: 'jack_kelly'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
-coverImageUnsplashId: 'ZiQkhI7417A'
-coverImagePhotographerName: 'Alina Grubnyak'
-project: 'open-energy'
+title: "Linked Data for the Energy System"
+date: "2020-08-18"
+author:
+  name: "Jack Kelly"
+  twitter: "jack_kelly"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
+coverImageUnsplashId: "ZiQkhI7417A"
+coverImagePhotographerName: "Alina Grubnyak"
+project: "open-energy"
 ---
 
 Say you want to build an innovative new information service for the energy system. Maybe that’s an interactive map of energy assets; or a resource assessment tool that automatically determines the cheapest place to install new distributed energy resources (DERs); or a new energy forecasting service; or a digital twin of the entire energy system; or a new demand side flexibility service; or something no one has even thought of yet...

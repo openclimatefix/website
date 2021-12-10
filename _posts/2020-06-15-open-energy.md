@@ -1,13 +1,13 @@
 ---
-title: 'Open Energy'
-path: '/blog/2020-06-15-open-energy'
-date: '2020-06-15'
-authorName: 'Jack Kelly'
-authorTwitter: 'jack_kelly'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png'
-coverImageUnsplashId: 'ahi73ZN5P0Y'
-coverImagePhotographerName: 'Federico Beccari'
-project: 'open-energy'
+title: "Open Energy"
+date: "2020-06-15"
+author:
+  name: "Jack Kelly"
+  twitter: "jack_kelly"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jack.png"
+coverImageUnsplashId: "ahi73ZN5P0Y"
+coverImagePhotographerName: "Federico Beccari"
+project: "open-energy"
 ---
 
 Back in the 1980s, computers communicated over a hodge-podge mix of clunky, complex protocols. Building new services spanning more than one machine (or just maintaining existing services) was painful, expensive and slow.

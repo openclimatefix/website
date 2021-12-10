@@ -1,13 +1,13 @@
 ---
-title: 'Getting Support and Funding from the Google.org Impact Challenge on Climate'
-path: '/blog/2021-04-13-googleorg-support'
-date: '2021-04-13'
-authorName: 'Flo Wirtz'
-authorTwitter: 'flowirtz'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/flo.jpg'
-coverImageUnsplashId: 'XGAZzyLzn18'
-coverImagePhotographerName: 'American Public Power Association'
-project: 'nowcasting'
+title: "Getting Support and Funding from the Google.org Impact Challenge on Climate"
+date: "2021-04-13"
+author:
+  name: "Flo Wirtz"
+  twitter: "flowirtz"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/flo.jpg"
+coverImageUnsplashId: "XGAZzyLzn18"
+coverImagePhotographerName: "American Public Power Association"
+project: "nowcasting"
 ---
 
 This morning Google.org, the philanthropic arm of Google, [announced the successful applicants to the Google.org Impact Challenge on Climate](https://www.blog.google/outreach-initiatives/sustainability/these-11-organizations-are-building-greener-europe/). The challenge commits €10M to fund “bold ideas that aim to use technology to accelerate Europe’s progress toward a greener, more resilient future”. Our solar electricity Nowcasting project is one of those ideas.

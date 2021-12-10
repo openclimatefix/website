@@ -1,13 +1,13 @@
 ---
-title: 'How Do We Get to the Grid of the Future?'
-path: '/blog/2020-07-22-getting-to-the-grid-of-the-future'
-date: '2020-07-22'
-authorName: 'Dan Travers'
-authorTwitter: 'danieltravers'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg'
-coverImageUnsplashId: 'vv-oEGlN-4E'
-coverImagePhotographerName: 'Jaromír Kavan'
-project: 'open-energy'
+title: "How Do We Get to the Grid of the Future?"
+date: "2020-07-22"
+author:
+  name: "Dan Travers"
+  twitter: "danieltravers"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg"
+coverImageUnsplashId: "vv-oEGlN-4E"
+coverImagePhotographerName: "Jaromír Kavan"
+project: "open-energy"
 ---
 
 How do you get all of those distributed energy assets talking to each other to enable the smart use of power around the grid, given the electricity grid is sometimes described as the most complex machine humans have ever built?

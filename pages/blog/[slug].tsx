@@ -1,19 +1,14 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
-import {
-  getPostBySlug,
-  getAllPosts,
-  PartialBlogPostWithSlugAndDate,
-} from "../../lib/blog";
+import { getPostBySlug, getAllPosts, BlogPost } from "../../lib/blog";
 import ReactMarkdown from "react-markdown";
 import { ParsedUrlQuery } from "querystring";
 import React from "react";
 
-import mappingBackground from "../../public/backgrounds/mapping.jpg";
-import PageHeader from "../../components/pageHeader";
 import Newsletter from "../../components/newsletter";
 import Footer from "../../components/footer";
+import Navigation from "../../components/navigation";
 
 const BlogPostPage = ({
   post,
@@ -25,20 +20,49 @@ const BlogPostPage = ({
 
   return (
     <div className="bg-white">
-      <PageHeader
-        bgImage={mappingBackground}
-        title={post.title || "Loading"}
-        teaserText={post.authorName || "Loading"}
-      />
-
+      <Navigation />
       <section className="container px-4 mx-auto sm:p-0 mb-36">
-        <article className="mx-auto mt-10 prose mb-36">
+        <article className="max-w-[65ch] mx-auto mt-16 mb-36">
           {router.isFallback ? (
             <h1>Loading...</h1>
           ) : (
-            <div className="prose bg-white">
-              <ReactMarkdown>{post.content!}</ReactMarkdown>
-            </div>
+            <>
+              <div className="mb-8 prose">
+                <h1>{post.title}</h1>
+              </div>
+              <div className="flex items-center mb-6">
+                <div className="flex-shrink-0">
+                  <span className="sr-only">{post.author.name}</span>
+                  <img
+                    className="w-12 h-12 rounded-full"
+                    src={post.author.image}
+                    alt={`Picture of the author ${post.author.name}`}
+                  />
+                </div>
+                <div className="ml-3">
+                  <p className="font-medium text-gray-900">
+                    {post.author.name}
+                  </p>
+                  <div className="flex space-x-1 text-sm text-gray-500">
+                    <time dateTime={post.date}>{post.prettyDate}</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <a
+                      href={`https://twitter.com/${post.author.twitter}`}
+                      className="hover:underline"
+                    >
+                      @{post.author.twitter}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="prose">
+                <img
+                  src={`https://source.unsplash.com/${post.coverImageUnsplashId}/624x384`}
+                  alt=""
+                />
+                <ReactMarkdown>{post.content!}</ReactMarkdown>
+              </div>
+            </>
           )}
         </article>
       </section>
@@ -51,7 +75,7 @@ const BlogPostPage = ({
 export default BlogPostPage;
 
 type Props = {
-  post: PartialBlogPostWithSlugAndDate;
+  post: BlogPost;
 };
 
 interface Params extends ParsedUrlQuery {
@@ -61,15 +85,7 @@ interface Params extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps<Props, Params> = async ({
   params,
 }) => {
-  const post = getPostBySlug(params!.slug, [
-    "title",
-    "date",
-    "slug",
-    "authorName",
-    "content",
-    "coverImageUnsplashId",
-    "coverImagePhotographerName",
-  ]);
+  const post = getPostBySlug(params!.slug);
 
   return {
     props: {
@@ -79,7 +95,7 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
 };
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllPosts();
 
   return {
     paths: posts.map((post) => {

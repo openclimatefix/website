@@ -1,13 +1,13 @@
 ---
-title: 'Energy Data Has Outgrown the Tribe'
-path: '/blog/2021-03-26-energy-data'
-date: '2021-03-26'
-authorName: 'Dan Travers'
-authorTwitter: 'danieltravers'
-authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg'
-coverImageUnsplashId: '3IxuF9MCjkA'
-coverImagePhotographerName: 'Crawford Jolly'
-project: 'open-energy'
+title: "Energy Data Has Outgrown the Tribe"
+date: "2021-03-26"
+author:
+  name: "Dan Travers"
+  twitter: "danieltravers"
+  image: "https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/dan.jpg"
+coverImageUnsplashId: "3IxuF9MCjkA"
+coverImagePhotographerName: "Crawford Jolly"
+project: "open-energy"
 ---
 
 In Yuval Noah Harari’s excellent book “Sapiens”, he outlines a fascinating history of how Homo Sapiens pulled apart from other species. That was through the use of our language to describe things that we have never seen, smelt or touched. In this way we tell stories, build myths, and form religions. Groups of primates rely on leaders to keep the group together based on personal one-to-one contact - members must be individually encouraged, woo-ed or threatened to be kept under control. And as a result, they only form groups of only 50 or 100 in size. We as humans however use our language, religion and stories to transmit the beliefs and common goals of our leaders to groups of millions.
