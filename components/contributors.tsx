@@ -1,4 +1,4 @@
-import CONTRIBUTORS from "../data/contributors.json";
+import CONTRIBUTORS from "../lib/contributors.json";
 
 interface IContributors {}
 
