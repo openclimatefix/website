@@ -22,7 +22,7 @@ const BlogPostsTeaser = ({
   isProjectSpecificTeaser = false,
 }: IBlogPostsTeaser) => {
   return (
-    <div className="grid max-w-md gap-5 mx-auto mt-12 md:grid-cols-3 md:max-w-2xl lg:max-w-4xl">
+    <div className="relative grid max-w-md gap-5 mx-auto mt-12 md:grid-cols-3 md:max-w-2xl lg:max-w-4xl">
       {allPosts.map((post) => (
         <Link href={`/blog/${post.slug}`} key={post.slug}>
           <a
