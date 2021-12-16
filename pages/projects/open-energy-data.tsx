@@ -6,7 +6,7 @@ import LogoCloud, { PARTNER_LOGOS } from "../../components/logoCloud";
 import openEnergyBackground from "../../public/backgrounds/open-energy.jpg";
 import Layout from "../../components/layout";
 import { BlogPost, getPostsByProject } from "../../lib/blog";
-import BlogPostsTeaser from "../../components/blog/blog-posts-teaser";
+import BlogPostsTeaser from "../../components/blog-posts-teaser";
 
 const OpenEnergyDataPage = ({ allPosts }: { allPosts: BlogPost[] }) => {
   return (

@@ -1,7 +1,7 @@
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Head from "next/head";
 import React from "react";
-import BlogPostsTeaser from "../../components/blog/blog-posts-teaser";
+import BlogPostsTeaser from "../../components/blog-posts-teaser";
 import Footer from "../../components/footer";
 import Navigation from "../../components/navigation";
 import Newsletter from "../../components/newsletter";

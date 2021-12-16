@@ -6,7 +6,7 @@ import LogoCloud, { PARTNER_LOGOS } from "../../components/logoCloud";
 import projectsBackground from "../../public/backgrounds/clouds.jpg";
 import nowcastingLogo from "../../public/logos/ocf_nowcasting_cw.png";
 import Layout from "../../components/layout";
-import BlogPostsTeaser from "../../components/blog/blog-posts-teaser";
+import BlogPostsTeaser from "../../components/blog-posts-teaser";
 import { getPostsByProject, BlogPost } from "../../lib/blog";
 
 const NowcastingPage = ({ allPosts }: { allPosts: BlogPost[] }) => {

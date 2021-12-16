@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BlogPost } from "../../lib/blog";
+import { BlogPost } from "../lib/blog";
 
 interface IBlogPostsTeaser {
   allPosts: BlogPost[];

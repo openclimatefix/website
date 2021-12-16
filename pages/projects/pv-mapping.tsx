@@ -6,7 +6,7 @@ import LogoCloud, { PARTNER_LOGOS } from "../../components/logoCloud";
 import mappingBackground from "../../public/backgrounds/mapping.jpg";
 import Layout from "../../components/layout";
 import { BlogPost, getPostsByProject } from "../../lib/blog";
-import BlogPostsTeaser from "../../components/blog/blog-posts-teaser";
+import BlogPostsTeaser from "../../components/blog-posts-teaser";
 
 const PVMappingPage = ({ allPosts }: { allPosts: BlogPost[] }) => {
   return (
