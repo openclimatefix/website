@@ -22,7 +22,7 @@ const BlogPostsTeaser = ({
   isProjectSpecificTeaser = false,
 }: IBlogPostsTeaser) => {
   return (
-    <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-6xl">
+    <div className="grid max-w-md gap-5 mx-auto mt-12 md:grid-cols-3 md:max-w-2xl lg:max-w-4xl">
       {allPosts.map((post) => (
         <Link href={`/blog/${post.slug}`} key={post.slug}>
           <a
@@ -67,9 +67,14 @@ const BlogPostsTeaser = ({
                   <p className="text-sm font-medium text-gray-900">
                     {post.author.name}
                   </p>
-                  <div className="flex space-x-1 text-sm text-gray-500">
+                  <div className="flex space-x-1 text-sm text-gray-500 md:flex-col lg:flex-row md:space-x-0 lg:space-x-1">
                     <time dateTime={post.date}>{post.prettyDate}</time>
-                    <span aria-hidden="true">&middot;</span>
+                    <span
+                      aria-hidden="true"
+                      className="md:hidden lg:inline-block"
+                    >
+                      &middot;
+                    </span>
                     <span>{post.readingTime} read</span>
                   </div>
                 </div>
