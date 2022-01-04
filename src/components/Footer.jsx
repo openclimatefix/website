@@ -78,7 +78,7 @@ export default function Example() {
           </div>
 
           <p className="mt-8 text-center text-base lg:mt-0 md:order-1">
-            &copy; 2021 Open Climate Fix
+            &copy; {new Date().getFullYear()} Open Climate Fix
           </p>
         </div>
       </div>
