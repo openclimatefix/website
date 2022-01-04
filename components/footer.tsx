@@ -84,7 +84,7 @@ export default function Footer() {
           </div>
 
           <p className="mt-12 text-base text-center lg:mt-0 md:order-1">
-            &copy; 2021 Open Climate Fix
+            &copy; {new Date().getFullYear()} Open Climate Fix
           </p>
         </div>
       </div>
