@@ -90,11 +90,15 @@ export function getPostsByProject(project: string) {
     .slice(0, 3); // TODO: Add a scroll and then load all of them
 }
 
-export function getAllPosts(): BlogPost[] {
+export function getAllPosts(limit?: number): BlogPost[] {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
+  if (limit) {
+    return posts.slice(0, limit);
+  }
   return posts;
 }
