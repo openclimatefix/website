@@ -12,6 +12,11 @@ import esaLogo from "../public/partners/esa.png";
 import turingLogo from "../public/partners/turing.png";
 import odiLogo from "../public/partners/odi.png";
 import icebreakerLogo from "../public/partners/icebreaker.png";
+import innovateukLogo from "../public/partners/innovateuk.png";
+import raaisLogo from "../public/partners/raais_foundation.png";
+import uclLogo from "../public/partners/ucl.jpg";
+import shuttleworthLogo from "../public/partners/shuttleworth.svg";
+import ngesoLogo from "../public/partners/ng_eso.png";
 
 export const PARTNER_LOGOS: {
   [name: string]: IPartnerLogo;
@@ -46,11 +51,36 @@ export const PARTNER_LOGOS: {
     image: icebreakerLogo,
     link: "https://icebreakerone.org/",
   },
+  innovateuk: {
+    name: "Innovate UK",
+    image: innovateukLogo,
+    link: "https://www.gov.uk/government/organisations/innovate-uk",
+  },
+  raais: {
+    name: "RAAIS Foundation",
+    image: raaisLogo,
+    link: "https://www.raais.org/",
+  },
+  ucl: {
+    name: "UCL",
+    image: uclLogo,
+    link: "https://www.ucl.ac.uk/",
+  },
+  shuttleworth: {
+    name: "Shuttleworth Foundation",
+    image: shuttleworthLogo,
+    link: "https://shuttleworthfoundation.org/",
+  },
+  ngeso: {
+    name: "National Grid ESO",
+    image: ngesoLogo,
+    link: "https://www.nationalgrideso.com/",
+  },
 };
 
 const LogoCloud = ({ logos }: { logos: IPartnerLogo[] }) => {
   return (
-    <div className="grid grid-cols-2 gap-8 my-2 sm:grid-cols-3 md:grid-cols-4">
+    <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4">
       {logos.map(({ name, image, link }: IPartnerLogo) => {
         return (
           <a
