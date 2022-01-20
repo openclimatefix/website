@@ -2,15 +2,15 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 
 const Newsletter = () => {
   return (
-    <section className="bg-yellow-400 w-full px-6 py-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-8">
+    <section className="w-full px-6 py-10 bg-yellow-400">
+      <div className="grid max-w-6xl grid-cols-1 mx-auto md:grid-cols-2 gap-x-8">
         <div>
-          <p className="text-2xl font-medium text-ocf-black-100 max-w-lg">
+          <p className="max-w-lg text-2xl font-medium text-ocf-black-100">
             Join our mailing list for updates about our projects, research, and
             more.
           </p>
-          <p className="text-xs leading-relaxed mt-2 md:ml-0 mb-4 text-ocf-black-100">
-            No spam, we promise. Read our{" "}
+          <p className="mt-2 mb-4 text-sm leading-relaxed md:ml-0 text-ocf-black-100">
+            4x emails per year. Read our{" "}
             <a href="#" className="underline">
               Privacy Policy
             </a>
@@ -25,12 +25,12 @@ const Newsletter = () => {
             <div className="relative max-w-md md:max-w-full">
               <input
                 type="text"
-                className="focus:ring-black focus:border-black block w-full rounded-full border-white py-4 px-6 pr-14"
+                className="block w-full px-6 py-4 border-white rounded-full focus:ring-black focus:border-black pr-14"
                 placeholder="Email"
               />
-              <button className="absolute inset-y-0 right-0 pr-6 flex items-center pointer-events-none">
+              <button className="absolute inset-y-0 right-0 flex items-center pr-6 pointer-events-none">
                 <ArrowRightIcon
-                  className="h-5 w-5 text-gray-400"
+                  className="w-5 h-5 text-gray-400"
                   aria-hidden="true"
                 />
               </button>
