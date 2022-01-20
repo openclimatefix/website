@@ -205,13 +205,30 @@ const AboutUsPage: NextPage = () => {
       </ul>
       <div className="max-w-2xl mx-auto mt-32">
         <Contributors />
-        <article className="mt-12 prose text-center">
-          <h3>Contribute</h3>
+        <article className="mt-12 prose ">
+          <h3 className="text-center">Contribute</h3>
           <p>
-            By using an open-source approach, we can draw upon a much larger
-            pool of expertise than any individual company, so combining existing
-            islands of knowledge and accelerating progress.
+            These wonderful people above are already contributing to our
+            codebase. Want to join them? Check out these resources:
           </p>
+          <ol className="">
+            <li>
+              <a href="https://github.com/search?l=&p=1&q=user%3Aopenclimatefix+label%3A%22good+first+issue%22&ref=advsearch&type=Issues&utf8=%E2%9C%93&state=open">
+                List of "good first issues"
+              </a>
+              : GitHub "issues" which describe changes we'd like to make to the
+              code.
+            </li>
+            <li>
+              <a href="https://github.com/openclimatefix/nowcasting/blob/main/coding_style.md">
+                OCF's Coding Style
+              </a>
+            </li>
+            <li>
+              The main tools we use include: PyTorch, PyTorch Lighting, xarray,
+              pandas, pvlib, Next.js
+            </li>
+          </ol>
         </article>
       </div>
     </Layout>
