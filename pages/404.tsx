@@ -5,11 +5,14 @@ import Layout from "../components/layout";
 import aboutBackground from "../public/backgrounds/clouds.jpg";
 
 const Custom404Page: NextPage = () => {
+  const teaserText =
+    "Whooops! We are not sure how you got here, but this page has been lost.";
   return (
     <Layout
       bgImage={aboutBackground}
       title="404 - Page Not Found"
-      teaserText="Whooops! We are not sure how you got here, but this page has been lost."
+      teaserText={teaserText}
+      description={teaserText}
     >
       To get back on track, why not:
       <ul>

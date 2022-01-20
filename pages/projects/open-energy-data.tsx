@@ -14,6 +14,7 @@ const OpenEnergyDataPage = ({ allPosts }: { allPosts: BlogPost[] }) => {
       bgImage={openEnergyBackground}
       title="Open Energy Data"
       teaserText="Data is needed for everything: To balance the grid, to decide where to install the next wind farm, to train machine learning models and more."
+      description="Data is needed for everything: To balance the grid, to decide where to install the next wind farm, to train machine learning models and more."
       isTextPage={false}
     >
       <article className="mx-auto mt-10 mb-20 prose">

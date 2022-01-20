@@ -211,12 +211,11 @@ const Home = ({ allPosts }: InferGetStaticPropsType<typeof getStaticProps>) => {
           </div>
           <BlogPostsTeaser allPosts={allPosts} />
           <div className="w-full mt-8 text-center">
-            <a
-              href="/blog"
-              className="text-base font-bold text-danube-600 hover:text-danube-500"
-            >
-              Read more blog posts<span aria-hidden="true"> &rarr;</span>
-            </a>
+            <Link href="/blog">
+              <a className="text-base font-bold text-danube-600 hover:text-danube-500">
+                Read more blog posts<span aria-hidden="true"> &rarr;</span>
+              </a>
+            </Link>
           </div>
         </section>
 

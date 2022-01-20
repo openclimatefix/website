@@ -62,6 +62,7 @@ const Projects: NextPage = () => {
       bgImage={projectsBackground}
       title="Projects"
       teaserText="We develop projects that use computers to reduce carbon emissions. Our projects span everything from reporting to data management."
+      description="We develop projects that use computers to reduce carbon emissions. Our projects span everything from reporting to data management."
       isTextPage={false}
     >
       <ProjectTeaser

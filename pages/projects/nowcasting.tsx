@@ -16,6 +16,7 @@ const NowcastingPage = ({ allPosts }: { allPosts: BlogPost[] }) => {
       title="Nowcasting"
       titleImage={nowcastingLogo}
       teaserVideoURL="https://www.youtube-nocookie.com/embed/IOp-tj-IJpk?controls=0"
+      description="Forecasting solar photovoltaic (PV) power production is hard: As clouds move over PV panels, the power output moves up and down rapidly. We devised a solution to keep the balance."
       isTextPage={false}
     >
       <article className="mx-auto mt-10 mb-20 prose">

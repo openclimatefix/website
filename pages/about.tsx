@@ -74,6 +74,7 @@ const AboutUsPage: NextPage = () => {
       bgImage={aboutBackground}
       title="About Us"
       teaserText="Open Climate Fix is a non-profit product lab, totally focused on reducing greenhouse gas emissions as rapidly as possible."
+      description="Open Climate Fix is a non-profit product lab, totally focused on reducing greenhouse gas emissions as rapidly as possible."
       isTextPage={false}
     >
       <article className="mx-auto mt-10 mb-20 prose">

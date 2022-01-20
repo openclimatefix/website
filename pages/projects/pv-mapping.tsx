@@ -14,6 +14,7 @@ const PVMappingPage = ({ allPosts }: { allPosts: BlogPost[] }) => {
       bgImage={mappingBackground}
       title="Solar Panel Mapping"
       teaserText="To accurately forecast solar power generation, we need to know where all the PV panels are. That is still largely unknown today in the UK."
+      description="To accurately forecast solar power generation, we need to know where all the PV panels are. That is still largely unknown today in the UK."
       isTextPage={false}
     >
       <article className="mx-auto mt-10 mb-20 prose">
