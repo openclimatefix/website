@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
 
-import LogoCloud, { PARTNER_LOGOS } from "../../components/logoCloud";
+import LogoCloud, { PARTNER_LOGOS } from "../../components/logo-cloud";
 
 import openEnergyBackground from "../../public/backgrounds/open-energy.jpg";
 import Layout from "../../components/layout";

@@ -9,7 +9,7 @@ import openenergyImage from "../public/backgrounds/open-energy.jpg";
 
 import Footer from "../components/footer";
 
-import LogoCloud, { PARTNER_LOGOS } from "../components/logoCloud";
+import LogoCloud, { PARTNER_LOGOS } from "../components/logo-cloud";
 
 import Newsletter from "../components/newsletter";
 import Image from "next/image";

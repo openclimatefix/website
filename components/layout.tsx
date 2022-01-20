@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Footer from "./footer";
 import Newsletter from "./newsletter";
-import PageHeader, { IPageHeader } from "./pageHeader";
+import PageHeader, { IPageHeader } from "./page-header";
 
 interface ILayout extends IPageHeader {
   children: React.ReactNode;

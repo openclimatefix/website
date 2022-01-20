@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
 
-import LogoCloud, { PARTNER_LOGOS } from "../../components/logoCloud";
+import LogoCloud, { PARTNER_LOGOS } from "../../components/logo-cloud";
 
 import projectsBackground from "../../public/backgrounds/clouds.jpg";
 import nowcastingLogo from "../../public/logos/ocf_nowcasting_cw.png";
