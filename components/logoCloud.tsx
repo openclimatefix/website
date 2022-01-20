@@ -1,4 +1,4 @@
-import Image from "./image";
+import Image from "next/image";
 
 interface IPartnerLogo {
   name: string;

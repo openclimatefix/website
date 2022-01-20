@@ -1,7 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
 
-import Image from "../components/image";
+import Image from "next/image";
 import Contributors from "../components/contributors";
 import Layout from "../components/layout";
 

@@ -12,7 +12,7 @@ import Footer from "../components/footer";
 import LogoCloud, { PARTNER_LOGOS } from "../components/logoCloud";
 
 import Newsletter from "../components/newsletter";
-import Image from "../components/image";
+import Image from "next/image";
 import Link from "next/link";
 import GenericMetaHeaders from "../components/meta-headers";
 import BlogPostsTeaser from "../components/blog-posts-teaser";

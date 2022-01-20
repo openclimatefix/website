@@ -1,8 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
 import Link from "next/link";
-
-import Image from "../../components/image";
+import Image from "next/image";
 
 import projectsBackground from "../../public/backgrounds/roadmap.jpg";
 import nowcastingBackground from "../../public/backgrounds/nowcasting.jpg";
