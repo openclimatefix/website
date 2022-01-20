@@ -2,6 +2,8 @@ import React from "react";
 import { NextPage } from "next";
 
 import Image from "../components/image";
+import Contributors from "../components/contributors";
+import Layout from "../components/layout";
 
 import aboutBackground from "../public/backgrounds/clouds.jpg";
 import jackImage from "../public/people/jack.png";
@@ -9,8 +11,7 @@ import danImage from "../public/people/dan.jpg";
 import floImage from "../public/people/flo.jpg";
 import jacobImage from "../public/people/jacob.jpg";
 import peterImage from "../public/people/peter.jpg";
-import Contributors from "../components/contributors";
-import Layout from "../components/layout";
+import kasiaImage from "../public/people/peter.jpg"; //TODO: fixme
 
 interface IPerson {
   name: string;
@@ -61,12 +62,13 @@ const AboutUsPage: NextPage = () => {
       linkedinUrl: "https://www.linkedin.com/in/peter-dudfield-b379b7a6/",
       githubUrl: "https://github.com/peterdudfield",
     },
-    // {
-    //   name: "Kasia Krasucka",
-    //   role: "Program Manager",
-    //   image: kasiaImage,
-    //   linkedinUrl: "https://www.linkedin.com/in/krasucka/",
-    // },
+    {
+      name: "Kasia Krasucka",
+      role: "Program Manager",
+      image: kasiaImage,
+      linkedinUrl: "https://www.linkedin.com/in/krasucka/",
+      githubUrl: "https://github.com/kasiaocf",
+    },
   ];
 
   return (
