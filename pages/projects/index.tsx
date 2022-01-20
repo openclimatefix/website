@@ -57,12 +57,15 @@ function ProjectTeaserSpacer() {
 }
 
 const Projects: NextPage = () => {
+  const teaserText =
+    "Our projects cover a variety of topics. Currently, we help locate solar panels, open up energy data and predict how much solar electricity will be produced.";
+
   return (
     <Layout
       bgImage={projectsBackground}
       title="Projects"
-      teaserText="We develop projects that use computers to reduce carbon emissions. Our projects span everything from reporting to data management."
-      description="We develop projects that use computers to reduce carbon emissions. Our projects span everything from reporting to data management."
+      teaserText={teaserText}
+      description={teaserText}
       isTextPage={false}
     >
       <ProjectTeaser

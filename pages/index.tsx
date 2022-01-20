@@ -159,10 +159,9 @@ const Home = ({ allPosts }: InferGetStaticPropsType<typeof getStaticProps>) => {
                 Our Projects
               </h2>
               <p className="text-xl text-gray-300">
-                From understanding where solar generation capacity like solar
-                panels is located, opening up energy data to predicting how much
-                energy will be produced – our projects cover a variety of
-                topics.
+                Our projects cover a variety of topics. Currently, we help
+                locate solar panels, open up energy data and predict how much
+                solar electricity will be produced.
               </p>
             </div>
             <ul
@@ -203,10 +202,8 @@ const Home = ({ allPosts }: InferGetStaticPropsType<typeof getStaticProps>) => {
               From the Blog
             </h2>
             <p className="text-xl text-gray-700">
-              One of our biggest goals at Open Climate Fix is transparency. We
-              want to let people take part in the work we do and we think that
-              is only possible by openly communicating about it. This blog is
-              one part of how we want to achieve that.
+              We communicate openly about our work to let everyone take part in
+              it. Here are our latest updates from the blog.
             </p>
           </div>
           <BlogPostsTeaser allPosts={allPosts} />
