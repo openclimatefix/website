@@ -41,9 +41,7 @@ const BlogPostsTeaser = ({
                 <div className="flex-1">
                   {!isProjectSpecificTeaser && (
                     <p className="text-sm font-medium text-yellow-600">
-                      <a href="#" className="hover:underline">
-                        {prettyPrintProjectTag(post.project)}
-                      </a>
+                      {prettyPrintProjectTag(post.project)}
                     </p>
                   )}
                   <div className="mt-2">
