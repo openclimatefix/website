@@ -87,7 +87,7 @@ export function getPostsByProject(project: string) {
         return [...allPosts];
       }
     }, [])
-    .slice(0, 3); // TODO: Add a scroll and then load all of them
+    .slice(0, 3);
 }
 
 export function getAllPosts(limit?: number): BlogPost[] {
