@@ -214,14 +214,14 @@ const AboutUsPage: NextPage = () => {
           <ol className="">
             <li>
               <a href="https://github.com/search?l=&p=1&q=user%3Aopenclimatefix+label%3A%22good+first+issue%22&ref=advsearch&type=Issues&utf8=%E2%9C%93&state=open">
-                List of "good first issues"
+                List of &quot;good first issues&quot;
               </a>
-              : GitHub "issues" which describe changes we'd like to make to the
-              code.
+              : GitHub &quot;issues&quot; which describe changes we&apos;d like
+              to make to the code.
             </li>
             <li>
               <a href="https://github.com/openclimatefix/nowcasting/blob/main/coding_style.md">
-                OCF's Coding Style
+                OCF&apos;s Coding Style
               </a>
             </li>
             <li>
