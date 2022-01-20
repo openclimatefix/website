@@ -18,7 +18,7 @@ const Image = (props: ImageProps) => {
 
   return (
     <NextImage
-      loader={cloudflareImageLoader}
+      // loader={cloudflareImageLoader}
       unoptimized={process.env.NODE_ENV === "development"}
       {...props}
     />
