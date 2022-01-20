@@ -20,7 +20,7 @@ const BlogIndexPage = ({
       <Navigation />
 
       <section className="container relative px-4 mx-auto sm:p-0 mb-36">
-        <Pattern />
+        {/* <Pattern /> */}
         <h2 className="relative text-5xl font-light text-center mt-14 text-ocf-black-100 mb-28">
           Open News
         </h2>
