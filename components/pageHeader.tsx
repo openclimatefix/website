@@ -41,7 +41,7 @@ const PageHeader = ({
                 />
               </div>
             ) : (
-              <h2 className="relative z-20 text-3xl font-light text-center text-white md:text-6xl text-shadow">
+              <h2 className="relative z-20 text-3xl font-semibold leading-tight text-center text-white md:text-6xl sm:text-5xl lg:text-7xl lg:font-bold text-shadow sm:leading-tight lg:leading-tight">
                 {title}
               </h2>
             )}

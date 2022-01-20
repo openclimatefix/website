@@ -21,7 +21,7 @@ const BlogIndexPage = ({
 
       <section className="container relative px-4 mx-auto sm:p-0 mb-36">
         {/* <Pattern /> */}
-        <h2 className="relative text-5xl font-light text-center mt-14 text-ocf-black-100 mb-28">
+        <h2 className="relative z-20 mt-20 text-3xl font-semibold leading-tight text-center text-ocf-black-100 md:text-6xl sm:text-5xl lg:text-7xl lg:font-bold text-shadow sm:leading-tight lg:leading-tight">
           Open News
         </h2>
         <BlogPostsTeaser allPosts={allPosts} />
