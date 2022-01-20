@@ -5,7 +5,7 @@
   Open Climate Fix Website
 </h1>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-) [![Open Collective backers and sponsors](https://img.shields.io/opencollective/all/openclimatefix?style=flat-square)](https://opencollective.com/openclimatefix) [![GitHub issues](https://img.shields.io/github/issues/openclimatefix/website?style=flat-square)](https://github.com/openclimatefix/website/issues) [![Deploy to GH Pages](https://img.shields.io/github/workflow/status/openclimatefix/website/Deploy%20to%20GH%20Pages?label=deployment&style=flat-square)](https://github.com/openclimatefix/website/actions?query=workflow%3A%22Deploy+to+GH+Pages%22)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-) [![GitHub issues](https://img.shields.io/github/issues/openclimatefix/website?style=flat-square)](https://github.com/openclimatefix/website/issues)
 
 ## 🚀 Getting Started
 
@@ -21,7 +21,7 @@ This website is built using [Next.js](https://nextjs.org/docs).
 
 ## 💫 Deploy
 
-This page is auto-deployed on GitHub Pages.
+This page is auto-deployed on Vercel.
 
 ## ✨ Contributors
 
