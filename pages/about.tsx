@@ -11,7 +11,7 @@ import danImage from "../public/people/dan.jpg";
 import floImage from "../public/people/flo.jpg";
 import jacobImage from "../public/people/jacob.jpg";
 import peterImage from "../public/people/peter.jpg";
-import kasiaImage from "../public/people/peter.jpg"; //TODO: fixme
+import kasiaImage from "../public/people/kasia.jpg";
 
 interface IPerson {
   name: string;
