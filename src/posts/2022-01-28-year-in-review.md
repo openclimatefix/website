@@ -40,7 +40,7 @@ Last but not least, we significantly expanded our network and built some great n
 ## What’s coming?
 
 Glad you have asked! Nowcasting will remain our main focus, at least for the first half of this year. Our goals are ambitious: we will continue to improve our nowcasting results and hope to have a pilot service for National Grid ESO that works in real-time by mid-2022. Once that is up and running, we will be testing it together with National Grid ESO and then in the next phase try to scale to other European countries.
-Another initiative that is especially close to our heart is a public ML competition to let everyone participate in improving our models. We [just released a small sample of our dataset (~108GB)](https://console.cloud.google.com/marketplace/product/bigquery-public-data/eumetsat-seviri-rss-hrv-uk?project=pc-api-6932409227086194180-457) and then hopefully later this year the full dataset (~25TB) and more tools to the public. Make sure [to follow us on Twitter](https://twitter.com/openclimatefix) for more updates.
+Another initiative that is especially close to our heart is a public ML competition to let everyone participate in improving our models. We are aiming to release   our full dataset (~25TB) and more tools later this year to the public. Make sure [to follow us on Twitter](https://twitter.com/openclimatefix) for more updates.
 Judging by these last few weeks, 2022 is going to be busy for us and we couldn’t be more excited! Thank you for following and supporting us on our journey so far. There are lots of exciting news to come!
 
 So long!
