@@ -14,9 +14,9 @@ Open Climate Fix has recently completed the first phase of our flagship [solar P
 
 The results we have achieved so far are very promising. OCF’s best forecast is already 2.8 times more accurate than the existing PV forecast from NG-ESO, with a mean absolute error (MAE) of 230 MW vs 650 MW. This is a great stepping stone for OCF, and for anyone interested in learning more about the details of our work, we are happy to share our first progress reports.
 
-> "I am very impressed with OCF’s high-quality work and the preliminary results the team has managed to achieve so early into the project."
->
-> -Lyndon Ruff, Lead Data Scientist, NG-ESO
+> I am very impressed with OCF’s high-quality work and the preliminary results the team has managed to achieve so early into the project.
+
+-Lyndon Ruff, Lead Data Scientist, NG-ESO
 
 ## How Did We Get There?
 
