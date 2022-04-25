@@ -5,13 +5,15 @@ import { StaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 // ADVISORS
-{/* <Person
+{
+  /* <Person
         name="Damien Tanner"
         image="damien.jpg"
         linkedin="https://www.linkedin.com/in/dctanner/"
         twitter="https://twitter.com/dctanner/"
         github="https://github.com/dctanner"
-      /> */}
+      /> */
+}
 
 export default function TeamSection() {
   return (
@@ -23,9 +25,7 @@ export default function TeamSection() {
               node {
                 relativePath
                 childImageSharp {
-                  gatsbyImageData(
-                    height: 200
-                  )
+                  gatsbyImageData(height: 200)
                 }
               }
             }
@@ -33,39 +33,45 @@ export default function TeamSection() {
         }
       `}
       render={(data) => (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 max-w-5xl">
+        <div className="grid max-w-5xl grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
           <Person
             name="Jack Kelly"
-            image={getImageFromList("jack.png", data)}
+            image={getImageFromList('jack2.png', data)}
             linkedin="https://www.linkedin.com/in/jackkelly0/"
             twitter="https://twitter.com/jack_kelly"
             github="https://github.com/JackKelly"
           />
           <Person
             name="Dan Travers"
-            image={getImageFromList("dan.jpg", data)}
+            image={getImageFromList('dan2.png', data)}
             linkedin="https://www.linkedin.com/in/dan-travers-56982912/"
             twitter="https://twitter.com/danieltravers"
           />
           <Person
             name="Flo Wirtz"
-            image={getImageFromList("flo.jpg", data)}
+            image={getImageFromList('flo2.png', data)}
             linkedin="https://www.linkedin.com/in/florianwirtz/"
             twitter="https://twitter.com/flowirtz"
             github="https://github.com/flowirtz"
           />
           <Person
             name="Jacob Bieker"
-            image={getImageFromList("jacob.jpg", data)}
+            image={getImageFromList('jacob2.png', data)}
             linkedin="https://www.linkedin.com/in/jacobbieker/"
             github="https://github.com/jacobbieker"
             twitter="https://twitter.com/JacobBieker"
           />
           <Person
             name="Peter Dudfield"
-            image={getImageFromList("peter.jpg", data)}
+            image={getImageFromList('peter2.png', data)}
             linkedin="https://www.linkedin.com/in/peter-dudfield-b379b7a6/"
             github="https://github.com/peterdudfield"
+          />
+          <Person
+            name="Kasia Krasucka"
+            image={getImageFromList('kasia2.png', data)}
+            linkedin="https://www.linkedin.com/in/krasucka/"
+            github="https://github.com/kasiaocf"
           />
         </div>
       )}
@@ -75,19 +81,16 @@ export default function TeamSection() {
 
 function getImageFromList(imageName, list) {
   return getImage(
-    list.allFile.edges.find(({ node }) =>
-      node.relativePath.endsWith(imageName)
-    ).node
+    list.allFile.edges.find(({ node }) => node.relativePath.endsWith(imageName))
+      .node
   );
 }
-
-
 
 function Person({ name, image, linkedin, twitter, github }) {
   const pic = getImage(image);
 
   return (
-    <div className="sm:max-w-xs p-2 mb-6">
+    <div className="p-2 mb-6 sm:max-w-xs">
       <div className="flex justify-center">
         <div className="inline-block">
           <GatsbyImage
@@ -97,7 +100,7 @@ function Person({ name, image, linkedin, twitter, github }) {
           />
         </div>
       </div>
-      <div className="text-center mt-3">
+      <div className="mt-3 text-center">
         <h3 className="text-lg">{name}</h3>
         <span className={iconList}>
           {linkedin && (
