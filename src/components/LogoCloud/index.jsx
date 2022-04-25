@@ -59,6 +59,11 @@ export default function LogoCloud({ logos }) {
       image: 'raais_foundation.png',
       link: 'https://www.raais.org/',
     },
+    {
+      name: 'Shuttleworth Foundation',
+      image: 'shuttleworth.jpg',
+      link: 'https://shuttleworthfoundation.org/fellows/flash-grants/',
+    },
   ];
 
   return (
