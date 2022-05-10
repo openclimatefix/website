@@ -27,7 +27,7 @@ If the authors don’t want to publish their models or aren’t allowed to, the 
 The original MetNet provided state-of-the-art multi-hour probabilistic precipitation forecasts for large spatial areas, and MetNet-2 built on top of that foundation to extend the forecasts out to 12 hours ahead. These models are very large, trained on multiple years of Multi-Radar/Multi-Sensor radar precipitation data, and GOES-16/17 5-minutely satellite imagery over the continental United States. We reimplemented these models in PyTorch, and are in the process of releasing a similar dataset to the one that is used in the papers. 
 
 - [ArXiv: “MetNet: A Neural Weather Model for Precipitation Forecasting” (Sønderby et al., 2020)](https://arxiv.org/abs/2003.12140)
-- [Arxiv: “Skillful Twelve Hour Precipitation Forecastsusing Large Context Neural Networks” (2021](https://arxiv.org/abs/2003.12140)
+- [Arxiv: “Skillful Twelve Hour Precipitation Forecastsusing Large Context Neural Networks” (2021)](https://arxiv.org/abs/2003.12140)
 - [https://github.com/openclimatefix/metnet](https://github.com/openclimatefix/metnet)
 - [HuggingFace: openclimatefix/metnet-2](https://huggingface.co/openclimatefix/metnet-2)
 - [https://huggingface.co/datasets/openclimatefix/mrms](https://huggingface.co/datasets/openclimatefix/mrms)
