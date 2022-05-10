@@ -62,4 +62,8 @@ Openly publishing so many different ML model architectures over the last six mon
 
 We are planning to release more datasets in the future and engage with our community and produce more models that are useful for a wider audience. We will also publish pretrained models soon. Stay tuned!
 
-<p align="center"><img src="https://github.com/openclimatefix/website/blob/main/src/images/logos/shuttleworth.jpg" width="500" height="200"></p>
+<p align="center">
+
+  <img width="460" height="160" src="https://raw.githubusercontent.com/openclimatefix/website/master/src/images/logos/shuttleworth.jpg">
+</p>
+  
