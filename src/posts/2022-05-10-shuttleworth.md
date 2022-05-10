@@ -10,7 +10,7 @@ coverImagePhotographerName: 'Joshua Sortino'
 project: 'nowcasting'
 ---
 
-Over the last couple of months, we have focused on our Machine Learning (ML) research around solar electricity short-term forecasting. The work is progressing nicely: in early March [we realeased our initial results](https://www.openclimatefix.org/blog/2022-03-02-first-results), showing that OCF’s best forecast already is 2.8 times more accurate than the existing solar forecast from National Grid ESO.
+Over the last couple of months, we have focused on our Machine Learning (ML) research around solar electricity short-term forecasting. The work is progressing nicely: in early March [we released our initial results](https://www.openclimatefix.org/blog/2022-03-02-first-results), showing that OCF’s best forecast already is 2.8 times more accurate than the existing solar forecast from National Grid ESO.
 
 Since we want as many people as possible to benefit from our work we release everything under open-source licences. While our work is currently focused on solar electricity forecasting, ML model architectures we have implemented so far can be used for precipitation and weather forecasting as well. In this blog post, we provide an overview of the models that we have released so far. 
 
