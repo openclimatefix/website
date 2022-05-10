@@ -5,8 +5,8 @@ date: '2022-05-10'
 authorName: 'Jacob Bieker'
 authorTwitter: 'JacobBieker'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/jacob.jpg'
-coverImageUnsplashId: 'blue-bright-lights-373543'
-coverImagePhotographerName: ''
+coverImageUnsplashId: 'LqKhnDzSF-8'
+coverImagePhotographerName: 'Joshua Sortino'
 project: 'nowcasting'
 ---
 
@@ -62,4 +62,4 @@ Openly publishing so many different ML model architectures over the last six mon
 
 We are planning to release more datasets in the future and engage with our community and produce more models that are useful for a wider audience. We will also publish pretrained models soon. Stay tuned!
 
-<img src="https://github.com/openclimatefix/website/blob/main/src/images/logos/shuttleworth.jpg" width="500" height="200" class="centerImage">
+<p align="center"><img src="https://github.com/openclimatefix/website/blob/main/src/images/logos/shuttleworth.jpg" width="500" height="200"></p>
