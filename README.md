@@ -60,6 +60,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://melnycz.uk"><img src="https://avatars.githubusercontent.com/u/23401306?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Howard Melnyczuk</b></sub></a><br /><a href="https://github.com/openclimatefix/website/commits?author=melnyczuk" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/kasiaocf"><img src="https://avatars.githubusercontent.com/u/96180540?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kasiaocf</b></sub></a><br /><a href="#blog-kasiaocf" title="Blogposts">📝</a></td>
   </tr>
 </table>
 
