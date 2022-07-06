@@ -48,13 +48,6 @@ export default function TeamSection() {
             twitter="https://twitter.com/danieltravers"
           />
           <Person
-            name="Flo Wirtz"
-            image={getImageFromList('flo2.png', data)}
-            linkedin="https://www.linkedin.com/in/florianwirtz/"
-            twitter="https://twitter.com/flowirtz"
-            github="https://github.com/flowirtz"
-          />
-          <Person
             name="Jacob Bieker"
             image={getImageFromList('jacob2.png', data)}
             linkedin="https://www.linkedin.com/in/jacobbieker/"
