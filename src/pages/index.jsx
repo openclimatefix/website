@@ -7,14 +7,14 @@ import Footer from '../components/Footer';
 import CloudHero from '../components/CloudHero';
 import TeamSection from '../components/TeamSection';
 import LogoCloud from '../components/LogoCloud';
-import SpecialAnnouncement from '../components/SpecialAnnouncement';
+
 
 import '../components/layout.css';
 
 const IndexPage = () => (
   <>
     <SEO title="Home" />
-    <SpecialAnnouncement />
+  
     <Header />
     <CloudHero />
     <main className="px-6 container mx-auto md:max-w-2xl lg:max-w-2xl xl:max-w-2xl mb-16">
