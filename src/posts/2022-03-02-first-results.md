@@ -40,7 +40,7 @@ With these solid foundations in place, the bulk of our work in the coming months
 
 ## Acknowledgements
 
-We would like to thank nvidia for their very generous support: nvidia provided OCF with two A6000 GPUs via the "academic hardware grant", and a further four A6000 GPUs via the nvidia foundation. Thank you nvidia!
+We would like to thank the NVIDIA Corporation for their very generous support: nvidia provided OCF with two A6000 GPUs via the "academic hardware grant", and a further four A6000 GPUs via the nvidia foundation. Thank you nvidia!
 
 We would also like to thank Google Cloud for providing free credits, and thank Sustainable Workspaces for providing help with our two servers.
 
