@@ -38,6 +38,14 @@ Having run hundreds of experiments on each of the six models, four of them outpe
 
 With these solid foundations in place, the bulk of our work in the coming months will focus on the production of the Nowcasting service with the goal to build an operational prototype by July. We are particularly interested in ensuring there is a user interface that can communicate the forecast information effectively and efficiently. We will also continue the ML research to improve the skill of our solar PV Nowcasts. We are looking into incorporating a probability distribution of the PV outputs (rather than just a point forecast) and conducting more analysis on the strengths of our models.
 
+## Acknowledgements
+
+We would like to thank nvidia for their very generous support: nvidia provided OCF with two A6000 GPUs via the "academic hardware grant", and a further four A6000 GPUs via the nvidia foundation. Thank you nvidia!
+
+We would also like to thank Google Cloud for providing free credits, and thank Sustainable Workspaces for providing help with our two servers.
+
+Last, but by no means least, we must thank our collaborators and [open-source contributors](https://github.com/orgs/openclimatefix/people). Thank you!
+
 ## Learn More and Download the Reports
 
 1. [Research Report: Solar PV Nowcasting Using Deep Learning](https://drive.google.com/file/d/1sDKZ8WEJlTNa5oyonbNl2xGyZ7GLXKtQ/view?usp=sharing)
