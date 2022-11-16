@@ -27,9 +27,11 @@ export default function BlogPost({
     date,
     coverImageUnsplashId,
     coverImagePhotographerName,
+    coverImageSourceTitle
   } = frontmatter;
 
-  const coverImageUrl = `https://source.unsplash.com/${coverImageUnsplashId}/624x384`;
+  const isUploadedImage = coverImageUnsplashId.slice(0,3) === '202';
+  const coverImageUrl = isUploadedImage ? `/images/blog/${coverImageUnsplashId}` : `https://source.unsplash.com/${coverImageUnsplashId}/624x384`;
 
   return (
     <Layout>
@@ -64,7 +66,7 @@ export default function BlogPost({
             </a>{' '}
             on{' '}
             <a className="underline" href="https://unsplash.com/">
-              Unsplash
+              {isUploadedImage && !!coverImageSourceTitle ? coverImageSourceTitle : 'Unsplash'}
             </a>
           </figcaption>
         </figure>
@@ -93,6 +95,7 @@ export const pageQuery = graphql`
         authorImage
         coverImageUnsplashId
         coverImagePhotographerName
+        coverImageSourceTitle
       }
     }
   }
@@ -112,6 +115,7 @@ BlogPost.propTypes = {
         authorImage: PropTypes.string.isRequired,
         coverImageUnsplashId: PropTypes.string.isRequired,
         coverImagePhotographerName: PropTypes.string.isRequired,
+        coverImageSourceTitle: PropTypes.string // optional,
       }).isRequired,
     }).isRequired,
   }).isRequired,

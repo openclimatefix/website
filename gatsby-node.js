@@ -8,6 +8,8 @@ const { createFilePath } = require('gatsby-source-filesystem');
 const { graphql } = require('gatsby');
 const dirPath = require('path');
 
+const fsExtra = require('fs-extra');
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
@@ -60,5 +62,28 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     });
+  }
+  const sourceNorm = dirPath.normalize(`${__dirname}/src/images`);
+  const destination = `/images`;
+
+  if (node.internal.type === 'File') {
+    const dir = dirPath.normalize(node.dir);
+
+    if (dir.includes(sourceNorm)) {
+      const relativeToDestination = dir.replace(sourceNorm, '');
+      const newPath = dirPath.join(
+        process.cwd(),
+        'public',
+        destination,
+        relativeToDestination,
+        node.base
+      );
+
+      fsExtra.copy(node.absolutePath, newPath, err => {
+        if (err) {
+          console.log('Error copying file: ', err)
+        }
+      })
+    }
   }
 };
