@@ -2,7 +2,7 @@
 title: 'How We Save Carbon'
 path: '/blog/2022-11-16_how-we-save-carbon'
 date: '2022-11-16'
-authorName: 'Dan Travers' 'Rachel L'Arbi Tipton'
+authorName: 'Dan Travers' 
 authorTwitter: 'dantravers'
 authorImage: 'https://raw.githubusercontent.com/openclimatefix/website/master/src/images/people/kasia.png'
 coverImageUnsplashId: '2022-11-16_how-we-save-carbon.jpg'
