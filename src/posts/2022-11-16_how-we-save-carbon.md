@@ -1,6 +1,6 @@
 ---
-title: 'How We Save Carbon'
-path: '/blog/2022-11-16_how-we-save-carbon'
+title: 'Nowcasting: How OCF will reduce carbon emissions with short-term solar forecasts'
+path: '/blog/2022-11-16_how-OCF-will_reduce-carbon'
 date: '2022-11-16'
 authorName: 'Dan Travers' 
 authorTwitter: 'dantravers'
