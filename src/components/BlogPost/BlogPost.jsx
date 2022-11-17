@@ -57,14 +57,16 @@ export default function BlogPost({
             alt="Blog Post Cover Image"
           />
           <figcaption className="text-xs text-gray-600 text-center mt-1">
-            Photo by{' '}
-            <a
+            <span>Photo {coverImagePhotographerName ? "by" : "source:"} </span>
+            {coverImagePhotographerName && <>
+              <a
               className="underline"
               href={`https://unsplash.com/photos/${coverImageUnsplashId}`}
-            >
-              {coverImagePhotographerName}
-            </a>{' '}
-            on{' '}
+              >
+            {coverImagePhotographerName}
+              </a>{' '}
+              on{' '}
+            </>}
             <a className="underline" href="https://unsplash.com/">
               {isUploadedImage && !!coverImageSourceTitle ? coverImageSourceTitle : 'Unsplash'}
             </a>
