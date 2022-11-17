@@ -17,6 +17,39 @@ const PostLink = ({
   },
 }) => {
   const coverImageUrl = coverImageUnsplashId.slice(0,3) === '202' ? `/images/blog/${coverImageUnsplashId}` : `https://source.unsplash.com/${coverImageUnsplashId}/400x250`;
+  let authorBlock = <>
+    <img
+      className="w-10 h-10 rounded-full mr-4"
+      src={authorImage}
+      alt={`Avatar of author ${authorName}`}
+    />
+    <div className="text-sm">
+      <p className="text-gray-900 leading-none">{authorName}</p>
+      <p className="text-gray-600">
+        {date} · {readingTime.text}
+      </p>
+    </div>
+  </>;
+  if(authorName.includes('|') && authorImage.includes('|')) {
+    authorBlock = <>
+      <img
+        className="w-10 h-10 rounded-full"
+        src={authorImage.split('|')[0]}
+        alt={`Avatar of author ${authorName.split('|')[0]}`}
+      />
+      <img
+        className="w-10 h-10 rounded-full mr-3 bg-gray-200 -ml-1"
+        src={authorImage.split('|')[1]}
+        alt={`Avatar of author ${authorName.split('|')[1]}`}
+      />
+      <div className="text-sm">
+        <p className="text-gray-900 leading-none">{authorName.split('|')[0]} & {authorName.split('|')[1]}</p>
+        <p className="text-gray-600">
+          {date} · {readingTime.text}
+        </p>
+      </div>
+    </>;
+  }
 
   return (
     <li className="list-none mb-4">
@@ -33,17 +66,7 @@ const PostLink = ({
               <p className="text-gray-700 text-base">{excerpt}</p>
             </div>
             <div className="flex items-center">
-              <img
-                className="w-10 h-10 rounded-full mr-4"
-                src={authorImage}
-                alt={`Avatar of author ${authorName}`}
-              />
-              <div className="text-sm">
-                <p className="text-gray-900 leading-none">{authorName}</p>
-                <p className="text-gray-600">
-                  {date} · {readingTime.text}
-                </p>
-              </div>
+              {authorBlock}
             </div>
           </div>
         </div>
