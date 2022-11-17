@@ -78,13 +78,15 @@ This technology drag makes it hard to attract and keep talent and hence to innov
 Firstly, we are fully open source, and are making the datasets we can open also. This will encourage others to contribute, but also for people to learn and get involved. 
 
 Secondly, we will make our forecasts freely available to researchers and innovators. By giving new entrants access to the same information available to the largest incumbents, we are taking small but vital steps towards levelling the playing field and encouraging innovation. 
-Lastly, the solar PV forecast is built on the latest approaches and technologies, seldom seen in the energy industry: 
+Lastly, the solar PV forecast is built on the latest approaches and technologies, seldom seen in the energy industry:
 
-Cutting Edge ML ➜ Latest in ML research brings new insights not usually seen in the forecasting community
 
-Consuming Terabytes of data ➜ The latest ML models can use huge amounts of data to learn effectively
+|                             |     |                                                                                         |
+|-----------------------------|:---:|-----------------------------------------------------------------------------------------|
+| Cutting Edge ML             |  ➜  | Latest in ML research brings new insights not usually seen in the forecasting community |
+| Consuming Terabytes of data |  ➜  | The latest ML models can use huge amounts of data to learn effectively                  |
+| Great user experience       |  ➜  | Easy to navigate and understand user interface & well documented API.                   |
 
-Great user experience ➜ Easy to navigate and understand user interface & well documented API.
 
 Through being open and modern, we hope to act as a lighthouse project for the next generation of technological innovation in the sector, attracting and keeping more tech talent.
 
