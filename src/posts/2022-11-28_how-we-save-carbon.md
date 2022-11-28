@@ -1,7 +1,7 @@
 ---
 title: 'Nowcasting: How OCF will reduce carbon emissions with short-term solar forecasts'
-path: '/blog/2022-11-16_how-OCF-will_reduce-carbon'
-date: '2022-11-16'
+path: '/blog/2022-11-28_how-OCF-will_reduce-carbon'
+date: '2022-11-28'
 authorName: 'Dan Travers|Rachel Tipton' 
 authorTwitter: 'danieltravers'
 authorImage: '/images/people/dan.jpg|/images/people/rachel.png'
