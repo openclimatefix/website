@@ -45,17 +45,18 @@ date: '2020-08-18'
 
 Update these fields accordingly. Here is an explanation of what each of these fields mean:
 
-| Name                       | Description                                                                                                                                           |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| title                      | Title of the blog post                                                                                                                                |
-| path                       | Path of the blog post. Must be the same as the filename, **without** the `.md` ending.                                                                |
-| date                       | Same as in the filename                                                                                                                               |
-| authorName                 | Name of the Author                                                                                                                                    |
-| authorTwitter              | Twitter Handle of Author (without the `@`)                                                                                                            |
-| authorImage                | Filepath to picture of author. Should be in [here](https://github.com/openclimatefix/website/tree/master/src/images/people), or add if not there yet. |
-| coverImageUnsplashId       | Id of cover photo, taken from unsplash.com. The id is in the URL once you click on an image you like                                                  |
-| coverImagePhotographerName | Name of the photographer of cover image. Displayed in top left corner on unsplash.com once you click in an image you like                             |
-| project                    | Handle of project this blog post is under. One of `["open-energy", "mapping", "nowcasting"]` or empty                                                 |
+| Name                       | Description                                                                                                                                                                                                           |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| title                      | Title of the blog post                                                                                                                                                                                                |
+| path                       | Path of the blog post. Must be the same as the filename, **without** the `.md` ending.                                                                                                                                |
+| date                       | Same as in the filename                                                                                                                                                                                               |
+| authorName                 | Name of the Author                                                                                                                                                                                                    |
+| authorTwitter              | Twitter Handle of Author (without the `@`)                                                                                                                                                                            |
+| authorImage                | Filepath to picture of author. Should be in [here](https://github.com/openclimatefix/website/tree/master/src/images/people), or add if not there yet.                                                                 |
+| coverImageUnsplashId       | Id of cover photo, taken from unsplash.com. The id is in the URL once you click on an image you like <br/> **OR** the title of the image file if uploaded to `src/images/blog` e.g. 2022-11-16_how-we-save-carbon.jpg |
+| coverImagePhotographerName | Name of the photographer of cover image. Displayed in top left corner on unsplash.com once you click in an image you like                                                                                             |
+| coverImageSourceTitle      | Text for source link if uploaded and not sourced from Unsplash                                                                                                                                                        |
+| project                    | Handle of project this blog post is under. One of `["open-energy", "mapping", "nowcasting"]` or empty                                                                                                                 |
 
 ## 4. Write Text
 
