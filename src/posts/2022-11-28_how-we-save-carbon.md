@@ -8,6 +8,7 @@ authorImage: '/images/people/dan.jpg|/images/people/rachel.png'
 coverImageUnsplashId: '2022-11-16_how-we-save-carbon.jpg'
 coverImagePhotographerName: ''
 coverImageSourceTitle: 'Flickr'
+coverImageSourceLink: 'https://www.flickr.com/photos/ashdenawards/26916355376/'
 project: 'nowcasting'
 ---
 
