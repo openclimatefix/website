@@ -27,11 +27,13 @@ export default function BlogPost({
     date,
     coverImageUnsplashId,
     coverImagePhotographerName,
-    coverImageSourceTitle
+    coverImageSourceTitle,
+    coverImageSourceLink
   } = frontmatter;
 
   const isUploadedImage = coverImageUnsplashId.slice(0,3) === '202';
   const coverImageUrl = isUploadedImage ? `/images/blog/${coverImageUnsplashId}` : `https://source.unsplash.com/${coverImageUnsplashId}/624x384`;
+  const coverImageSourceUrl = isUploadedImage ? coverImageSourceLink : `https://unsplash.com/photos/${coverImageUnsplashId}`
 
   return (
     <Layout>
@@ -60,14 +62,15 @@ export default function BlogPost({
             <span>Photo {coverImagePhotographerName ? "by" : "source:"} </span>
             {coverImagePhotographerName && <>
               <a
-              className="underline"
-              href={`https://unsplash.com/photos/${coverImageUnsplashId}`}
+                className="underline"
+                href={isUploadedImage ? coverImageSourceLink : `https://unsplash.com/photos/${coverImageUnsplashId}`}
               >
-            {coverImagePhotographerName}
-              </a>{' '}
+                {coverImagePhotographerName}
+              </a>
+            }{' '}
               on{' '}
             </>}
-            <a className="underline" href="https://unsplash.com/">
+            <a className="underline" href={coverImageSourceUrl || coverImageUrl}>
               {isUploadedImage && !!coverImageSourceTitle ? coverImageSourceTitle : 'Unsplash'}
             </a>
           </figcaption>
@@ -98,6 +101,7 @@ export const pageQuery = graphql`
         coverImageUnsplashId
         coverImagePhotographerName
         coverImageSourceTitle
+        coverImageSourceLink
       }
     }
   }
@@ -117,7 +121,8 @@ BlogPost.propTypes = {
         authorImage: PropTypes.string.isRequired,
         coverImageUnsplashId: PropTypes.string.isRequired,
         coverImagePhotographerName: PropTypes.string.isRequired,
-        coverImageSourceTitle: PropTypes.string // optional,
+        coverImageSourceTitle: PropTypes.string, // optional,
+        coverImageSourceLink: PropTypes.string // optional,
       }).isRequired,
     }).isRequired,
   }).isRequired,
